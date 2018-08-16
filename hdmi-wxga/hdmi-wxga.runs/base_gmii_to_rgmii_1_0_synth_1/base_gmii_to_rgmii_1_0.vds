@@ -1,0 +1,504 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Aug 13 20:15:26 2018
+# Process ID: 3092
+# Current directory: Z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.runs/base_gmii_to_rgmii_1_0_synth_1
+# Command line: vivado.exe -log base_gmii_to_rgmii_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_gmii_to_rgmii_1_0.tcl
+# Log file: Z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.runs/base_gmii_to_rgmii_1_0_synth_1/base_gmii_to_rgmii_1_0.vds
+# Journal file: Z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.runs/base_gmii_to_rgmii_1_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Users/Russell Bush/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source base_gmii_to_rgmii_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 234.586 ; gain = 15.328
+config_ip_cache: Time (s): cpu = 00:00:01 ; elapsed = 00:00:25 . Memory (MB): peak = 271.895 ; gain = 0.000
+Command: synth_design -top base_gmii_to_rgmii_1_0 -part xc7z020clg400-3 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10276 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 385.195 ; gain = 104.242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'base_gmii_to_rgmii_1_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0.vhd:124]
+INFO: [Synth 8-3491] module 'base_gmii_to_rgmii_1_0_block' declared at 'z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_block.vhd:87' bound to instance 'U0' of component 'base_gmii_to_rgmii_1_0_block' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'base_gmii_to_rgmii_1_0_block' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_block.vhd:133]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'rgmii_txc_obuf_i' to cell 'OBUF' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_block.vhd:202]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'rgmii_tx_ctl_obuf_i' to cell 'OBUF' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_block.vhd:208]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'rgmii_txd_obuf_i' to cell 'OBUF' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_block.vhd:215]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'rgmii_txd_obuf_i' to cell 'OBUF' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_block.vhd:215]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'rgmii_txd_obuf_i' to cell 'OBUF' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_block.vhd:215]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'rgmii_txd_obuf_i' to cell 'OBUF' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_block.vhd:215]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'rgmii_rxc_ibuf_i' to cell 'IBUF' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_block.vhd:222]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'rgmii_rx_ctl_ibuf_i' to cell 'IBUF' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_block.vhd:228]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'rgmii_rxd_ibuf_i' to cell 'IBUF' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_block.vhd:235]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'rgmii_rxd_ibuf_i' to cell 'IBUF' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_block.vhd:235]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'rgmii_rxd_ibuf_i' to cell 'IBUF' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_block.vhd:235]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'rgmii_rxd_ibuf_i' to cell 'IBUF' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_block.vhd:235]
+	Parameter C_RGMII_TXC_SKEW_EN bound to: 0 - type: integer 
+	Parameter C_RGMII_TXC_ODELAY_VAL bound to: 0 - type: integer 
+	Parameter C_DEVICE_TYPE bound to: 0 - type: integer 
+	Parameter C_PHYADDR bound to: 5'b01001 
+INFO: [Synth 8-3491] module 'gmii_to_rgmii_v4_0_6' declared at 'z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/8c24/hdl/gmii_to_rgmii_v4_0_vhsyn_rfs.vhd:2452' bound to instance 'base_gmii_to_rgmii_1_0_core' of component 'gmii_to_rgmii_v4_0_6' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_block.vhd:243]
+INFO: [Synth 8-256] done synthesizing module 'base_gmii_to_rgmii_1_0_block' (8#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_block.vhd:133]
+INFO: [Synth 8-256] done synthesizing module 'base_gmii_to_rgmii_1_0' (9#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0.vhd:124]
+WARNING: [Synth 8-3331] design reset_sync has unconnected port enable
+WARNING: [Synth 8-3331] design gmii_to_rgmii_core has unconnected port speed_selection[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 440.289 ; gain = 159.336
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 440.289 ; gain = 159.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 440.289 ; gain = 159.336
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 82 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg400-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0.xdc] for cell 'U0'
+Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0.xdc] for cell 'U0'
+Parsing XDC File [Z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.runs/base_gmii_to_rgmii_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [Z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.runs/base_gmii_to_rgmii_1_0_synth_1/dont_touch.xdc]
+Parsing XDC File [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_clocks.xdc] for cell 'U0'
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'base_gmii_to_rgmii_1_0_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_clocks.xdc:7]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_clocks.xdc:20]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_clocks.xdc:21]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_clocks.xdc:24]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_clocks.xdc:32]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_clocks.xdc:33]
+Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_clocks.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/base_gmii_to_rgmii_1_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/base_gmii_to_rgmii_1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 65 instances were transformed.
+  FD => FDRE: 24 instances
+  FDP => FDPE: 36 instances
+  IODELAYE1 => IDELAYE2: 5 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.141 . Memory (MB): peak = 800.063 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:47 . Memory (MB): peak = 800.063 ; gain = 519.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:48 . Memory (MB): peak = 800.063 ; gain = 519.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  Z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.runs/base_gmii_to_rgmii_1_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:48 . Memory (MB): peak = 800.063 ; gain = 519.109
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'MDIO_INTERFACE'
+INFO: [Synth 8-5544] ROM "BIT_COUNT_LOAD_VALUE" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BIT_COUNT_LOAD_EN" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WE" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RD" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ADDRESS_MATCH" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NEW_STATE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NEW_STATE" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NEW_STATE" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NEW_STATE" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        idle_or_preamble |                      00000010000 |                             0000
+          wait_for_start |                      00001000000 |                             0001
+                opcode_1 |                      00000001000 |                             0010
+                opcode_2 |                      00000000001 |                             0011
+                ld_phyad |                      00000000010 |                             0100
+                ld_regad |                      00000000100 |                             0101
+                    ta_1 |                      10000000000 |                             0110
+                    ta_2 |                      00010000000 |                             0111
+                  data_1 |                      00100000000 |                             1000
+                  data_2 |                      01000000000 |                             1001
+                  data_3 |                      00000100000 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'one-hot' in module 'MDIO_INTERFACE'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:49 . Memory (MB): peak = 800.063 ; gain = 519.109
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 24    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	  11 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MDIO_INTERFACE 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	  11 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+Module MANAGEMENT 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module gmii_to_rgmii_core 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module gmii_to_rgmii_gen 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "i_gmii_to_rgmii/i_MANAGEMENT/MDIO_INTERFACE_1/NEW_STATE" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "i_gmii_to_rgmii/i_MANAGEMENT/MDIO_INTERFACE_1/NEW_STATE" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "i_gmii_to_rgmii/i_MANAGEMENT/MDIO_INTERFACE_1/NEW_STATE" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-3332] Sequential element (i_gmii_to_rgmii/i_gmii_to_rgmii/i_reset_sync_tx_90_reset/reset_sync1) is unused and will be removed from module gmii_to_rgmii_v4_0_6.
+WARNING: [Synth 8-3332] Sequential element (i_gmii_to_rgmii/i_gmii_to_rgmii/i_reset_sync_tx_90_reset/reset_sync2) is unused and will be removed from module gmii_to_rgmii_v4_0_6.
+WARNING: [Synth 8-3332] Sequential element (i_gmii_to_rgmii/i_gmii_to_rgmii/i_reset_sync_tx_90_reset/reset_sync3) is unused and will be removed from module gmii_to_rgmii_v4_0_6.
+WARNING: [Synth 8-3332] Sequential element (i_gmii_to_rgmii/i_gmii_to_rgmii/i_reset_sync_tx_90_reset/reset_sync4) is unused and will be removed from module gmii_to_rgmii_v4_0_6.
+WARNING: [Synth 8-3332] Sequential element (i_gmii_to_rgmii/i_gmii_to_rgmii/i_reset_sync_tx_90_reset/reset_sync5) is unused and will be removed from module gmii_to_rgmii_v4_0_6.
+WARNING: [Synth 8-3332] Sequential element (i_gmii_to_rgmii/i_gmii_to_rgmii/i_reset_sync_tx_90_reset/reset_sync6) is unused and will be removed from module gmii_to_rgmii_v4_0_6.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:52 . Memory (MB): peak = 800.063 ; gain = 519.109
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:01:16 . Memory (MB): peak = 800.063 ; gain = 519.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:01:16 . Memory (MB): peak = 810.355 ; gain = 529.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:01:17 . Memory (MB): peak = 811.504 ; gain = 530.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:01:19 . Memory (MB): peak = 811.504 ; gain = 530.551
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:01:19 . Memory (MB): peak = 811.504 ; gain = 530.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:01:19 . Memory (MB): peak = 811.504 ; gain = 530.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:01:19 . Memory (MB): peak = 811.504 ; gain = 530.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:01:19 . Memory (MB): peak = 811.504 ; gain = 530.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:01:19 . Memory (MB): peak = 811.504 ; gain = 530.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++---------------------+-----------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name          | RTL Name                                                        | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++---------------------+-----------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|gmii_to_rgmii_v4_0_6 | i_gmii_to_rgmii/i_MANAGEMENT/MDIO_INTERFACE_1/SHIFT_REG_reg[12] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++---------------------+-----------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |BUFIO     |     1|
+|3     |IDDR      |     5|
+|4     |IODELAYE1 |     5|
+|5     |LUT2      |    11|
+|6     |LUT3      |    12|
+|7     |LUT4      |     5|
+|8     |LUT5      |    12|
+|9     |LUT6      |    14|
+|10    |ODDR      |     6|
+|11    |SRL16E    |     1|
+|12    |FD        |    24|
+|13    |FDP       |    30|
+|14    |FDRE      |    68|
+|15    |FDSE      |     6|
+|16    |IBUF      |     6|
+|17    |OBUF      |     6|
++------+----------+------+
+
+Report Instance Areas: 
++------+--------------------------------+-----------------------------+------+
+|      |Instance                        |Module                       |Cells |
++------+--------------------------------+-----------------------------+------+
+|1     |top                             |                             |   213|
+|2     |  U0                            |base_gmii_to_rgmii_1_0_block |   213|
+|3     |    base_gmii_to_rgmii_1_0_core |gmii_to_rgmii_v4_0_6         |   201|
+|4     |      i_gmii_to_rgmii           |gmii_to_rgmii_gen            |   201|
+|5     |        i_MANAGEMENT            |MANAGEMENT                   |   112|
+|6     |          MDIO_INTERFACE_1      |MDIO_INTERFACE               |    87|
+|7     |          SYNC_MDC              |sync_block                   |     7|
+|8     |          SYNC_MDIO_IN          |sync_block_5                 |     6|
+|9     |        i_gmii_to_rgmii         |gmii_to_rgmii_core           |    67|
+|10    |          i_reset_sync_rx_reset |reset_sync_2                 |     6|
+|11    |          i_reset_sync_tx_reset |reset_sync_3                 |     6|
+|12    |          i_sync_rx_dv          |sync_block__parameterized1   |     6|
+|13    |          i_sync_rx_er          |sync_block__parameterized1_4 |     8|
+|14    |        i_reset_sync_mgmt_reset |reset_sync                   |     6|
+|15    |        i_reset_sync_rx_reset   |reset_sync_0                 |     7|
+|16    |        i_reset_sync_tx_reset   |reset_sync_1                 |     7|
++------+--------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:01:19 . Memory (MB): peak = 811.504 ; gain = 530.551
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:53 . Memory (MB): peak = 811.504 ; gain = 170.777
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:01:20 . Memory (MB): peak = 811.504 ; gain = 530.551
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 76 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 59 instances were transformed.
+  FD => FDRE: 24 instances
+  FDP => FDPE: 30 instances
+  IODELAYE1 => IDELAYE2: 5 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:01:25 . Memory (MB): peak = 814.059 ; gain = 542.164
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'Z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.runs/base_gmii_to_rgmii_1_0_synth_1/base_gmii_to_rgmii_1_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/base_gmii_to_rgmii_1_0.xci
+config_ip_cache: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 814.059 ; gain = 0.000
+INFO: [Coretcl 2-1174] Renamed 15 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'Z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.runs/base_gmii_to_rgmii_1_0_synth_1/base_gmii_to_rgmii_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file base_gmii_to_rgmii_1_0_utilization_synth.rpt -pb base_gmii_to_rgmii_1_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.188 . Memory (MB): peak = 814.059 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 13 20:18:29 2018...

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root MajorVersion="0" MinorVersion="36">
+  <CompositeFile CompositeFileTopName="base" CanBeSetAsTop="false" CanDisplayChildGraph="true">
+    <Description>Composite Fileset</Description>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1534363553"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1534363553"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1534363553"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1534363553"/>
+    <FileCollection Name="SOURCES" Type="SOURCES">
+      <File Name="ip\base_processing_system7_0_0\base_processing_system7_0_0.xci" Type="IP">
+        <Instance HierarchyPath="processing_system7_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1534216246" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_gmii_to_rgmii_0_0\base_gmii_to_rgmii_0_0.xci" Type="IP">
+        <Instance HierarchyPath="ethernet/gmii_to_rgmii_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1534216256" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_proc_sys_reset_0_0\base_proc_sys_reset_0_0.xci" Type="IP">
+        <Instance HierarchyPath="ethernet/proc_sys_reset_200MHz"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1534216256" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_xlconcat_0_0\base_xlconcat_0_0.xci" Type="IP">
+        <Instance HierarchyPath="xlconcat_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1533952444" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_gmii_to_rgmii_1_0\base_gmii_to_rgmii_1_0.xci" Type="IP">
+        <Instance HierarchyPath="ethernet/gmii_to_rgmii_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1534216256" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_v_axi4s_vid_out_0_0\base_v_axi4s_vid_out_0_0.xci" Type="IP">
+        <Instance HierarchyPath="hdmi/v_axi4s_vid_out_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1534230446" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_v_vid_in_axi4s_0_0\base_v_vid_in_axi4s_0_0.xci" Type="IP">
+        <Instance HierarchyPath="hdmi/v_vid_in_axi4s_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1534216260" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_proc_sys_reset_0_2\base_proc_sys_reset_0_2.xci" Type="IP">
+        <Instance HierarchyPath="proc_sys_reset_150MHz"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1534216256" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_system_ila_0_0\base_system_ila_0_0.xci" Type="IP">
+        <Instance HierarchyPath="hdmi/stream_ila"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1534216258" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_v_tc_0_0\base_v_tc_0_0.xci" Type="IP">
+        <Instance HierarchyPath="hdmi/vtc_gen"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1534230450" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_proc_sys_reset_0_1\base_proc_sys_reset_0_1.xci" Type="IP">
+        <Instance HierarchyPath="hdmi/proc_sys_reset_rx_pclk"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1533070394" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_axi_vdma_0_0\base_axi_vdma_0_0.xci" Type="IP">
+        <Instance HierarchyPath="hdmi/axi_vdma_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1534216261" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_axi_interconnect_0_0\base_axi_interconnect_0_0.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1534216083" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_smartconnect_0_0\base_smartconnect_0_0.xci" Type="IP">
+        <Instance HierarchyPath="smartconnect_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1534216247" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_proc_sys_reset_pclk_0\base_proc_sys_reset_pclk_0.xci" Type="IP">
+        <Instance HierarchyPath="hdmi/proc_sys_reset_tx_pclk"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1534230446" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_v_tpg_0_0\base_v_tpg_0_0.xci" Type="IP">
+        <Instance HierarchyPath="hdmi/v_tpg_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1534216261" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_clk_wiz_0_0\base_clk_wiz_0_0.xci" Type="IP">
+        <Instance HierarchyPath="hdmi/clk_wiz_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1534230446" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_system_ila_0_1\base_system_ila_0_1.xci" Type="IP">
+        <Instance HierarchyPath="hdmi/hdmi_rx_ila"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1533917796" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_system_ila_0_2\base_system_ila_0_2.xci" Type="IP">
+        <Instance HierarchyPath="hdmi/hdmi_tx_ila"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1534230446" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_xbar_0\base_xbar_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_interconnect_0/xbar"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1534216256" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_xlconstant_0_0\base_xlconstant_0_0.xci" Type="IP">
+        <Instance HierarchyPath="hdmi/vcc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1533867582" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="synth\base.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="sim\base.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_v_tc_0_1\base_v_tc_0_1.xci" Type="IP">
+        <Instance HierarchyPath="hdmi/vtc_det"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1534216262" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_auto_pc_0\base_auto_pc_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_interconnect_0/s00_couplers/auto_pc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="base_ooc.xdc" Type="XDC">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="OUT_OF_CONTEXT"/>
+      </File>
+      <File Name="hw_handoff\base.hwh" Type="HwHandoff">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="hw_handoff\base_bd.tcl">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="synth\base.hwdef">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+    </FileCollection>
+  </CompositeFile>
+</Root>

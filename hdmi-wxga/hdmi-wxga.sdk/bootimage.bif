@@ -1,0 +1,6 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]Z:\Projects\piSmasher\piSmasher-testing\hdmi-wxga\hdmi-wxga.sdk\fsbl\Debug\fsbl.elf
+	Z:\Projects\piSmasher\piSmasher-testing\hdmi-wxga\hdmi-wxga.sdk\u-boot.elf
+}

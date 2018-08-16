@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Aug 14 13:38:43 2018
+# Process ID: 5136
+# Current directory: Z:/Projects/piSmasher/piSmasher-testing/hdmi-dynamic/hdmi-dynamic.runs/base_v_vid_in_axi4s_0_0_synth_1
+# Command line: vivado.exe -log base_v_vid_in_axi4s_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_v_vid_in_axi4s_0_0.tcl
+# Log file: Z:/Projects/piSmasher/piSmasher-testing/hdmi-dynamic/hdmi-dynamic.runs/base_v_vid_in_axi4s_0_0_synth_1/base_v_vid_in_axi4s_0_0.vds
+# Journal file: Z:/Projects/piSmasher/piSmasher-testing/hdmi-dynamic/hdmi-dynamic.runs/base_v_vid_in_axi4s_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source base_v_vid_in_axi4s_0_0.tcl -notrace

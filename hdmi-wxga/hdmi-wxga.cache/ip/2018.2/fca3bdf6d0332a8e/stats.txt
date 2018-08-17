@@ -1,4 +1,4 @@
-NumberHits:2
-Timestamp: Wed Aug 15 00:03:37 UTC 2018
+NumberHits:3
+Timestamp: Fri Aug 17 06:14:20 UTC 2018
 VLNV: xilinx.com:ip:axi_protocol_converter:2.1
 SynthRuntime: 150

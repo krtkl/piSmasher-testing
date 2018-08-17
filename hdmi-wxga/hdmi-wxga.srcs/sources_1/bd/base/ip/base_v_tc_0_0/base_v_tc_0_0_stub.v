@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-// Date        : Tue Aug 14 17:05:20 2018
+// Date        : Thu Aug 16 23:15:53 2018
 // Host        : WIN-MJ2I8SI0RJV running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               Z:/Projects/piSmasher/piSmasher-testing/hdmi-wxga/hdmi-wxga.srcs/sources_1/bd/base/ip/base_v_tc_0_0/base_v_tc_0_0_stub.v

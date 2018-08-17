@@ -98,8 +98,8 @@
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_GEN_F0_VBLANK_HEND">1366</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_GEN_F0_VBLANK_HSTART">1366</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_GEN_F0_VFRAME_SIZE">798</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_GEN_F0_VSYNC_HEND">1366</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_GEN_F0_VSYNC_HSTART">1366</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_GEN_F0_VSYNC_HEND">1436</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_GEN_F0_VSYNC_HSTART">1436</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_GEN_F0_VSYNC_VEND">773</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_GEN_F0_VSYNC_VSTART">770</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_GEN_F1_VBLANK_HEND">1280</spirit:configurableElementValue>
@@ -174,8 +174,8 @@
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.GEN_F0_VBLANK_HEND">1366</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.GEN_F0_VBLANK_HSTART">1366</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.GEN_F0_VFRAME_SIZE">798</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.GEN_F0_VSYNC_HEND">1366</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.GEN_F0_VSYNC_HSTART">1366</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.GEN_F0_VSYNC_HEND">1436</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.GEN_F0_VSYNC_HSTART">1436</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.GEN_F0_VSYNC_VEND">773</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.GEN_F0_VSYNC_VSTART">770</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.GEN_F1_VBLANK_HEND">1280</spirit:configurableElementValue>

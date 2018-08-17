@@ -557,7 +557,7 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>HDMI_TX_SCLK</spirit:name>
+          <spirit:name>AC_BCLK</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
           </spirit:wire>
@@ -569,7 +569,7 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>AC_BCLK</spirit:name>
+          <spirit:name>HDMI_TX_SCLK</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
           </spirit:wire>
@@ -581,13 +581,13 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>HDMI_TX_LRCLK</spirit:name>
+          <spirit:name>AC_WCLK</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>AC_WCLK</spirit:name>
+          <spirit:name>HDMI_TX_LRCLK</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
           </spirit:wire>
@@ -1428,15 +1428,15 @@
       <spirit:adHocConnection>
         <spirit:name>HDMI_RX_SCLK_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="HDMI_RX_SCLK"/>
-        <spirit:externalPortReference spirit:portRef="AC_BCLK"/>
-        <spirit:externalPortReference spirit:portRef="AC_MCLK"/>
         <spirit:externalPortReference spirit:portRef="HDMI_TX_SCLK"/>
+        <spirit:externalPortReference spirit:portRef="AC_MCLK"/>
+        <spirit:externalPortReference spirit:portRef="AC_BCLK"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>HDMI_RX_LRCLK_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="HDMI_RX_LRCLK"/>
-        <spirit:externalPortReference spirit:portRef="AC_WCLK"/>
         <spirit:externalPortReference spirit:portRef="HDMI_TX_LRCLK"/>
+        <spirit:externalPortReference spirit:portRef="AC_WCLK"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>HDMI_RX_I2S0_1</spirit:name>
@@ -3717,8 +3717,8 @@
           <spirit:configurableElementValue spirit:referenceId="GEN_HACTIVE_SIZE">1366</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="GEN_HSYNC_END">1579</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="GEN_HFRAME_SIZE">1792</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="GEN_F0_VSYNC_HSTART">1366</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="GEN_F0_VSYNC_HEND">1366</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="GEN_F0_VSYNC_HSTART">1436</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="GEN_F0_VSYNC_HEND">1436</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="GEN_F0_VFRAME_SIZE">798</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="GEN_F0_VSYNC_VEND">773</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="GEN_F0_VBLANK_HEND">1366</spirit:configurableElementValue>

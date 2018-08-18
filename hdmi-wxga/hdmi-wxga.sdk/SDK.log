@@ -1,0 +1,9 @@
+16:02:03 INFO  : Registering command handlers for SDK TCF services
+16:02:03 INFO  : Launching XSCT server: xsct.bat -interactive Z:\Projects\piSmasher\piSmasher-testing\hdmi-wxga\hdmi-wxga.sdk\temp_xsdb_launch_script.tcl
+16:02:08 INFO  : XSCT server has started successfully.
+16:02:12 INFO  : Successfully done setting XSCT server connection channel  
+16:02:12 INFO  : Processing command line option -hwspec Z:/Projects/piSmasher/piSmasher-testing/hdmi-wxga/hdmi-wxga.sdk/base_wrapper.hdf.
+16:02:12 INFO  : Successfully done setting SDK workspace  
+16:07:55 INFO  : Invoking Bootgen: bootgen -image bootimage.bif -arch zynq -o Z:\Projects\piSmasher\piSmasher-testing\hdmi-wxga\hdmi-wxga.sdk\boot.bin
+16:07:55 INFO  : Overwriting existing bif file Z:\Projects\piSmasher\piSmasher-testing\hdmi-wxga\hdmi-wxga.sdk\bootimage.bif
+16:07:58 INFO  : Bootgen command execution is done.

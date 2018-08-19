@@ -72,6 +72,12 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_xlconstant
 # IP: bd/base/ip/base_v_tc_0_1/base_v_tc_0_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_v_tc_0_1 || ORIG_REF_NAME==base_v_tc_0_1} -quiet] -quiet
 
+# IP: bd/base/ip/base_clk_wiz_0_1/base_clk_wiz_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_clk_wiz_0_1 || ORIG_REF_NAME==base_clk_wiz_0_1} -quiet] -quiet
+
+# IP: bd/base/ip/base_system_ila_0_3/base_system_ila_0_3.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_system_ila_0_3 || ORIG_REF_NAME==base_system_ila_0_3} -quiet] -quiet
+
 # IP: bd/base/ip/base_auto_pc_0/base_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_auto_pc_0 || ORIG_REF_NAME==base_auto_pc_0} -quiet] -quiet
 

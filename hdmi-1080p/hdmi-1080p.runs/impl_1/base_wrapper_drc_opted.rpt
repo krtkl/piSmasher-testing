@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Wed Aug 15 13:13:57 2018
+| Date         : Sat Aug 18 19:03:04 2018
 | Host         : WIN-MJ2I8SI0RJV running 64-bit major release  (build 9200)
 | Command      : report_drc -file base_wrapper_drc_opted.rpt -pb base_wrapper_drc_opted.pb -rpx base_wrapper_drc_opted.rpx
 | Design       : base_wrapper
@@ -24,13 +24,14 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 22
+             Violations found: 23
 +----------+----------+------------------------+------------+
 | Rule     | Severity | Description            | Violations |
 +----------+----------+------------------------+------------+
 | DPIP-1   | Warning  | Input pipelining       | 8          |
 | DPOP-1   | Warning  | PREG Output pipelining | 5          |
 | DPOP-2   | Warning  | MREG Output pipelining | 8          |
+| PLCK-12  | Warning  | Clock Placer Checks    | 1          |
 | REQP-181 | Advisory | writefirst             | 1          |
 +----------+----------+------------------------+------------+
 
@@ -139,6 +140,17 @@ Related violations: <none>
 DPOP-2#8 Warning
 MREG Output pipelining  
 DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mul_mul_9nsPgM_U86/base_v_tpg_0_0_v_tpg_mul_mul_9nsPgM_DSP48_9_U/p multiplier stage base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mul_mul_9nsPgM_U86/base_v_tpg_0_0_v_tpg_mul_mul_9nsPgM_DSP48_9_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PLCK-12#1 Warning
+Clock Placer Checks  
+Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	AC_BCLK_IBUF_inst (IBUF.O) is locked to P20
+	AC_BCLK_IBUF_BUFG_inst (BUFG.I) cannot be placed
+
 Related violations: <none>
 
 REQP-181#1 Advisory

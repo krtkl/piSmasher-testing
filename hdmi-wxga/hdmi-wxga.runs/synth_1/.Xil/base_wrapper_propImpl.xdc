@@ -193,3 +193,5 @@ set_property src_info {type:XDC file:1 line:181 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN P20 [get_ports AC_BCLK];               # JB2.37
 set_property src_info {type:XDC file:1 line:182 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN G14 [get_ports AC_WCLK];               # JA1.4
+set_property src_info {type:XDC file:1 line:184 export:INPUT save:INPUT read:READ} [current_design]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets {AC_BCLK_IBUF}]

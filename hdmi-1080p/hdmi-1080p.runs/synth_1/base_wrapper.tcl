@@ -17,6 +17,8 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param tcl.collectionResultDisplayLimit 0
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7z020clg400-3
 
 set_param project.singleFileAddWarning.threshold 0
@@ -102,6 +104,15 @@ set_property used_in_implementation false [get_files -all z:/Projects/piSmasher/
 set_property used_in_implementation false [get_files -all z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_system_ila_0_2/base_system_ila_0_2_ooc.xdc]
 set_property used_in_implementation false [get_files -all z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_v_tc_0_1/base_v_tc_0_1_clocks.xdc]
 set_property used_in_implementation false [get_files -all z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_v_tc_0_1/base_v_tc_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_clk_wiz_0_1/base_clk_wiz_0_1_board.xdc]
+set_property used_in_implementation false [get_files -all z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_clk_wiz_0_1/base_clk_wiz_0_1.xdc]
+set_property used_in_implementation false [get_files -all z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_clk_wiz_0_1/base_clk_wiz_0_1_ooc.xdc]
+set_property used_in_synthesis false [get_files -all z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_system_ila_0_3/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_system_ila_0_3/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_system_ila_0_3/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_system_ila_0_3/bd_0/ip/ip_0/bd_e623_ila_lib_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_system_ila_0_3/bd_0/bd_e623_ooc.xdc]
+set_property used_in_implementation false [get_files -all z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_system_ila_0_3/base_system_ila_0_3_ooc.xdc]
 set_property used_in_implementation false [get_files -all z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all Z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/base_ooc.xdc]
 

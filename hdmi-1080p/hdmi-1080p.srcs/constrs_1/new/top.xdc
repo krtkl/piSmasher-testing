@@ -181,4 +181,6 @@ set_property PACKAGE_PIN N20 [get_ports AC_MCLK];               # JB2.35
 set_property PACKAGE_PIN P20 [get_ports AC_BCLK];               # JB2.37
 set_property PACKAGE_PIN G14 [get_ports AC_WCLK];               # JA1.4
 
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets {AC_BCLK_IBUF}]
+
 set_property IOSTANDARD LVCMOS33 [get_ports [list AC_DIN AC_DOUT AC_MCLK AC_BCLK AC_WCLK]] 

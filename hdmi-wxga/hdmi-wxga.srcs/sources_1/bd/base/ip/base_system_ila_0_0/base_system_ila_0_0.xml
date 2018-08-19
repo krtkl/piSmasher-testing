@@ -742,7 +742,7 @@ dency video_comp2_offset format long minimum {} maximum {}} value 16} integer {s
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Aug 15 00:02:43 UTC 2018</spirit:value>
+            <spirit:value>Sat Aug 18 22:29:58 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>

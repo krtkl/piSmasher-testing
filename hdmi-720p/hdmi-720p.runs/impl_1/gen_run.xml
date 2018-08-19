@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-3" LaunchTime="1534286333">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-3" LaunchTime="1534645818">
   <File Type="BITSTR-BMM" Name="base_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="base_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="base_wrapper_timing_summary_init.rpt"/>
@@ -130,5 +130,7 @@
   <BlockFileSet Type="BlockSrcs" Name="base_system_ila_0_2"/>
   <BlockFileSet Type="BlockSrcs" Name="base_smartconnect_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="base_v_axi4s_vid_out_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_clk_wiz_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="base_proc_sys_reset_pclk_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_system_ila_0_3"/>
 </GenRun>

@@ -653,7 +653,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Aug 15 20:05:29 UTC 2018</spirit:value>
+            <spirit:value>Sun Aug 19 01:25:35 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -673,7 +673,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Aug 15 20:05:35 UTC 2018</spirit:value>
+            <spirit:value>Sun Aug 19 01:25:48 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -696,7 +696,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Aug 15 20:05:29 UTC 2018</spirit:value>
+            <spirit:value>Sun Aug 19 01:25:35 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -716,7 +716,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Aug 15 20:05:35 UTC 2018</spirit:value>
+            <spirit:value>Sun Aug 19 01:25:48 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>

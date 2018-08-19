@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Aug 18 14:09:41 2018
+# Process ID: 11672
+# Current directory: Z:/Projects/piSmasher/piSmasher-testing/hdmi-wxga/hdmi-wxga.runs/base_system_ila_0_3_synth_1
+# Command line: vivado.exe -log base_system_ila_0_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_system_ila_0_3.tcl
+# Log file: Z:/Projects/piSmasher/piSmasher-testing/hdmi-wxga/hdmi-wxga.runs/base_system_ila_0_3_synth_1/base_system_ila_0_3.vds
+# Journal file: Z:/Projects/piSmasher/piSmasher-testing/hdmi-wxga/hdmi-wxga.runs/base_system_ila_0_3_synth_1\vivado.jou
+#-----------------------------------------------------------
+source base_system_ila_0_3.tcl -notrace

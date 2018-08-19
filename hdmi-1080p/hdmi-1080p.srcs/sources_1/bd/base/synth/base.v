@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-//Date        : Wed Aug 15 13:05:13 2018
+//Date        : Sat Aug 18 18:24:59 2018
 //Host        : WIN-MJ2I8SI0RJV running 64-bit major release  (build 9200)
 //Command     : generate_target base.bd
 //Design      : base
@@ -9,7 +9,47 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "base,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=base,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=30,numReposBlks=22,numNonXlnxBlks=0,numHierBlks=8,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=34,da_board_cnt=2,da_clkrst_cnt=30,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "base.hwdef" *) 
+module audio_imp_ONXNST
+   (AC_BCLK,
+    AC_DIN,
+    AC_DOUT,
+    AC_MCLK,
+    AC_WCLK,
+    clk_in1,
+    resetn);
+  input AC_BCLK;
+  output AC_DIN;
+  input AC_DOUT;
+  output AC_MCLK;
+  input AC_WCLK;
+  input clk_in1;
+  input resetn;
+
+  wire AC_BCLK_1;
+  wire AC_DOUT_1;
+  wire AC_WCLK_1;
+  wire clk_in1_1;
+  wire clk_wiz_0_clk_out1;
+  wire resetn_1;
+
+  assign AC_BCLK_1 = AC_BCLK;
+  assign AC_DIN = AC_DOUT_1;
+  assign AC_DOUT_1 = AC_DOUT;
+  assign AC_MCLK = clk_wiz_0_clk_out1;
+  assign AC_WCLK_1 = AC_WCLK;
+  assign clk_in1_1 = clk_in1;
+  assign resetn_1 = resetn;
+  base_clk_wiz_0_1 clk_wiz_0
+       (.clk_in1(clk_in1_1),
+        .clk_out1(clk_wiz_0_clk_out1),
+        .resetn(resetn_1));
+  base_system_ila_0_3 system_ila_0
+       (.clk(AC_BCLK_1),
+        .probe0(AC_DOUT_1),
+        .probe1(AC_WCLK_1));
+endmodule
+
+(* CORE_GENERATION_INFO = "base,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=base,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=33,numReposBlks=24,numNonXlnxBlks=0,numHierBlks=9,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=34,da_board_cnt=2,da_clkrst_cnt=30,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "base.hwdef" *) 
 module base
    (AC_BCLK,
     AC_DIN,
@@ -75,11 +115,11 @@ module base
     HDMI_TX_PCLK,
     HDMI_TX_SCLK,
     HDMI_TX_VS);
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.AC_BCLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.AC_BCLK, FREQ_HZ 100000000, PHASE 0.000" *) output AC_BCLK;
+  input AC_BCLK;
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.AC_DIN DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.AC_DIN, LAYERED_METADATA undef" *) output AC_DIN;
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.AC_DOUT DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.AC_DOUT, LAYERED_METADATA undef" *) input AC_DOUT;
   output AC_MCLK;
-  output AC_WCLK;
+  input AC_WCLK;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR ADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250" *) inout [14:0]DDR_addr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR BA" *) inout [2:0]DDR_ba;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR CAS_N" *) inout DDR_cas_n;
@@ -140,7 +180,9 @@ module base
   output HDMI_TX_SCLK;
   output HDMI_TX_VS;
 
+  wire AC_BCLK_1;
   wire AC_DIN_1;
+  wire AC_WCLK_1;
   wire [0:0]ARESETN_1;
   wire ETH0_CLK125_1;
   wire ETH1_CLK125_1;
@@ -152,6 +194,8 @@ module base
   wire HDMI_RX_PCLK_1;
   wire HDMI_RX_SCLK_1;
   wire HDMI_RX_VS_1;
+  wire audio_AC_DIN;
+  wire audio_AC_MCLK;
   wire [31:0]axi_interconnect_0_M00_AXI_ARADDR;
   wire [0:0]axi_interconnect_0_M00_AXI_ARREADY;
   wire [0:0]axi_interconnect_0_M00_AXI_ARVALID;
@@ -405,11 +449,11 @@ module base
   wire smartconnect_0_M00_AXI_WVALID;
   wire [15:0]xlconcat_0_dout;
 
-  assign AC_BCLK = HDMI_RX_SCLK_1;
-  assign AC_DIN = AC_DIN_1;
+  assign AC_BCLK_1 = AC_BCLK;
+  assign AC_DIN = audio_AC_DIN;
   assign AC_DIN_1 = AC_DOUT;
-  assign AC_MCLK = HDMI_RX_SCLK_1;
-  assign AC_WCLK = HDMI_RX_LRCLK_1;
+  assign AC_MCLK = audio_AC_MCLK;
+  assign AC_WCLK_1 = AC_WCLK;
   assign ETH0_CLK125_1 = ETH0_CLK125;
   assign ETH0_MDIO_mdc = ethernet_ETH0_MDIO_MDC;
   assign ETH0_MDIO_mdio_o = ethernet_ETH0_MDIO_MDIO_O;
@@ -448,6 +492,14 @@ module base
   assign ethernet_ETH1_RGMII_RD = ETH1_RGMII_rd[3:0];
   assign ethernet_ETH1_RGMII_RXC = ETH1_RGMII_rxc;
   assign ethernet_ETH1_RGMII_RX_CTL = ETH1_RGMII_rx_ctl;
+  audio_imp_ONXNST audio
+       (.AC_BCLK(AC_BCLK_1),
+        .AC_DIN(audio_AC_DIN),
+        .AC_DOUT(AC_DIN_1),
+        .AC_MCLK(audio_AC_MCLK),
+        .AC_WCLK(AC_WCLK_1),
+        .clk_in1(processing_system7_0_FCLK_CLK1),
+        .resetn(proc_sys_reset_100MHz_peripheral_aresetn));
   base_axi_interconnect_0_0 axi_interconnect_0
        (.ACLK(processing_system7_0_FCLK_CLK1),
         .ARESETN(ARESETN_1),

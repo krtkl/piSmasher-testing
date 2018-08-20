@@ -1,37 +1,36 @@
 #-----------------------------------------------------------
-# Vivado v2018.2 (64-bit)
-# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
-# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Mon Aug 13 20:15:27 2018
-# Process ID: 4224
-# Current directory: Z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.runs/base_smartconnect_0_0_synth_1
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Sun Aug 19 20:27:57 2018
+# Process ID: 2508
+# Current directory: Z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.runs/base_smartconnect_0_0_synth_1
 # Command line: vivado.exe -log base_smartconnect_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_smartconnect_0_0.tcl
-# Log file: Z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.runs/base_smartconnect_0_0_synth_1/base_smartconnect_0_0.vds
-# Journal file: Z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.runs/base_smartconnect_0_0_synth_1\vivado.jou
+# Log file: Z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.runs/base_smartconnect_0_0_synth_1/base_smartconnect_0_0.vds
+# Journal file: Z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.runs/base_smartconnect_0_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 Sourcing tcl script 'C:/Users/Russell Bush/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
 source base_smartconnect_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 234.141 ; gain = 15.793
-config_ip_cache: Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 284.074 ; gain = 9.348
+create_project: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 234.074 ; gain = 16.086
 Command: synth_design -top base_smartconnect_0_0 -part xc7z020clg400-3 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1116 
+INFO: Helper process launched with PID 12484 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 408.008 ; gain = 112.461
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 400.445 ; gain = 110.914
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'base_smartconnect_0_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/synth/base_smartconnect_0_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:10]
-INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_VX460J' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:949]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_one_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_0/synth/bd_b441_one_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_5_xlconstant' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/f1c3/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6157] synthesizing module 'base_smartconnect_0_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/synth/base_smartconnect_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:10]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_VX460J' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:949]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_one_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_0/synth/bd_b441_one_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_5_xlconstant' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/f1c3/hdl/xlconstant_v1_1_vl_rfs.v:23]
 	Parameter CONST_VAL bound to: 1 - type: integer 
 	Parameter CONST_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_5_xlconstant' (1#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/f1c3/hdl/xlconstant_v1_1_vl_rfs.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_one_0' (2#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_0/synth/bd_b441_one_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'bd_b441_psr_aclk_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_1/synth/bd_b441_psr_aclk_0.vhd:74]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_5_xlconstant' (1#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/f1c3/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_one_0' (2#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_0/synth/bd_b441_one_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'bd_b441_psr_aclk_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_1/synth/bd_b441_psr_aclk_0.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
@@ -41,8 +40,8 @@ INFO: [Synth 8-638] synthesizing module 'bd_b441_psr_aclk_0' [z:/Projects/piSmas
 	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
 	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_1/synth/bd_b441_psr_aclk_0.vhd:129]
-INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_1/synth/bd_b441_psr_aclk_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
@@ -56,37 +55,37 @@ INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [z:/Projects/piSmasher/
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
 	Parameter INIT bound to: 1'b1 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
 	Parameter INIT bound to: 1'b1 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
-INFO: [Synth 8-638] synthesizing module 'lpf' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
 	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
 	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
-INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:50695' bound to instance 'POR_SRL_I' of component 'SRL16' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:50695' bound to instance 'POR_SRL_I' of component 'SRL16' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
 INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:50695]
 	Parameter INIT bound to: 16'b0000000000000000 
 INFO: [Synth 8-6155] done synthesizing module 'SRL16' (3#1) [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:50695]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter C_CDC_TYPE bound to: 1 - type: integer 
 	Parameter C_RESET_STATE bound to: 0 - type: integer 
 	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
@@ -94,35 +93,35 @@ INFO: [Synth 8-638] synthesizing module 'cdc_sync' [z:/Projects/piSmasher/piSmas
 	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
 	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (4#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'lpf' (5#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
-INFO: [Synth 8-638] synthesizing module 'sequence_psr' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-638] synthesizing module 'upcnt_n' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (4#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (5#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
 	Parameter C_SIZE bound to: 6 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (6#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
-INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (7#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (8#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
-INFO: [Synth 8-256] done synthesizing module 'bd_b441_psr_aclk_0' (9#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_1/synth/bd_b441_psr_aclk_0.vhd:74]
-WARNING: [Synth 8-350] instance 'psr_aclk' of module 'bd_b441_psr_aclk_0' requires 10 connections, but only 6 given [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:990]
-WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_VX460J does not have driver. [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:969]
-INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_VX460J' (10#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:949]
-INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_12QWDRC' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:999]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_m00e_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_26/synth/bd_b441_m00e_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_m00e_0' (24#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_26/synth/bd_b441_m00e_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_12QWDRC' (25#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:999]
-INFO: [Synth 8-6157] synthesizing module 'm00_nodes_imp_1OX6JR8' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:1370]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_m00arn_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_21/synth/bd_b441_m00arn_0.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (6#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (7#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (8#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'bd_b441_psr_aclk_0' (9#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_1/synth/bd_b441_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-350] instance 'psr_aclk' of module 'bd_b441_psr_aclk_0' requires 10 connections, but only 6 given [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:990]
+WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_VX460J does not have driver. [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:969]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_VX460J' (10#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:949]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_12QWDRC' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:999]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_m00e_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_26/synth/bd_b441_m00e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_m00e_0' (24#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_26/synth/bd_b441_m00e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_12QWDRC' (25#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:999]
+INFO: [Synth 8-6157] synthesizing module 'm00_nodes_imp_1OX6JR8' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:1370]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_m00arn_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_21/synth/bd_b441_m00arn_0.sv:58]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram' [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:6888]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 	Parameter MEMORY_TYPE bound to: 1 - type: integer 
@@ -265,16 +264,16 @@ INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM g
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_m00arn_0' (41#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_21/synth/bd_b441_m00arn_0.sv:58]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_m00awn_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_23/synth/bd_b441_m00awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_m00arn_0' (41#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_21/synth/bd_b441_m00arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_m00awn_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_23/synth/bd_b441_m00awn_0.sv:58]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_m00awn_0' (42#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_23/synth/bd_b441_m00awn_0.sv:58]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_m00bn_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_25/synth/bd_b441_m00bn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_m00awn_0' (42#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_23/synth/bd_b441_m00awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_m00bn_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_25/synth/bd_b441_m00bn_0.sv:58]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized1' [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:6888]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 	Parameter MEMORY_TYPE bound to: 1 - type: integer 
@@ -417,8 +416,8 @@ INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM g
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_m00bn_0' (43#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_25/synth/bd_b441_m00bn_0.sv:58]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_m00rn_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_22/synth/bd_b441_m00rn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_m00bn_0' (43#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_25/synth/bd_b441_m00bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_m00rn_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_22/synth/bd_b441_m00rn_0.sv:58]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized3' [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:6888]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized3' [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 	Parameter MEMORY_TYPE bound to: 1 - type: integer 
@@ -493,8 +492,8 @@ INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM g
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_m00rn_0' (44#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_22/synth/bd_b441_m00rn_0.sv:58]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_m00wn_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_24/synth/bd_b441_m00wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_m00rn_0' (44#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_22/synth/bd_b441_m00rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_m00wn_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_24/synth/bd_b441_m00wn_0.sv:58]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized4' [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:6888]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized4' [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 	Parameter MEMORY_TYPE bound to: 1 - type: integer 
@@ -645,7 +644,7 @@ INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM g
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_m00wn_0' (45#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_24/synth/bd_b441_m00wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_m00wn_0' (45#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_24/synth/bd_b441_m00wn_0.sv:58]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
@@ -658,22 +657,22 @@ INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM g
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-6155] done synthesizing module 'm00_nodes_imp_1OX6JR8' (46#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:1370]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_m00s2a_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_20/synth/bd_b441_m00s2a_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_m00s2a_0' (48#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_20/synth/bd_b441_m00s2a_0.sv:58]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_s00a2s_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_10/synth/bd_b441_s00a2s_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_s00a2s_0' (50#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_10/synth/bd_b441_s00a2s_0.sv:58]
-INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_2DDXGR' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:1675]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_s00mmu_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_7/synth/bd_b441_s00mmu_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_s00mmu_0' (54#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_7/synth/bd_b441_s00mmu_0.sv:58]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_s00sic_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_9/synth/bd_b441_s00sic_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_s00sic_0' (57#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_9/synth/bd_b441_s00sic_0.sv:58]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_s00tr_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_8/synth/bd_b441_s00tr_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_s00tr_0' (60#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_8/synth/bd_b441_s00tr_0.sv:58]
-WARNING: [Synth 8-350] instance 's00_transaction_regulator' of module 'bd_b441_s00tr_0' requires 38 connections, but only 36 given [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:1920]
-INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_2DDXGR' (61#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:1675]
-INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_83QRW1' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:1959]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_sarn_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_11/synth/bd_b441_sarn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm00_nodes_imp_1OX6JR8' (46#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:1370]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_m00s2a_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_20/synth/bd_b441_m00s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_m00s2a_0' (48#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_20/synth/bd_b441_m00s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_s00a2s_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_10/synth/bd_b441_s00a2s_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_s00a2s_0' (50#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_10/synth/bd_b441_s00a2s_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_2DDXGR' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:1675]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_s00mmu_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_7/synth/bd_b441_s00mmu_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_s00mmu_0' (54#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_7/synth/bd_b441_s00mmu_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_s00sic_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_9/synth/bd_b441_s00sic_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_s00sic_0' (57#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_9/synth/bd_b441_s00sic_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_s00tr_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_8/synth/bd_b441_s00tr_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_s00tr_0' (60#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_8/synth/bd_b441_s00tr_0.sv:58]
+WARNING: [Synth 8-350] instance 's00_transaction_regulator' of module 'bd_b441_s00tr_0' requires 38 connections, but only 36 given [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:1920]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_2DDXGR' (61#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:1675]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_83QRW1' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:1959]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_sarn_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_11/synth/bd_b441_sarn_0.sv:58]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized6' [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:6888]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized6' [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 	Parameter MEMORY_TYPE bound to: 1 - type: integer 
@@ -816,25 +815,25 @@ INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM g
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Common 17-14] Message 'Synth 8-5772' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_sarn_0' (62#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_11/synth/bd_b441_sarn_0.sv:58]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_srn_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_12/synth/bd_b441_srn_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_srn_0' (63#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_12/synth/bd_b441_srn_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_83QRW1' (64#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:1959]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_s01a2s_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_16/synth/bd_b441_s01a2s_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_s01a2s_0' (65#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_16/synth/bd_b441_s01a2s_0.sv:58]
-INFO: [Synth 8-6157] synthesizing module 's01_entry_pipeline_imp_152BHXB' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:2090]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_s01mmu_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_13/synth/bd_b441_s01mmu_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_s01mmu_0' (66#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_13/synth/bd_b441_s01mmu_0.sv:58]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_s01sic_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_15/synth/bd_b441_s01sic_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_s01sic_0' (67#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_15/synth/bd_b441_s01sic_0.sv:58]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_s01tr_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_14/synth/bd_b441_s01tr_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_s01tr_0' (68#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_14/synth/bd_b441_s01tr_0.sv:58]
-WARNING: [Synth 8-350] instance 's01_transaction_regulator' of module 'bd_b441_s01tr_0' requires 46 connections, but only 44 given [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:2386]
-INFO: [Synth 8-6155] done synthesizing module 's01_entry_pipeline_imp_152BHXB' (69#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:2090]
-INFO: [Synth 8-6157] synthesizing module 's01_nodes_imp_ZKUU2V' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:2433]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_sawn_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_17/synth/bd_b441_sawn_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_sawn_0' (70#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_17/synth/bd_b441_sawn_0.sv:58]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_sbn_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_19/synth/bd_b441_sbn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_sarn_0' (62#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_11/synth/bd_b441_sarn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_srn_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_12/synth/bd_b441_srn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_srn_0' (63#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_12/synth/bd_b441_srn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_83QRW1' (64#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:1959]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_s01a2s_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_16/synth/bd_b441_s01a2s_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_s01a2s_0' (65#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_16/synth/bd_b441_s01a2s_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 's01_entry_pipeline_imp_152BHXB' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:2090]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_s01mmu_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_13/synth/bd_b441_s01mmu_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_s01mmu_0' (66#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_13/synth/bd_b441_s01mmu_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_s01sic_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_15/synth/bd_b441_s01sic_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_s01sic_0' (67#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_15/synth/bd_b441_s01sic_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_s01tr_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_14/synth/bd_b441_s01tr_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_s01tr_0' (68#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_14/synth/bd_b441_s01tr_0.sv:58]
+WARNING: [Synth 8-350] instance 's01_transaction_regulator' of module 'bd_b441_s01tr_0' requires 46 connections, but only 44 given [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:2386]
+INFO: [Synth 8-6155] done synthesizing module 's01_entry_pipeline_imp_152BHXB' (69#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:2090]
+INFO: [Synth 8-6157] synthesizing module 's01_nodes_imp_ZKUU2V' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:2433]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_sawn_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_17/synth/bd_b441_sawn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_sawn_0' (70#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_17/synth/bd_b441_sawn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_sbn_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_19/synth/bd_b441_sbn_0.sv:58]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized8' [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:6888]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized8' [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 	Parameter MEMORY_TYPE bound to: 1 - type: integer 
@@ -898,25 +897,25 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized8' [C:/X
 	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized8' (70#1) [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized8' (70#1) [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:6888]
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_sbn_0' (71#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_19/synth/bd_b441_sbn_0.sv:58]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_swn_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_18/synth/bd_b441_swn_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_swn_0' (72#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_18/synth/bd_b441_swn_0.sv:58]
-INFO: [Synth 8-6155] done synthesizing module 's01_nodes_imp_ZKUU2V' (73#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:2433]
-INFO: [Synth 8-6157] synthesizing module 'switchboards_imp_WY9GV9' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:2619]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_arsw_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_2/synth/bd_b441_arsw_0.sv:57]
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_arsw_0' (76#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_2/synth/bd_b441_arsw_0.sv:57]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_awsw_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_4/synth/bd_b441_awsw_0.sv:57]
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_awsw_0' (77#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_4/synth/bd_b441_awsw_0.sv:57]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_bsw_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_6/synth/bd_b441_bsw_0.sv:57]
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_bsw_0' (78#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_6/synth/bd_b441_bsw_0.sv:57]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_rsw_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_3/synth/bd_b441_rsw_0.sv:57]
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_rsw_0' (79#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_3/synth/bd_b441_rsw_0.sv:57]
-INFO: [Synth 8-6157] synthesizing module 'bd_b441_wsw_0' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_5/synth/bd_b441_wsw_0.sv:57]
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441_wsw_0' (80#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_5/synth/bd_b441_wsw_0.sv:57]
-INFO: [Synth 8-6155] done synthesizing module 'switchboards_imp_WY9GV9' (81#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:2619]
-WARNING: [Synth 8-350] instance 'switchboards' of module 'switchboards_imp_WY9GV9' requires 77 connections, but only 66 given [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:880]
-INFO: [Synth 8-6155] done synthesizing module 'bd_b441' (82#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:10]
-INFO: [Synth 8-6155] done synthesizing module 'base_smartconnect_0_0' (83#1) [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/synth/base_smartconnect_0_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_sbn_0' (71#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_19/synth/bd_b441_sbn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_swn_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_18/synth/bd_b441_swn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_swn_0' (72#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_18/synth/bd_b441_swn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 's01_nodes_imp_ZKUU2V' (73#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:2433]
+INFO: [Synth 8-6157] synthesizing module 'switchboards_imp_WY9GV9' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:2619]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_arsw_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_2/synth/bd_b441_arsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_arsw_0' (76#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_2/synth/bd_b441_arsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_awsw_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_4/synth/bd_b441_awsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_awsw_0' (77#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_4/synth/bd_b441_awsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_bsw_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_6/synth/bd_b441_bsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_bsw_0' (78#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_6/synth/bd_b441_bsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_rsw_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_3/synth/bd_b441_rsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_rsw_0' (79#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_3/synth/bd_b441_rsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_b441_wsw_0' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_5/synth/bd_b441_wsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441_wsw_0' (80#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_5/synth/bd_b441_wsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'switchboards_imp_WY9GV9' (81#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:2619]
+WARNING: [Synth 8-350] instance 'switchboards' of module 'switchboards_imp_WY9GV9' requires 77 connections, but only 66 given [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:880]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b441' (82#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/synth/bd_b441.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'base_smartconnect_0_0' (83#1) [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/synth/base_smartconnect_0_0.v:57]
 WARNING: [Synth 8-3331] design sc_util_v1_0_3_pipeline__parameterized7 has unconnected port aclk
 WARNING: [Synth 8-3331] design sc_util_v1_0_3_pipeline__parameterized7 has unconnected port aclken
 WARNING: [Synth 8-3331] design sc_util_v1_0_3_pipeline__parameterized7 has unconnected port areset
@@ -1019,7 +1018,7 @@ WARNING: [Synth 8-3331] design xpm_memory_base__parameterized6 has unconnected p
 WARNING: [Synth 8-3331] design xpm_memory_base__parameterized6 has unconnected port dinb[15]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:00:48 . Memory (MB): peak = 568.109 ; gain = 272.563
+Finished RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:00:57 . Memory (MB): peak = 561.090 ; gain = 271.559
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1032,26 +1031,26 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:52 . Memory (MB): peak = 568.109 ; gain = 272.563
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:01:03 . Memory (MB): peak = 561.090 ; gain = 271.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:52 . Memory (MB): peak = 568.109 ; gain = 272.563
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:33 ; elapsed = 00:01:03 . Memory (MB): peak = 561.090 ; gain = 271.559
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Device 21-403] Loading part xc7z020clg400-3
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/ooc.xdc] for cell 'inst'
-Parsing XDC File [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_1/bd_b441_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_1/bd_b441_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
-Parsing XDC File [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_1/bd_b441_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_1/bd_b441_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
-Parsing XDC File [Z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.runs/base_smartconnect_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [Z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.runs/base_smartconnect_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/ooc.xdc] for cell 'inst'
+Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_1/bd_b441_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_1/bd_b441_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_1/bd_b441_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/bd_0/ip/ip_1/bd_b441_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [Z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.runs/base_smartconnect_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [Z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.runs/base_smartconnect_0_0_synth_1/dont_touch.xdc]
 Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
 WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
 Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
@@ -1127,21 +1126,21 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1445.883 ; gain = 2.121
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1439.105 ; gain = 2.117
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:50 ; elapsed = 00:02:41 . Memory (MB): peak = 1445.883 ; gain = 1150.336
+Finished Constraint Validation : Time (s): cpu = 00:01:53 ; elapsed = 00:03:22 . Memory (MB): peak = 1439.105 ; gain = 1149.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:50 ; elapsed = 00:02:41 . Memory (MB): peak = 1445.883 ; gain = 1150.336
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:53 ; elapsed = 00:03:22 . Memory (MB): peak = 1439.105 ; gain = 1149.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for inst. (constraint file  Z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.runs/base_smartconnect_0_0_synth_1/dont_touch.xdc, line 135).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  Z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.runs/base_smartconnect_0_0_synth_1/dont_touch.xdc, line 135).
 Applied set_property DONT_TOUCH = true for inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/m00_nodes/m00_w_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint, line ).
@@ -1165,10 +1164,10 @@ Applied set_property DONT_TOUCH = true for inst/s00_nodes/s00_ar_node/inst/inst_
 Applied set_property DONT_TOUCH = true for inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/s01_nodes/s01_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:50 ; elapsed = 00:02:41 . Memory (MB): peak = 1445.883 ; gain = 1150.336
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:53 ; elapsed = 00:03:22 . Memory (MB): peak = 1439.105 ; gain = 1149.574
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
-WARNING: [Synth 8-6014] Unused sequential element seq_cnt_en_reg was removed.  [z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
+INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
+WARNING: [Synth 8-6014] Unused sequential element seq_cnt_en_reg was removed.  [z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-5546] ROM "gen_pipelined.next0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
@@ -1201,7 +1200,7 @@ INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_AB_reg_slice.stat
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.gen_write.write_cs_reg' using encoding 'one-hot' in module 'sc_mmu_v1_0_6_decerr_slave'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:59 ; elapsed = 00:02:58 . Memory (MB): peak = 1445.883 ; gain = 1150.336
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:04 ; elapsed = 00:03:41 . Memory (MB): peak = 1439.105 ; gain = 1149.574
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -3539,7 +3538,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (sc_util_v1_0_3_axi_reg_stall__5:/\skid_buffer_reg[84] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:28 ; elapsed = 00:05:04 . Memory (MB): peak = 1445.883 ; gain = 1150.336
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:21 ; elapsed = 00:05:09 . Memory (MB): peak = 1439.105 ; gain = 1149.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -3608,13 +3607,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:50 ; elapsed = 00:05:38 . Memory (MB): peak = 1445.883 ; gain = 1150.336
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:37 ; elapsed = 00:05:27 . Memory (MB): peak = 1439.105 ; gain = 1149.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:04:02 ; elapsed = 00:05:56 . Memory (MB): peak = 1445.883 ; gain = 1150.336
+Finished Timing Optimization : Time (s): cpu = 00:03:44 ; elapsed = 00:05:35 . Memory (MB): peak = 1439.105 ; gain = 1149.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -3681,7 +3680,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:04:14 ; elapsed = 00:06:14 . Memory (MB): peak = 1445.883 ; gain = 1150.336
+Finished Technology Mapping : Time (s): cpu = 00:03:50 ; elapsed = 00:05:42 . Memory (MB): peak = 1439.105 ; gain = 1149.574
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -3729,7 +3728,7 @@ INFO: [Synth 8-5365] Flop inst_mi_handler/gen_normal_area.inst_fifo_node_payld/g
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:04:17 ; elapsed = 00:06:18 . Memory (MB): peak = 1445.883 ; gain = 1150.336
+Finished IO Insertion : Time (s): cpu = 00:03:53 ; elapsed = 00:05:44 . Memory (MB): peak = 1439.105 ; gain = 1149.574
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -3742,7 +3741,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:04:17 ; elapsed = 00:06:18 . Memory (MB): peak = 1445.883 ; gain = 1150.336
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:53 ; elapsed = 00:05:44 . Memory (MB): peak = 1439.105 ; gain = 1149.574
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -3754,25 +3753,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:19 ; elapsed = 00:06:21 . Memory (MB): peak = 1445.883 ; gain = 1150.336
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:54 ; elapsed = 00:05:46 . Memory (MB): peak = 1439.105 ; gain = 1149.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:04:19 ; elapsed = 00:06:21 . Memory (MB): peak = 1445.883 ; gain = 1150.336
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:54 ; elapsed = 00:05:46 . Memory (MB): peak = 1439.105 ; gain = 1149.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:04:19 ; elapsed = 00:06:21 . Memory (MB): peak = 1445.883 ; gain = 1150.336
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:54 ; elapsed = 00:05:46 . Memory (MB): peak = 1439.105 ; gain = 1149.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:04:20 ; elapsed = 00:06:21 . Memory (MB): peak = 1445.883 ; gain = 1150.336
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:55 ; elapsed = 00:05:46 . Memory (MB): peak = 1439.105 ; gain = 1149.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -4162,11 +4161,11 @@ Report Instance Areas:
 |337   |          \gen_mi[0].inst_opipe_payld                                                           |sc_util_v1_0_3_pipeline__parameterized12                  |    52|
 +------+------------------------------------------------------------------------------------------------+----------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:04:20 ; elapsed = 00:06:22 . Memory (MB): peak = 1445.883 ; gain = 1150.336
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:55 ; elapsed = 00:05:46 . Memory (MB): peak = 1439.105 ; gain = 1149.574
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2188 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:36 ; elapsed = 00:04:47 . Memory (MB): peak = 1445.883 ; gain = 272.563
-Synthesis Optimization Complete : Time (s): cpu = 00:04:20 ; elapsed = 00:06:22 . Memory (MB): peak = 1445.883 ; gain = 1150.336
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:07 ; elapsed = 00:03:41 . Memory (MB): peak = 1439.105 ; gain = 271.559
+Synthesis Optimization Complete : Time (s): cpu = 00:03:55 ; elapsed = 00:05:46 . Memory (MB): peak = 1439.105 ; gain = 1149.574
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 190 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -4183,16 +4182,15 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 517 Infos, 228 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:04:30 ; elapsed = 00:06:37 . Memory (MB): peak = 1445.883 ; gain = 1161.809
+synth_design: Time (s): cpu = 00:04:02 ; elapsed = 00:05:57 . Memory (MB): peak = 1439.105 ; gain = 1161.043
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'Z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.runs/base_smartconnect_0_0_synth_1/base_smartconnect_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1445.883 ; gain = 0.000
-INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/base_smartconnect_0_0.xci
-config_ip_cache: Time (s): cpu = 00:00:02 ; elapsed = 00:00:39 . Memory (MB): peak = 1445.883 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'Z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.runs/base_smartconnect_0_0_synth_1/base_smartconnect_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1439.105 ; gain = 0.000
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/base_smartconnect_0_0.xci
 INFO: [Coretcl 2-1174] Renamed 336 cell refs.
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'Z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.runs/base_smartconnect_0_0_synth_1/base_smartconnect_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1445.883 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'Z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.runs/base_smartconnect_0_0_synth_1/base_smartconnect_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1439.105 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file base_smartconnect_0_0_utilization_synth.rpt -pb base_smartconnect_0_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.276 . Memory (MB): peak = 1445.883 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Aug 13 20:24:54 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.174 . Memory (MB): peak = 1439.105 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 19 20:35:25 2018...

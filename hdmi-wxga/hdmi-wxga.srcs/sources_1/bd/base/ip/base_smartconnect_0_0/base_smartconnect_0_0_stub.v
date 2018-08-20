@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-// Date        : Mon Aug 13 20:24:46 2018
+// Tool Version: Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
+// Date        : Sun Aug 19 22:11:39 2018
 // Host        : WIN-MJ2I8SI0RJV running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               Z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/base_smartconnect_0_0_stub.v
+//               Z:/Projects/piSmasher/piSmasher-testing/hdmi-wxga/hdmi-wxga.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/base_smartconnect_0_0_stub.v
 // Design      : base_smartconnect_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-3
@@ -13,7 +13,7 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* X_CORE_INFO = "bd_b441,Vivado 2018.2" *)
+(* X_CORE_INFO = "bd_b441,Vivado 2018.2.1" *)
 module base_smartconnect_0_0(aclk, aresetn, S00_AXI_araddr, S00_AXI_arlen, 
   S00_AXI_arsize, S00_AXI_arburst, S00_AXI_arlock, S00_AXI_arcache, S00_AXI_arprot, 
   S00_AXI_arqos, S00_AXI_arvalid, S00_AXI_arready, S00_AXI_rdata, S00_AXI_rresp, 

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Aug 18 18:26:24 2018" VIVADOVERSION="2018.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Aug 19 19:27:52 2018" VIVADOVERSION="2018.2.1">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="base" PACKAGE="clg400" SPEEDGRADE="-3"/>
 
@@ -43,11 +43,6 @@
         <CONNECTION INSTANCE="External_Ports" PORT="HDMI_RX_SCLK"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="AC_MCLK" SIGIS="undef" SIGNAME="audio_clk_wiz_0_clk_out1">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="audio_clk_wiz_0" PORT="clk_out1"/>
-      </CONNECTIONS>
-    </PORT>
     <PORT DIR="I" NAME="HDMI_RX_LRCLK" SIGIS="undef" SIGNAME="External_Ports_HDMI_RX_LRCLK">
       <CONNECTIONS>
         <CONNECTION INSTANCE="External_Ports" PORT="HDMI_TX_LRCLK"/>
@@ -70,13 +65,8 @@
     </PORT>
     <PORT DIR="I" NAME="AC_DOUT" SIGIS="data" SIGNAME="External_Ports_AC_DOUT">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="audio_system_ila_0" PORT="probe0"/>
         <CONNECTION INSTANCE="External_Ports" PORT="AC_DIN"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="AC_DIN" SIGIS="data" SIGNAME="External_Ports_AC_DOUT">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="External_Ports" PORT="AC_DOUT"/>
+        <CONNECTION INSTANCE="audio_system_ila_0" PORT="probe0"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" LEFT="23" NAME="HDMI_TX_DATA" RIGHT="0" SIGIS="undef" SIGNAME="hdmi_v_axi4s_vid_out_0_vid_data">
@@ -138,6 +128,26 @@
         <CONNECTION INSTANCE="hdmi_clk_wiz_0" PORT="clk_out1"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="O" NAME="AC_MCLK" SIGIS="undef" SIGNAME="audio_clk_wiz_0_clk_out1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="audio_clk_wiz_0" PORT="clk_out1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AC_DIN" SIGIS="data" SIGNAME="External_Ports_AC_DOUT">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="External_Ports" PORT="AC_DOUT"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AC_WCLK" SIGIS="undef" SIGNAME="External_Ports_AC_WCLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="audio_system_ila_0" PORT="probe1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AC_BCLK" SIGIS="undef" SIGNAME="External_Ports_AC_BCLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="audio_system_ila_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
     <PORT CLKFREQUENCY="100000000" DIR="O" NAME="ETH0_MDIO_mdc" SIGIS="clk"/>
     <PORT DIR="I" NAME="ETH0_MDIO_mdio_i" SIGIS="undef"/>
     <PORT DIR="O" NAME="ETH0_MDIO_mdio_o" SIGIS="undef"/>
@@ -158,16 +168,6 @@
     <PORT DIR="O" LEFT="3" NAME="ETH1_RGMII_td" RIGHT="0" SIGIS="undef"/>
     <PORT DIR="O" NAME="ETH1_RGMII_tx_ctl" SIGIS="undef"/>
     <PORT CLKFREQUENCY="100000000" DIR="O" NAME="ETH1_RGMII_txc" SIGIS="clk"/>
-    <PORT DIR="I" NAME="AC_BCLK" SIGIS="undef" SIGNAME="External_Ports_AC_BCLK">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="audio_system_ila_0" PORT="clk"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="AC_WCLK" SIGIS="undef" SIGNAME="External_Ports_AC_WCLK">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="audio_system_ila_0" PORT="probe1"/>
-      </CONNECTIONS>
-    </PORT>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES>
@@ -22182,7 +22182,6 @@
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_150MHz_peripheral_aresetn">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="smartconnect_0" PORT="aresetn"/>
             <CONNECTION INSTANCE="hdmi_v_axi4s_vid_out_0" PORT="aresetn"/>
             <CONNECTION INSTANCE="hdmi_stream_ila" PORT="resetn"/>
             <CONNECTION INSTANCE="hdmi_v_vid_in_axi4s_0" PORT="aresetn"/>
@@ -22196,6 +22195,7 @@
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="M02_ARESETN"/>
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="M03_ARESETN"/>
             <CONNECTION INSTANCE="audio_clk_wiz_0" PORT="resetn"/>
+            <CONNECTION INSTANCE="smartconnect_0" PORT="aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -23680,7 +23680,6 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_ACLK"/>
             <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_ACLK"/>
-            <CONNECTION INSTANCE="smartconnect_0" PORT="aclk"/>
             <CONNECTION INSTANCE="proc_sys_reset_150MHz" PORT="slowest_sync_clk"/>
             <CONNECTION INSTANCE="hdmi_v_axi4s_vid_out_0" PORT="aclk"/>
             <CONNECTION INSTANCE="hdmi_clk_wiz_0" PORT="clk_in1"/>
@@ -23701,6 +23700,7 @@
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="M02_ACLK"/>
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="M03_ACLK"/>
             <CONNECTION INSTANCE="audio_clk_wiz_0" PORT="clk_in1"/>
+            <CONNECTION INSTANCE="smartconnect_0" PORT="aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="1.99998e+08" DIR="O" NAME="FCLK_CLK3" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK3">

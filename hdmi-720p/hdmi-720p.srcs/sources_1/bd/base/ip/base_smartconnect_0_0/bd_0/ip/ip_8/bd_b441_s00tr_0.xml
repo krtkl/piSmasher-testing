@@ -1359,7 +1359,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Aug 19 02:29:09 UTC 2018</spirit:value>
+            <spirit:value>Mon Aug 20 03:27:09 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -1390,7 +1390,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Aug 19 02:29:13 UTC 2018</spirit:value>
+            <spirit:value>Mon Aug 20 03:27:12 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -1413,7 +1413,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Aug 19 02:29:09 UTC 2018</spirit:value>
+            <spirit:value>Mon Aug 20 03:27:09 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -1433,7 +1433,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Aug 19 02:29:13 UTC 2018</spirit:value>
+            <spirit:value>Mon Aug 20 03:27:12 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -3951,7 +3951,7 @@
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2018.2</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2018.2.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a0cb3f32"/>
       <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="76686b00"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="9c893021"/>

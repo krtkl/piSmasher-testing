@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='Z:/Projects/piSmasher/piSmasher_4.0_testing/piSmasher_4.0/piSmasher_4.0.runs/base_smartconnect_0_0_synth_1'
+HD_PWD='Z:/Projects/piSmasher/piSmasher-testing/hdmi-wxga/hdmi-wxga.runs/base_smartconnect_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

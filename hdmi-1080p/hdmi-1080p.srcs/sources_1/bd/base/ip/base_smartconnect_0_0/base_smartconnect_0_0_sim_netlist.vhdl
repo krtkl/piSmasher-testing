@@ -1,7 +1,7 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
--- Date        : Tue Aug 14 09:40:04 2018
+-- Tool Version: Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
+-- Date        : Sun Aug 19 19:36:28 2018
 -- Host        : WIN-MJ2I8SI0RJV running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               Z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/base_smartconnect_0_0_sim_netlist.vhdl
@@ -99845,11 +99845,11 @@ end base_smartconnect_0_0_switchboards_imp_WY9GV9;
 
 architecture STRUCTURE of base_smartconnect_0_0_switchboards_imp_WY9GV9 is
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of ar_switchboard : label is "sc_switchboard_v1_0_5_top,Vivado 2018.2";
-  attribute X_CORE_INFO of aw_switchboard : label is "sc_switchboard_v1_0_5_top,Vivado 2018.2";
-  attribute X_CORE_INFO of b_switchboard : label is "sc_switchboard_v1_0_5_top,Vivado 2018.2";
-  attribute X_CORE_INFO of r_switchboard : label is "sc_switchboard_v1_0_5_top,Vivado 2018.2";
-  attribute X_CORE_INFO of w_switchboard : label is "sc_switchboard_v1_0_5_top,Vivado 2018.2";
+  attribute X_CORE_INFO of ar_switchboard : label is "sc_switchboard_v1_0_5_top,Vivado 2018.2.1";
+  attribute X_CORE_INFO of aw_switchboard : label is "sc_switchboard_v1_0_5_top,Vivado 2018.2.1";
+  attribute X_CORE_INFO of b_switchboard : label is "sc_switchboard_v1_0_5_top,Vivado 2018.2.1";
+  attribute X_CORE_INFO of r_switchboard : label is "sc_switchboard_v1_0_5_top,Vivado 2018.2.1";
+  attribute X_CORE_INFO of w_switchboard : label is "sc_switchboard_v1_0_5_top,Vivado 2018.2.1";
 begin
 ar_switchboard: entity work.base_smartconnect_0_0_bd_b441_arsw_0
      port map (
@@ -106689,8 +106689,8 @@ end base_smartconnect_0_0_s00_entry_pipeline_imp_2DDXGR;
 architecture STRUCTURE of base_smartconnect_0_0_s00_entry_pipeline_imp_2DDXGR is
   signal \^s_sc_ar_payld\ : STD_LOGIC_VECTOR ( 56 downto 0 );
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of s00_mmu : label is "sc_mmu_v1_0_6_top,Vivado 2018.2";
-  attribute X_CORE_INFO of s00_si_converter : label is "sc_si_converter_v1_0_6_top,Vivado 2018.2";
+  attribute X_CORE_INFO of s00_mmu : label is "sc_mmu_v1_0_6_top,Vivado 2018.2.1";
+  attribute X_CORE_INFO of s00_si_converter : label is "sc_si_converter_v1_0_6_top,Vivado 2018.2.1";
 begin
   S_SC_AR_payld(56 downto 0) <= \^s_sc_ar_payld\(56 downto 0);
 s00_mmu: entity work.base_smartconnect_0_0_bd_b441_s00mmu_0
@@ -108074,8 +108074,8 @@ architecture STRUCTURE of base_smartconnect_0_0_s01_entry_pipeline_imp_152BHXB i
   signal s01_transaction_regulator_M_AXI_AWREADY : STD_LOGIC;
   signal s01_transaction_regulator_M_AXI_WREADY : STD_LOGIC;
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of s01_mmu : label is "sc_mmu_v1_0_6_top,Vivado 2018.2";
-  attribute X_CORE_INFO of s01_si_converter : label is "sc_si_converter_v1_0_6_top,Vivado 2018.2";
+  attribute X_CORE_INFO of s01_mmu : label is "sc_mmu_v1_0_6_top,Vivado 2018.2.1";
+  attribute X_CORE_INFO of s01_si_converter : label is "sc_si_converter_v1_0_6_top,Vivado 2018.2.1";
 begin
   S_SC_AW_payld(56 downto 0) <= \^s_sc_aw_payld\(56 downto 0);
   S_SC_W_payld(50 downto 0) <= \^s_sc_w_payld\(50 downto 0);
@@ -115146,7 +115146,7 @@ end base_smartconnect_0_0_m00_exit_pipeline_imp_12QWDRC;
 
 architecture STRUCTURE of base_smartconnect_0_0_m00_exit_pipeline_imp_12QWDRC is
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of m00_exit : label is "sc_exit_v1_0_7_top,Vivado 2018.2";
+  attribute X_CORE_INFO of m00_exit : label is "sc_exit_v1_0_7_top,Vivado 2018.2.1";
 begin
 m00_exit: entity work.base_smartconnect_0_0_bd_b441_m00e_0
      port map (
@@ -115248,11 +115248,11 @@ architecture STRUCTURE of base_smartconnect_0_0_m00_nodes_imp_1OX6JR8 is
   signal m00_aw_node_M_AXIS_ARB_TREADY : STD_LOGIC;
   signal m00_aw_node_M_AXIS_ARB_TVALID : STD_LOGIC;
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of m00_ar_node : label is "sc_node_v1_0_9_top,Vivado 2018.2";
-  attribute X_CORE_INFO of m00_aw_node : label is "sc_node_v1_0_9_top,Vivado 2018.2";
-  attribute X_CORE_INFO of m00_b_node : label is "sc_node_v1_0_9_top,Vivado 2018.2";
-  attribute X_CORE_INFO of m00_r_node : label is "sc_node_v1_0_9_top,Vivado 2018.2";
-  attribute X_CORE_INFO of m00_w_node : label is "sc_node_v1_0_9_top,Vivado 2018.2";
+  attribute X_CORE_INFO of m00_ar_node : label is "sc_node_v1_0_9_top,Vivado 2018.2.1";
+  attribute X_CORE_INFO of m00_aw_node : label is "sc_node_v1_0_9_top,Vivado 2018.2.1";
+  attribute X_CORE_INFO of m00_b_node : label is "sc_node_v1_0_9_top,Vivado 2018.2.1";
+  attribute X_CORE_INFO of m00_r_node : label is "sc_node_v1_0_9_top,Vivado 2018.2.1";
+  attribute X_CORE_INFO of m00_w_node : label is "sc_node_v1_0_9_top,Vivado 2018.2.1";
 begin
 m00_ar_node: entity work.base_smartconnect_0_0_bd_b441_m00arn_0
      port map (
@@ -115348,8 +115348,8 @@ end base_smartconnect_0_0_s00_nodes_imp_83QRW1;
 
 architecture STRUCTURE of base_smartconnect_0_0_s00_nodes_imp_83QRW1 is
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of s00_ar_node : label is "sc_node_v1_0_9_top,Vivado 2018.2";
-  attribute X_CORE_INFO of s00_r_node : label is "sc_node_v1_0_9_top,Vivado 2018.2";
+  attribute X_CORE_INFO of s00_ar_node : label is "sc_node_v1_0_9_top,Vivado 2018.2.1";
+  attribute X_CORE_INFO of s00_r_node : label is "sc_node_v1_0_9_top,Vivado 2018.2.1";
 begin
 s00_ar_node: entity work.base_smartconnect_0_0_bd_b441_sarn_0
      port map (
@@ -115411,9 +115411,9 @@ end base_smartconnect_0_0_s01_nodes_imp_ZKUU2V;
 
 architecture STRUCTURE of base_smartconnect_0_0_s01_nodes_imp_ZKUU2V is
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of s01_aw_node : label is "sc_node_v1_0_9_top,Vivado 2018.2";
-  attribute X_CORE_INFO of s01_b_node : label is "sc_node_v1_0_9_top,Vivado 2018.2";
-  attribute X_CORE_INFO of s01_w_node : label is "sc_node_v1_0_9_top,Vivado 2018.2";
+  attribute X_CORE_INFO of s01_aw_node : label is "sc_node_v1_0_9_top,Vivado 2018.2.1";
+  attribute X_CORE_INFO of s01_b_node : label is "sc_node_v1_0_9_top,Vivado 2018.2.1";
+  attribute X_CORE_INFO of s01_w_node : label is "sc_node_v1_0_9_top,Vivado 2018.2.1";
 begin
 s01_aw_node: entity work.base_smartconnect_0_0_bd_b441_sawn_0
      port map (
@@ -116072,7 +116072,7 @@ entity base_smartconnect_0_0 is
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of base_smartconnect_0_0 : entity is "yes";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of base_smartconnect_0_0 : entity is "bd_b441,Vivado 2018.2";
+  attribute X_CORE_INFO of base_smartconnect_0_0 : entity is "bd_b441,Vivado 2018.2.1";
 end base_smartconnect_0_0;
 
 architecture STRUCTURE of base_smartconnect_0_0 is

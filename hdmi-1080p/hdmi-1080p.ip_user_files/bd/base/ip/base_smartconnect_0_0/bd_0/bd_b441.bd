@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x8DF614B62BDE9CB9" bd:bdsource="SBD" bd:device="xc7z020clg400-3" bd:isScoped="true" bd:isValidated="true" bd:synthFlowMode="None" bd:tool_version="2018.2" bd:top="bd_b441" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x8DF614B69C33AA91" bd:bdsource="SBD" bd:device="xc7z020clg400-3" bd:isScoped="true" bd:isValidated="true" bd:synthFlowMode="None" bd:tool_version="2018.2.1" bd:top="bd_b441" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -39,7 +39,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>FREQ_HZ</spirit:name>
-            <spirit:value>9.9999e+07</spirit:value>
+            <spirit:value>1.53845e+08</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
                 <bd:configElementInfo bd:valueSource="user_prop"/>
@@ -246,7 +246,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>CLK_DOMAIN</spirit:name>
-            <spirit:value>base_processing_system7_0_0_FCLK_CLK1</spirit:value>
+            <spirit:value>base_processing_system7_0_0_FCLK_CLK2</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
                 <bd:configElementInfo bd:valueSource="default_prop"/>
@@ -317,7 +317,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>FREQ_HZ</spirit:name>
-            <spirit:value>9.9999e+07</spirit:value>
+            <spirit:value>1.53845e+08</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
                 <bd:configElementInfo bd:valueSource="user_prop"/>
@@ -524,7 +524,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>CLK_DOMAIN</spirit:name>
-            <spirit:value>base_processing_system7_0_0_FCLK_CLK1</spirit:value>
+            <spirit:value>base_processing_system7_0_0_FCLK_CLK2</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
                 <bd:configElementInfo bd:valueSource="default_prop"/>
@@ -595,7 +595,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>FREQ_HZ</spirit:name>
-            <spirit:value>9.9999e+07</spirit:value>
+            <spirit:value>1.53845e+08</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
                 <bd:configElementInfo bd:valueSource="user_prop"/>
@@ -802,7 +802,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>CLK_DOMAIN</spirit:name>
-            <spirit:value>base_processing_system7_0_0_FCLK_CLK1</spirit:value>
+            <spirit:value>base_processing_system7_0_0_FCLK_CLK2</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
                 <bd:configElementInfo bd:valueSource="default_prop"/>
@@ -867,7 +867,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>FREQ_HZ</spirit:name>
-            <spirit:value>9.9999e+07</spirit:value>
+            <spirit:value>1.53845e+08</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
                 <bd:configElementInfo bd:valueSource="user_prop"/>
@@ -885,7 +885,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>CLK_DOMAIN</spirit:name>
-            <spirit:value>base_processing_system7_0_0_FCLK_CLK1</spirit:value>
+            <spirit:value>base_processing_system7_0_0_FCLK_CLK2</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
                 <bd:configElementInfo bd:valueSource="default_prop"/>

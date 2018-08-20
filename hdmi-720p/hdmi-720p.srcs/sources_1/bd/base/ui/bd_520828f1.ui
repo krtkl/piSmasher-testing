@@ -5,8 +5,8 @@
 #  -string -flagsOSRD
 preplace port HDMI_RX_PCLK -pg 1 -y 60 -defaultsOSRD
 preplace port DDR -pg 1 -y 260 -defaultsOSRD
-preplace port HDMI_RX_HS -pg 1 -y 460 -defaultsOSRD
 preplace port AC_MCLK -pg 1 -y 730 -defaultsOSRD
+preplace port HDMI_RX_HS -pg 1 -y 460 -defaultsOSRD
 preplace port ETH1_RGMII -pg 1 -y 160 -defaultsOSRD
 preplace port HDMI_TX_HS -pg 1 -y 300 -defaultsOSRD
 preplace port HDMI_TX_I2S0 -pg 1 -y 480 -defaultsOSRD
@@ -28,8 +28,8 @@ preplace port HDMI_RX_SCLK -pg 1 -y 630 -defaultsOSRD
 preplace port ETH1_CLK125 -pg 1 -y 120 -defaultsOSRD
 preplace port HDMI_TX_VS -pg 1 -y 540 -defaultsOSRD
 preplace port HDMI_TX_DE -pg 1 -y 320 -defaultsOSRD
-preplace port HDMI_RX_DE -pg 1 -y 40 -defaultsOSRD
 preplace port AC_DIN -pg 1 -y 750 -defaultsOSRD
+preplace port HDMI_RX_DE -pg 1 -y 40 -defaultsOSRD
 preplace portBus HDMI_TX_DATA -pg 1 -y 340 -defaultsOSRD
 preplace portBus HDMI_RX_DATA -pg 1 -y 20 -defaultsOSRD
 preplace inst proc_sys_reset_100MHz -pg 1 -lvl 1 -y 180 -defaultsOSRD

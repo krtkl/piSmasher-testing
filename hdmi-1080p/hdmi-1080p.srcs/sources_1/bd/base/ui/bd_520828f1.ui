@@ -5,8 +5,8 @@
 #  -string -flagsOSRD
 preplace port HDMI_RX_PCLK -pg 1 -y 60 -defaultsOSRD
 preplace port DDR -pg 1 -y 260 -defaultsOSRD
-preplace port HDMI_RX_HS -pg 1 -y 600 -defaultsOSRD
 preplace port AC_MCLK -pg 1 -y 700 -defaultsOSRD
+preplace port HDMI_RX_HS -pg 1 -y 470 -defaultsOSRD
 preplace port ETH1_RGMII -pg 1 -y 160 -defaultsOSRD
 preplace port HDMI_TX_HS -pg 1 -y 300 -defaultsOSRD
 preplace port HDMI_TX_I2S0 -pg 1 -y 480 -defaultsOSRD
@@ -28,8 +28,8 @@ preplace port HDMI_RX_SCLK -pg 1 -y 620 -defaultsOSRD
 preplace port ETH1_CLK125 -pg 1 -y 120 -defaultsOSRD
 preplace port HDMI_TX_VS -pg 1 -y 540 -defaultsOSRD
 preplace port HDMI_TX_DE -pg 1 -y 320 -defaultsOSRD
-preplace port HDMI_RX_DE -pg 1 -y 40 -defaultsOSRD
 preplace port AC_DIN -pg 1 -y 720 -defaultsOSRD
+preplace port HDMI_RX_DE -pg 1 -y 40 -defaultsOSRD
 preplace portBus HDMI_TX_DATA -pg 1 -y 340 -defaultsOSRD
 preplace portBus HDMI_RX_DATA -pg 1 -y 20 -defaultsOSRD
 preplace inst proc_sys_reset_150MHz -pg 1 -lvl 1 -y 180 -defaultsOSRD
@@ -64,7 +64,7 @@ preplace netloc hdmi_s2mm_introut 1 3 1 1200
 preplace netloc ETH0_CLK125_1 1 0 6 -10J 10 NJ 10 NJ 10 NJ 10 NJ 10 2250J
 preplace netloc HDMI_RX_VS_1 1 0 3 20J 60 NJ 60 740J
 preplace netloc HDMI_RX_DE_1 1 0 3 NJ 40 NJ 40 770J
-preplace netloc HDMI_RX_SCLK_1 1 0 7 10J 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 2590J
+preplace netloc HDMI_RX_SCLK_1 1 0 7 20J 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 2590J
 preplace netloc hdmi_M_AXI_S2MM 1 3 1 N
 preplace netloc smartconnect_0_M00_AXI 1 4 1 N
 preplace netloc processing_system7_0_FCLK_RESET1_N 1 0 6 40 80 NJ 80 780J 80 N 80 N 80 2130
@@ -74,7 +74,7 @@ preplace netloc ethernet_ETH1_RGMII 1 6 1 NJ
 preplace netloc hdmi_M_AXI_MM2S 1 3 1 N
 preplace netloc processing_system7_0_MDIO_ETHERNET_0 1 5 1 2150
 preplace netloc AC_BCLK_1 1 0 3 NJ 730 NJ 730 N
-preplace netloc HDMI_RX_HS_1 1 0 3 20J 470 NJ 470 NJ
+preplace netloc HDMI_RX_HS_1 1 0 3 NJ 470 NJ 470 NJ
 preplace netloc hdmi_HDMI_TX_DE 1 3 4 1210J 50 NJ 50 2180J 320 NJ
 preplace netloc xlconcat_0_dout 1 4 1 1610
 preplace netloc processing_system7_0_FIXED_IO 1 5 2 NJ 280 NJ

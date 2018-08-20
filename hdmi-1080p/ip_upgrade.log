@@ -1,0 +1,32 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
+| Date         : Sun Aug 19 19:24:04 2018
+| Host         : WIN-MJ2I8SI0RJV running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-3
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'base_smartconnect_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of base_smartconnect_0_0 (xilinx.com:ip:smartconnect:1.0 (Rev. 9)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'base_smartconnect_0_0'.
+
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'base_smartconnect_0_0'. These changes may impact your design.
+
+
+

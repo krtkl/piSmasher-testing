@@ -50,9 +50,9 @@
 // IP VLNV: xilinx.com:ip:sc_switchboard:1.0
 // IP Revision: 5
 
-(* X_CORE_INFO = "sc_switchboard_v1_0_5_top,Vivado 2018.2" *)
+(* X_CORE_INFO = "sc_switchboard_v1_0_5_top,Vivado 2018.2.1" *)
 (* CHECK_LICENSE_TYPE = "bd_b441_wsw_0,sc_switchboard_v1_0_5_top,{}" *)
-(* CORE_GENERATION_INFO = "bd_b441_wsw_0,sc_switchboard_v1_0_5_top,{x_ipProduct=Vivado 2018.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=sc_switchboard,x_ipVersion=1.0,x_ipCoreRevision=5,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_PAYLD_WIDTH=52,K_MAX_INFO_WIDTH=1,C_S_PIPELINES=0,C_M_PIPELINES=1,C_S_LATENCY=0,C_NUM_SI=2,C_NUM_MI=1,C_TESTING_MODE=0,C_CONNECTIVITY=11}" *)
+(* CORE_GENERATION_INFO = "bd_b441_wsw_0,sc_switchboard_v1_0_5_top,{x_ipProduct=Vivado 2018.2.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=sc_switchboard,x_ipVersion=1.0,x_ipCoreRevision=5,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_PAYLD_WIDTH=52,K_MAX_INFO_WIDTH=1,C_S_PIPELINES=0,C_M_PIPELINES=1,C_S_LATENCY=0,C_NUM_SI=2,C_NUM_MI=1,C_TESTING_MODE=0,C_CONNECTIVITY=11}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_b441_wsw_0 (
   aclk,

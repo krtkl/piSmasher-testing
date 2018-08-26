@@ -11,8 +11,8 @@
       <spirit:configurableElementValues>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.AUX_RESET.POLARITY">ACTIVE_LOW</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.CLOCK.ASSOCIATED_BUSIF"/>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.CLOCK.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK2</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.CLOCK.FREQ_HZ">1.53845e+08</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.CLOCK.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK3</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.CLOCK.FREQ_HZ">1.99998e+08</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.CLOCK.PHASE">0.000</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.EXT_RESET.POLARITY">ACTIVE_LOW</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_AUX_RESET_HIGH">0</spirit:configurableElementValue>

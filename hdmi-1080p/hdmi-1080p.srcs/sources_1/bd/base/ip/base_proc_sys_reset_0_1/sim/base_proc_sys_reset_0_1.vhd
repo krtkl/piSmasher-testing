@@ -117,7 +117,7 @@ ARCHITECTURE base_proc_sys_reset_0_1_arch OF base_proc_sys_reset_0_1 IS
   ATTRIBUTE X_INTERFACE_INFO OF aux_reset_in: SIGNAL IS "xilinx.com:signal:reset:1.0 aux_reset RST";
   ATTRIBUTE X_INTERFACE_PARAMETER OF ext_reset_in: SIGNAL IS "XIL_INTERFACENAME ext_reset, BOARD.ASSOCIATED_PARAM RESET_BOARD_INTERFACE, POLARITY ACTIVE_LOW";
   ATTRIBUTE X_INTERFACE_INFO OF ext_reset_in: SIGNAL IS "xilinx.com:signal:reset:1.0 ext_reset RST";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF slowest_sync_clk: SIGNAL IS "XIL_INTERFACENAME clock, ASSOCIATED_RESET mb_reset:bus_struct_reset:interconnect_aresetn:peripheral_aresetn:peripheral_reset, FREQ_HZ 74250000, PHASE 0.000, CLK_DOMAIN base_HDMI_RX_PCLK";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF slowest_sync_clk: SIGNAL IS "XIL_INTERFACENAME clock, ASSOCIATED_RESET mb_reset:bus_struct_reset:interconnect_aresetn:peripheral_aresetn:peripheral_reset, FREQ_HZ 148500000, PHASE 0.000, CLK_DOMAIN base_HDMI_RX_PCLK";
   ATTRIBUTE X_INTERFACE_INFO OF slowest_sync_clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clock CLK";
 BEGIN
   U0 : proc_sys_reset

@@ -123,7 +123,7 @@ ARCHITECTURE bd_b441_psr_aclk_0_arch OF bd_b441_psr_aclk_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF aux_reset_in: SIGNAL IS "xilinx.com:signal:reset:1.0 aux_reset RST";
   ATTRIBUTE X_INTERFACE_PARAMETER OF ext_reset_in: SIGNAL IS "XIL_INTERFACENAME ext_reset, BOARD.ASSOCIATED_PARAM RESET_BOARD_INTERFACE, POLARITY ACTIVE_LOW";
   ATTRIBUTE X_INTERFACE_INFO OF ext_reset_in: SIGNAL IS "xilinx.com:signal:reset:1.0 ext_reset RST";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF slowest_sync_clk: SIGNAL IS "XIL_INTERFACENAME clock, ASSOCIATED_RESET mb_reset:bus_struct_reset:interconnect_aresetn:peripheral_aresetn:peripheral_reset, FREQ_HZ 1.53845e+08, PHASE 0.000, CLK_DOMAIN base_processing_system7_0_0_FCLK_CLK2";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF slowest_sync_clk: SIGNAL IS "XIL_INTERFACENAME clock, ASSOCIATED_RESET mb_reset:bus_struct_reset:interconnect_aresetn:peripheral_aresetn:peripheral_reset, FREQ_HZ 1.99998e+08, PHASE 0.000, CLK_DOMAIN base_processing_system7_0_0_FCLK_CLK3";
   ATTRIBUTE X_INTERFACE_INFO OF slowest_sync_clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clock CLK";
 BEGIN
   U0 : proc_sys_reset

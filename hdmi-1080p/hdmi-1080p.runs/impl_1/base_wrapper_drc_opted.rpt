@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date         : Sun Aug 19 20:10:15 2018
+| Date         : Fri Aug 24 13:48:54 2018
 | Host         : WIN-MJ2I8SI0RJV running 64-bit major release  (build 9200)
 | Command      : report_drc -file base_wrapper_drc_opted.rpt -pb base_wrapper_drc_opted.pb -rpx base_wrapper_drc_opted.rpx
 | Design       : base_wrapper
@@ -94,12 +94,12 @@ Related violations: <none>
 
 DPOP-1#4 Warning
 PREG Output pipelining  
-DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mac_muladd_OgC_U85/base_v_tpg_0_0_v_tpg_mac_muladd_OgC_DSP48_8_U/p output base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mac_muladd_OgC_U85/base_v_tpg_0_0_v_tpg_mac_muladd_OgC_DSP48_8_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mac_muladd_Ngs_U85/base_v_tpg_0_0_v_tpg_mac_muladd_Ngs_DSP48_7_U/p output base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mac_muladd_Ngs_U85/base_v_tpg_0_0_v_tpg_mac_muladd_Ngs_DSP48_7_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#5 Warning
 PREG Output pipelining  
-DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mul_mul_9nsPgM_U86/base_v_tpg_0_0_v_tpg_mul_mul_9nsPgM_DSP48_9_U/p output base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mul_mul_9nsPgM_U86/base_v_tpg_0_0_v_tpg_mul_mul_9nsPgM_DSP48_9_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mul_mul_9nsOgC_U86/base_v_tpg_0_0_v_tpg_mul_mul_9nsOgC_DSP48_8_U/p output base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mul_mul_9nsOgC_U86/base_v_tpg_0_0_v_tpg_mul_mul_9nsOgC_DSP48_8_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-2#1 Warning
@@ -134,12 +134,12 @@ Related violations: <none>
 
 DPOP-2#7 Warning
 MREG Output pipelining  
-DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mac_muladd_OgC_U85/base_v_tpg_0_0_v_tpg_mac_muladd_OgC_DSP48_8_U/p multiplier stage base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mac_muladd_OgC_U85/base_v_tpg_0_0_v_tpg_mac_muladd_OgC_DSP48_8_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mac_muladd_Ngs_U85/base_v_tpg_0_0_v_tpg_mac_muladd_Ngs_DSP48_7_U/p multiplier stage base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mac_muladd_Ngs_U85/base_v_tpg_0_0_v_tpg_mac_muladd_Ngs_DSP48_7_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#8 Warning
 MREG Output pipelining  
-DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mul_mul_9nsPgM_U86/base_v_tpg_0_0_v_tpg_mul_mul_9nsPgM_DSP48_9_U/p multiplier stage base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mul_mul_9nsPgM_U86/base_v_tpg_0_0_v_tpg_mul_mul_9nsPgM_DSP48_9_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mul_mul_9nsOgC_U86/base_v_tpg_0_0_v_tpg_mul_mul_9nsOgC_DSP48_8_U/p multiplier stage base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mul_mul_9nsOgC_U86/base_v_tpg_0_0_v_tpg_mul_mul_9nsOgC_DSP48_8_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 PLCK-12#1 Warning

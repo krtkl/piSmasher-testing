@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Root MajorVersion="0" MinorVersion="36">
-  <CompositeFile CompositeFileTopName="base" CanBeSetAsTop="false" CanDisplayChildGraph="true">
+  <CompositeFile CompositeFileTopName="base" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1534732072"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1534732072"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1534732072"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1534732072"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1535141411"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1535141411"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1535141411"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1535141411"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\base_processing_system7_0_0\base_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>
@@ -104,6 +104,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\base_axi_interconnect_0_0\base_axi_interconnect_0_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_interconnect_0"/>
         <Properties IsEditable="false" IsVisible="false" Timestamp="1534216083" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -135,7 +136,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\base_clk_wiz_0_0\base_clk_wiz_0_0.xci" Type="IP">
-        <Instance HierarchyPath="hdmi/clk_wiz_0"/>
+        <Instance HierarchyPath="clk_wiz_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="1534230446" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -174,28 +175,9 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="synth\base.v" Type="Verilog">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-      </File>
-      <File Name="sim\base.v" Type="Verilog">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
       <File Name="ip\base_v_tc_0_1\base_v_tc_0_1.xci" Type="IP">
         <Instance HierarchyPath="hdmi/vtc_det"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="1534216262" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\base_clk_wiz_0_1\base_clk_wiz_0_1.xci" Type="IP">
-        <Instance HierarchyPath="audio/clk_wiz_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -207,6 +189,17 @@
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="synth\base.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="sim\base.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\base_auto_pc_0\base_auto_pc_0.xci" Type="IP">

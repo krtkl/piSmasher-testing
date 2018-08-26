@@ -207,8 +207,8 @@
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_0_AXI.SUPPORTS_NARROW_BURST">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_0_AXI.WUSER_BITS_PER_BYTE">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_0_AXI.WUSER_WIDTH">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_0_AXIS.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK2</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_0_AXIS.FREQ_HZ">1.53845e+08</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_0_AXIS.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK3</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_0_AXIS.FREQ_HZ">1.99998e+08</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_0_AXIS.HAS_TKEEP">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_0_AXIS.HAS_TLAST">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_0_AXIS.HAS_TREADY">1</spirit:configurableElementValue>
@@ -501,8 +501,8 @@
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_1_AXI.SUPPORTS_NARROW_BURST">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_1_AXI.WUSER_BITS_PER_BYTE">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_1_AXI.WUSER_WIDTH">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_1_AXIS.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK2</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_1_AXIS.FREQ_HZ">1.53845e+08</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_1_AXIS.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK3</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_1_AXIS.FREQ_HZ">1.99998e+08</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_1_AXIS.HAS_TKEEP">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_1_AXIS.HAS_TLAST">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_1_AXIS.HAS_TREADY">1</spirit:configurableElementValue>
@@ -543,8 +543,8 @@
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.SUPPORTS_NARROW_BURST">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.WUSER_BITS_PER_BYTE">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.WUSER_WIDTH">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXIS.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK2</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXIS.FREQ_HZ">1.53845e+08</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXIS.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK3</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXIS.FREQ_HZ">1.99998e+08</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXIS.HAS_TKEEP">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXIS.HAS_TLAST">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXIS.HAS_TREADY">1</spirit:configurableElementValue>
@@ -849,8 +849,8 @@
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_9_AXIS.TDEST_WIDTH">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_9_AXIS.TID_WIDTH">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_SLOT_9_AXIS.TUSER_WIDTH">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SIGNAL_CLOCK.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK2</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SIGNAL_CLOCK.FREQ_HZ">1.53845e+08</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SIGNAL_CLOCK.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK3</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SIGNAL_CLOCK.FREQ_HZ">1.99998e+08</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SIGNAL_CLOCK.PHASE">0.000</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_0_AXI.ADDR_WIDTH">32</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_0_AXI.ARUSER_WIDTH">0</spirit:configurableElementValue>
@@ -882,8 +882,8 @@
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_0_AXI.SUPPORTS_NARROW_BURST">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_0_AXI.WUSER_BITS_PER_BYTE">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_0_AXI.WUSER_WIDTH">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_0_AXIS.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK2</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_0_AXIS.FREQ_HZ">1.53845e+08</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_0_AXIS.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK3</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_0_AXIS.FREQ_HZ">1.99998e+08</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_0_AXIS.HAS_TKEEP">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_0_AXIS.HAS_TLAST">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_0_AXIS.HAS_TREADY">1</spirit:configurableElementValue>
@@ -1176,8 +1176,8 @@
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_1_AXI.SUPPORTS_NARROW_BURST">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_1_AXI.WUSER_BITS_PER_BYTE">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_1_AXI.WUSER_WIDTH">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_1_AXIS.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK2</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_1_AXIS.FREQ_HZ">1.53845e+08</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_1_AXIS.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK3</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_1_AXIS.FREQ_HZ">1.99998e+08</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_1_AXIS.HAS_TKEEP">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_1_AXIS.HAS_TLAST">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_1_AXIS.HAS_TREADY">1</spirit:configurableElementValue>
@@ -1218,8 +1218,8 @@
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.SUPPORTS_NARROW_BURST">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.WUSER_BITS_PER_BYTE">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.WUSER_WIDTH">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXIS.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK2</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXIS.FREQ_HZ">1.53845e+08</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXIS.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK3</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXIS.FREQ_HZ">1.99998e+08</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXIS.HAS_TKEEP">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXIS.HAS_TLAST">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXIS.HAS_TREADY">1</spirit:configurableElementValue>

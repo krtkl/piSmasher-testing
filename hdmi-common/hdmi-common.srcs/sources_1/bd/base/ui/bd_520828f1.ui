@@ -1,0 +1,103 @@
+{
+   ExpandedHierarchyInLayout: "",
+   PinnedBlocks: "/processing_system7_0|/hdmi|",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port HDMI_RX_PCLK -pg 1 -y 60 -defaultsOSRD
+preplace port DDR -pg 1 -y 260 -defaultsOSRD
+preplace port AC_MCLK -pg 1 -y 780 -defaultsOSRD
+preplace port HDMI_RX_HS -pg 1 -y 430 -defaultsOSRD
+preplace port ETH1_RGMII -pg 1 -y 160 -defaultsOSRD
+preplace port HDMI_TX_HS -pg 1 -y 300 -defaultsOSRD
+preplace port ETH1_MDIO -pg 1 -y 140 -defaultsOSRD
+preplace port HDMI_RX_LRCLK -pg 1 -y 600 -defaultsOSRD
+preplace port ETH0_MDIO -pg 1 -y 100 -defaultsOSRD
+preplace port AC_WCLK -pg 1 -y 830 -defaultsOSRD
+preplace port HDMI_TX_SCLK -pg 1 -y 620 -defaultsOSRD
+preplace port AC_DOUT -pg 1 -y 790 -defaultsOSRD
+preplace port ETH0_RGMII -pg 1 -y 120 -defaultsOSRD
+preplace port HDMI_TX_LRCLK -pg 1 -y 600 -defaultsOSRD
+preplace port HDMI_RX_VS -pg 1 -y 80 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 280 -defaultsOSRD
+preplace port ETH0_CLK125 -pg 1 -y 100 -defaultsOSRD
+preplace port HDMI_RX_SCLK -pg 1 -y 620 -defaultsOSRD
+preplace port AC_BCLK -pg 1 -y 810 -defaultsOSRD
+preplace port HDMI_TX_PCLK -pg 1 -y 380 -defaultsOSRD
+preplace port ETH1_CLK125 -pg 1 -y 120 -defaultsOSRD
+preplace port HDMI_TX_VS -pg 1 -y 360 -defaultsOSRD
+preplace port HDMI_TX_DE -pg 1 -y 320 -defaultsOSRD
+preplace port AC_DIN -pg 1 -y 800 -defaultsOSRD
+preplace port HDMI_RX_DE -pg 1 -y 40 -defaultsOSRD
+preplace portBus HDMI_TX_I2S -pg 1 -y 640 -defaultsOSRD
+preplace portBus HDMI_TX_DATA -pg 1 -y 340 -defaultsOSRD
+preplace portBus HDMI_RX_I2S -pg 1 -y 640 -defaultsOSRD
+preplace portBus HDMI_RX_DATA -pg 1 -y 20 -defaultsOSRD
+preplace inst hdmi_audio -pg 1 -lvl 3 -y 620 -defaultsOSRD
+preplace inst proc_sys_reset_150MHz -pg 1 -lvl 1 -y 180 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 4 -y 280 -defaultsOSRD
+preplace inst audio -pg 1 -lvl 3 -y 790 -defaultsOSRD -resize 173 160
+preplace inst hdmi -pg 1 -lvl 3 -y 350 -defaultsOSRD -resize 343 290
+preplace inst xlconcat_0 -pg 1 -lvl 4 -y 460 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 2 -y 270 -defaultsOSRD
+preplace inst ethernet -pg 1 -lvl 6 -y 130 -defaultsOSRD -resize 277 228
+preplace inst processing_system7_0 -pg 1 -lvl 5 -y 320 -defaultsOSRD
+preplace netloc ethernet_ETH0_MDIO 1 6 1 NJ
+preplace netloc processing_system7_0_DDR 1 5 2 NJ 260 NJ
+preplace netloc AC_WCLK_1 1 0 3 NJ 830 NJ 830 N
+preplace netloc hdmi_mm2s_introut 1 3 1 1260
+preplace netloc HDMI_RX_DATA_1 1 0 3 -20J 30 NJ 30 740J
+preplace netloc hdmi_HDMI_TX_HS 1 3 4 1250J 40 NJ 40 2210J 300 NJ
+preplace netloc processing_system7_0_FCLK_CLK3 1 5 1 2230
+preplace netloc hdmi_vtc_gen_introut 1 3 1 1290
+preplace netloc hdmi_tpg_introut 1 3 1 1270
+preplace netloc hdmi_HDMI_TX_DATA 1 3 4 1240J 50 NJ 50 2180J 340 NJ
+preplace netloc audio_AC_DIN 1 3 4 N 800 NJ 800 NJ 800 NJ
+preplace netloc hdmi_HDMI_TX_PCLK_0 1 3 4 1280J 60 NJ 60 2150J 380 NJ
+preplace netloc ethernet_ETH0_RGMII 1 6 1 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 410J 100 NJ 100 NJ 100 NJ 100 2110
+preplace netloc ETH1_CLK125_1 1 0 6 -10J 20 NJ 20 NJ 20 NJ 20 NJ 20 2240J
+preplace netloc HDMI_RX_PCLK_1 1 0 3 NJ 60 NJ 60 730J
+preplace netloc axi_interconnect_0_M02_AXI 1 2 1 N
+preplace netloc audio_AC_MCLK 1 3 4 NJ 780 NJ 780 NJ 780 N
+preplace netloc ARESETN_1 1 1 1 390
+preplace netloc processing_system7_0_FCLK_RESET3_N 1 5 1 2250
+preplace netloc hdmi_s2mm_introut 1 3 1 1250
+preplace netloc HDMI_RX_SCLK_1 1 0 3 NJ 620 NJ 620 N
+preplace netloc ETH0_CLK125_1 1 0 6 -30J 10 NJ 10 NJ 10 NJ 10 NJ 10 2250J
+preplace netloc HDMI_RX_VS_1 1 0 3 -20J 50 NJ 50 720J
+preplace netloc HDMI_RX_DE_1 1 0 3 NJ 40 NJ 40 750J
+preplace netloc hdmi_M_AXI_S2MM 1 3 1 N
+preplace netloc smartconnect_0_M00_AXI 1 4 1 N
+preplace netloc processing_system7_0_FCLK_RESET1_N 1 0 6 10 80 NJ 80 770J 80 N 80 N 80 2130
+preplace netloc AC_DIN_1 1 0 3 NJ 790 NJ 790 NJ
+preplace netloc ethernet_ETH1_RGMII 1 6 1 NJ
+preplace netloc hdmi_M_AXI_MM2S 1 3 1 N
+preplace netloc processing_system7_0_MDIO_ETHERNET_0 1 5 1 2160
+preplace netloc hdmi_audio_HDMI_TX_I2S 1 3 4 NJ 640 NJ 640 NJ 640 N
+preplace netloc AC_BCLK_1 1 0 3 NJ 810 NJ 810 N
+preplace netloc HDMI_RX_HS_1 1 0 3 NJ 430 NJ 430 NJ
+preplace netloc hdmi_HDMI_TX_DE 1 3 4 1230J 30 NJ 30 2220J 320 NJ
+preplace netloc xlconcat_0_dout 1 4 1 1620
+preplace netloc processing_system7_0_FIXED_IO 1 5 2 NJ 280 NJ
+preplace netloc processing_system7_0_MDIO_ETHERNET_1 1 5 1 2190
+preplace netloc hdmi_audio_HDMI_TX_LRCLK 1 3 4 N 600 NJ 600 NJ 600 NJ
+preplace netloc axi_interconnect_0_M00_AXI 1 2 1 N
+preplace netloc HDMI_RX_I2S_1 1 0 3 NJ 640 NJ 640 N
+preplace netloc axi_interconnect_0_M01_AXI 1 2 1 N
+preplace netloc hdmi_HDMI_TX_VS 1 3 4 1290J 70 NJ 70 2140J 360 NJ
+preplace netloc processing_system7_0_GMII_ETHERNET_0 1 5 1 2170
+preplace netloc HDMI_RX_LRCLK_1 1 0 3 NJ 600 NJ 600 N
+preplace netloc proc_sys_reset_100MHz_peripheral_aresetn 1 1 3 390J 450 730J 510 1240J
+preplace netloc processing_system7_0_FCLK_CLK1 1 0 6 0 70 400 440 760 520 1300 190 1620 90 2120
+preplace netloc ethernet_ETH1_MDIO 1 6 1 NJ
+preplace netloc processing_system7_0_GMII_ETHERNET_1 1 5 1 2200
+preplace netloc hdmi_audio_HDMI_TX_SCLK 1 3 4 N 620 NJ 620 NJ 620 NJ
+levelinfo -pg 1 -50 220 570 1030 1480 1864 2420 2620 -top -10 -bot 1070
+",
+}
+{
+   da_axi4_cnt: "34",
+   da_board_cnt: "2",
+   da_clkrst_cnt: "30",
+   da_ps7_cnt: "1",
+}

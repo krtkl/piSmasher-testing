@@ -2,8 +2,8 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Sun Aug 19 20:40:55 2018
-# Process ID: 6048
+# Start of session at: Wed Aug 22 13:52:17 2018
+# Process ID: 1256
 # Current directory: Z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.runs/synth_1
 # Command line: vivado.exe -log base_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_wrapper.tcl
 # Log file: Z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.runs/synth_1/base_wrapper.vds

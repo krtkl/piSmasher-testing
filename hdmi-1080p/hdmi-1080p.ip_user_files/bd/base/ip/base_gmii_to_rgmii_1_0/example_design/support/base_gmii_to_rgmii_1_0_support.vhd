@@ -69,7 +69,6 @@ entity base_gmii_to_rgmii_1_0_support is
     rx_reset                      : in    std_logic;
     -- Clocks
     clkin                         : in    std_logic;          -- 200 MHz free running clock
-    gmii_clk                      : in    std_logic;
  
     -- Register interface: Status output
     speed_mode                    : out   std_logic_vector(1 downto 0);
@@ -114,8 +113,11 @@ architecture wrapper of base_gmii_to_rgmii_1_0_support is
     port(
       clkin               : in  std_logic;               -- 200 MHz free running clock
       clkin_out           : out std_logic;               -- clkin passed thru BUFG
-      gmii_clk            : in  std_logic;
-      gmii_clk_out        : out std_logic
+      reset               : in  std_logic;
+      mmcm_locked         : out std_logic;
+      gmii_clk_125m       : out std_logic;               -- 125 MHz clock
+      gmii_clk_25m        : out std_logic;               -- 25 MHz clock
+      gmii_clk_2_5m       : out std_logic                -- 2.5 MHz clock
     
     );
   end component;
@@ -137,8 +139,11 @@ architecture wrapper of base_gmii_to_rgmii_1_0_support is
       rx_reset                      : in    std_logic;
       -- Clocks
       ref_clk_in                    : in    std_logic;
-      gmii_clk                      : in    std_logic;
- 
+    
+      mmcm_locked_in                : in    std_logic;
+      gmii_clk_125m_in              : in    std_logic;
+      gmii_clk_25m_in               : in    std_logic; 
+      gmii_clk_2_5m_in              : in    std_logic;
       
       -- Register interface: Status output
       speed_mode                    : out   std_logic_vector(1 downto 0);
@@ -179,7 +184,10 @@ architecture wrapper of base_gmii_to_rgmii_1_0_support is
 
   -- Signals for local interconnect
   signal ref_clk_i            : std_logic;
-  signal gmii_tx_clk_i        : std_logic;
+  signal mmcm_locked_i        : std_logic;
+  signal gmii_clk_125m_i      : std_logic;
+  signal gmii_clk_25m_i       : std_logic;
+  signal gmii_clk_2_5m_i      : std_logic;
   
   signal async_reset          : std_logic;
   signal idelayctrl_reset_i   : std_logic;
@@ -192,8 +200,11 @@ begin
     port map(
       clkin            => clkin,
       clkin_out        => ref_clk_i,
-      gmii_clk         => gmii_clk,
-      gmii_clk_out     => gmii_tx_clk_i
+      reset            => tx_reset,
+      mmcm_locked      => mmcm_locked_i,
+      gmii_clk_125m    => gmii_clk_125m_i,
+      gmii_clk_25m     => gmii_clk_25m_i,
+      gmii_clk_2_5m    => gmii_clk_2_5m_i
     
     );  
 
@@ -226,7 +237,11 @@ begin
       rx_reset                      => rx_reset,
       -- Clocks
       ref_clk_in                    => ref_clk_i,
-      gmii_clk                      => gmii_clk,
+    
+      mmcm_locked_in                => mmcm_locked_i,
+      gmii_clk_125m_in              => gmii_clk_125m_i, 
+      gmii_clk_25m_in               => gmii_clk_25m_i,  
+      gmii_clk_2_5m_in              => gmii_clk_2_5m_i, 
       -- Register interface: Status output
       speed_mode                    => speed_mode,
       -- GMII Interface to GEM

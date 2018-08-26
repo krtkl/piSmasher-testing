@@ -63,8 +63,11 @@ entity base_gmii_to_rgmii_1_0_clocking is
   port(
     clkin             : in  std_logic;               -- 200 MHz free running clock
     clkin_out         : out std_logic;               -- clkin passed thru BUFG
-    gmii_clk          : in  std_logic;
-    gmii_clk_out      : out std_logic
+    reset             : in std_logic;
+    mmcm_locked       : out std_logic;
+    gmii_clk_125m     : out std_logic;               -- 125 MHz clock
+    gmii_clk_25m      : out std_logic;               -- 25 MHz clock
+    gmii_clk_2_5m     : out std_logic                -- 2.5 MHz clock
     
   );
 end base_gmii_to_rgmii_1_0_clocking ; 
@@ -73,9 +76,13 @@ architecture rtl of base_gmii_to_rgmii_1_0_clocking is
 
   -- Signals for local interconnect
   signal clkin_bufg             : std_logic;
- 
-  signal gmii_clk_bufg          : std_logic;
   
+  signal clkfbout               : std_logic;
+  signal clkfbout_buf           : std_logic;
+  signal clk_125m_i             : std_logic;
+  signal clk_25m_i              : std_logic;
+  signal clk_10                 : std_logic;
+  signal clk_2_5m_i             : std_logic;
   
 
 
@@ -84,14 +91,93 @@ begin
   -- Instantiate BUFG for clkin
   i_bufg_clk_in: BUFG port map (I => clkin, O => clkin_bufg);
 
-  -- Instantiate BUFG for gmii_clk
-  i_bufg_gmii_clk:    BUFG port map (I => gmii_clk, O => gmii_clk_bufg);
   
+  -- Instantiate MMCM
+  mmcm_adv_inst: MMCME2_ADV
+    generic map(
+      BANDWIDTH            => "OPTIMIZED",
+      CLKOUT4_CASCADE      => FALSE,
+      COMPENSATION         => "ZHOLD",
+      STARTUP_WAIT         => FALSE,
+      DIVCLK_DIVIDE        => 1,
+      CLKFBOUT_MULT_F      => 5.000,
+      CLKFBOUT_PHASE       => 0.000,
+      CLKFBOUT_USE_FINE_PS => FALSE,
+      CLKOUT0_DIVIDE_F     => 8.000,
+      CLKOUT0_PHASE        => 0.000,
+      CLKOUT0_DUTY_CYCLE   => 0.500,
+      CLKOUT0_USE_FINE_PS  => FALSE,
+      CLKOUT1_DIVIDE       => 40,
+      CLKOUT1_PHASE        => 0.000,
+      CLKOUT1_DUTY_CYCLE   => 0.500,
+      CLKOUT1_USE_FINE_PS  => FALSE,
+      CLKOUT2_DIVIDE       => 100,
+      CLKOUT2_PHASE        => 0.000,
+      CLKOUT2_DUTY_CYCLE   => 0.500,
+      CLKOUT2_USE_FINE_PS  => FALSE,
+      CLKIN1_PERIOD        => 5.000,
+      REF_JITTER1          => 0.010
+    )
+    port map(
+      -- Output clocks
+      CLKFBOUT            => clkfbout,
+      CLKFBOUTB           => open,
+      CLKOUT0             => clk_125m_i,
+      CLKOUT0B            => open,
+      CLKOUT1             => clk_25m_i,
+      CLKOUT1B            => open,
+      CLKOUT2             => clk_10,
+      CLKOUT2B            => open,
+      CLKOUT3             => open,
+      CLKOUT3B            => open,
+      CLKOUT4             => open,
+      CLKOUT5             => open,
+      CLKOUT6             => open,
+      -- Input clock control
+      CLKFBIN             => clkfbout,
+      CLKIN1              => clkin_bufg,
+      CLKIN2              => '0',
+      -- Tied to always select the primary input clock
+      CLKINSEL            => '1',
+      -- Ports for dynamic reconfiguration
+      DADDR               => (others => '0'),
+      DCLK                => '0',
+      DEN                 => '0',
+      DI                  => (others => '0'),
+      DO                  => open,
+      DRDY                => open,
+      DWE                 => '0',
+      -- Ports for dynamic phase shift
+      PSCLK               => '0',
+      PSEN                => '0',
+      PSINCDEC            => '0',
+      PSDONE              => open,
+      -- Other control and status signals
+      LOCKED              => mmcm_locked,
+      CLKINSTOPPED        => open,
+      CLKFBSTOPPED        => open,
+      PWRDWN              => '0',
+      RST                 => reset
+    );
+   
+  -- Generate the 2.5 MHz clock
+  clk10_div_buf: BUFR
+    generic map (
+      BUFR_DIVIDE => "4")
+    port map (
+      I   => clk_10,
+      CE  => '1',
+      CLR => '0',
+      O   => clk_2_5m_i
+    );
   
 
   -- Assign to O/P ports
   clkin_out       <= clkin_bufg;
-  gmii_clk_out    <= gmii_clk_bufg;
+  
+  gmii_clk_125m     <= clk_125m_i;
+  gmii_clk_25m      <= clk_25m_i;
+  gmii_clk_2_5m     <= clk_2_5m_i;
   
   
 

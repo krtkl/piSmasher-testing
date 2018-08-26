@@ -1,0 +1,17 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port HDMI_RX_LRCLK -pg 1 -y 40 -defaultsOSRD
+preplace port HDMI_TX_SCLK -pg 1 -y 20 -defaultsOSRD
+preplace port HDMI_TX_LRCLK -pg 1 -y 40 -defaultsOSRD
+preplace port HDMI_RX_SCLK -pg 1 -y 20 -defaultsOSRD
+preplace portBus HDMI_TX_I2S -pg 1 -y 60 -defaultsOSRD
+preplace portBus HDMI_RX_I2S -pg 1 -y 60 -defaultsOSRD
+preplace netloc HDMI_RX_SCLK_1 1 0 1 N
+preplace netloc HDMI_RX_I2S_1 1 0 1 N
+preplace netloc HDMI_RX_LRCLK_1 1 0 1 N
+levelinfo -pg 1 0 40 -top 0 -bot 80
+",
+}
+

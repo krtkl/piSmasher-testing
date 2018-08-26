@@ -169,7 +169,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI_CTRL.FREQ_HZ">1.53845e+08</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI_CTRL.FREQ_HZ">1.99998e+08</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -358,7 +358,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI_CTRL.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK2</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI_CTRL.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK3</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -431,7 +431,7 @@
           <spirit:name>FREQ_HZ</spirit:name>
           <spirit:displayName>Frequency in Hz</spirit:displayName>
           <spirit:description>Clock Frequency (Hz)</spirit:description>
-          <spirit:value spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.AP_CLK.FREQ_HZ">1.53845e+08</spirit:value>
+          <spirit:value spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.AP_CLK.FREQ_HZ">1.99998e+08</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>PHASE</spirit:name>
@@ -444,7 +444,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AP_CLK.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK2</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AP_CLK.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK3</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -660,7 +660,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXIS_VIDEO.FREQ_HZ">1.53845e+08</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXIS_VIDEO.FREQ_HZ">1.99998e+08</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -678,7 +678,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXIS_VIDEO.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK2</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXIS_VIDEO.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK3</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -850,7 +850,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_VIDEO.FREQ_HZ">1.53845e+08</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_VIDEO.FREQ_HZ">1.99998e+08</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -868,7 +868,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_VIDEO.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK2</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_VIDEO.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK3</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -924,52 +924,6 @@
         </spirit:parameters>
       </spirit:view>
       <spirit:view>
-        <spirit:name>xilinx_veriloghlssynthesis</spirit:name>
-        <spirit:displayName>Verilog HLS Outputs for Synthesis</spirit:displayName>
-        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis.hls</spirit:envIdentifier>
-        <spirit:language>verilog</spirit:language>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_veriloghlssynthesis_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Aug 14 16:49:31 UTC 2018</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:7e7ea6db</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>outputProductLicenses</spirit:name>
-            <spirit:value>v_tpg@2015.09(BOUGHT)</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
-      </spirit:view>
-      <spirit:view>
-        <spirit:name>xilinx_veriloghlssimulation</spirit:name>
-        <spirit:displayName>Verilog HLS Outputs for Simulation</spirit:displayName>
-        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation.hls</spirit:envIdentifier>
-        <spirit:language>verilog</spirit:language>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_veriloghlssimulation_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Aug 14 16:49:31 UTC 2018</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:7e7ea6db</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>outputProductLicenses</spirit:name>
-            <spirit:value>v_tpg@2015.09(BOUGHT)</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
-      </spirit:view>
-      <spirit:view>
         <spirit:name>xilinx_anylanguagehls</spirit:name>
         <spirit:displayName>C/C++ Implementation Sources</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:hls</spirit:envIdentifier>
@@ -980,11 +934,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Aug 14 16:33:00 UTC 2018</spirit:value>
+            <spirit:value>Fri Aug 24 19:50:03 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:7e7ea6db</spirit:value>
+            <spirit:value>8:c6bc423a</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductLicenses</spirit:name>
@@ -1003,11 +957,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Aug 14 16:33:01 UTC 2018</spirit:value>
+            <spirit:value>Fri Aug 24 19:50:03 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:7e7ea6db</spirit:value>
+            <spirit:value>8:c6bc423a</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductLicenses</spirit:name>
@@ -1022,7 +976,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:7e7ea6db</spirit:value>
+            <spirit:value>8:c6bc423a</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductLicenses</spirit:name>
@@ -1042,11 +996,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Aug 14 16:33:01 UTC 2018</spirit:value>
+            <spirit:value>Fri Aug 24 19:50:03 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:7e7ea6db</spirit:value>
+            <spirit:value>8:c6bc423a</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductLicenses</spirit:name>
@@ -1065,11 +1019,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Aug 14 16:33:01 UTC 2018</spirit:value>
+            <spirit:value>Fri Aug 24 19:50:03 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:c96e1862</spirit:value>
+            <spirit:value>8:59a3c5e1</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductLicenses</spirit:name>
@@ -1089,11 +1043,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Aug 14 16:33:01 UTC 2018</spirit:value>
+            <spirit:value>Fri Aug 24 19:50:03 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:c96e1862</spirit:value>
+            <spirit:value>8:59a3c5e1</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductLicenses</spirit:name>
@@ -1102,16 +1056,44 @@
         </spirit:parameters>
       </spirit:view>
       <spirit:view>
-        <spirit:name>xilinx_externalfiles</spirit:name>
-        <spirit:displayName>External Files</spirit:displayName>
-        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
+        <spirit:name>xilinx_veriloghlssynthesis</spirit:name>
+        <spirit:displayName>Verilog HLS Outputs for Synthesis</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis.hls</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
         <spirit:fileSetRef>
-          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
+          <spirit:localName>xilinx_veriloghlssynthesis_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Aug 24 20:00:50 UTC 2018</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:7e7ea6db</spirit:value>
+            <spirit:value>8:c6bc423a</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductLicenses</spirit:name>
+            <spirit:value>v_tpg@2015.09(BOUGHT)</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_veriloghlssimulation</spirit:name>
+        <spirit:displayName>Verilog HLS Outputs for Simulation</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation.hls</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_veriloghlssimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Aug 24 20:00:50 UTC 2018</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>8:c6bc423a</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductLicenses</spirit:name>
@@ -1765,6 +1747,74 @@
   </spirit:choices>
   <spirit:fileSets>
     <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagehls_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>hls/hls_commands.txt</spirit:name>
+        <spirit:userFileType>text</spirit:userFileType>
+        <spirit:userFileType>USED_IN_hls</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/v_tpg_config.h</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_c_source</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/v_tpg.cpp</spirit:name>
+        <spirit:fileType>cppSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/v_tpg.h</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/v_tpg_zoneplate.h</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>base_v_tpg_0_0.xdc</spirit:name>
+        <spirit:userFileType>xdc</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>late</spirit:value>
+        </spirit:define>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/v_tpg_v7_0_rfs.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>v_tpg_v7_0_11</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/base_v_tpg_0_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>hdl/v_tpg_v7_0_rfs.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+        <spirit:logicalName>v_tpg_v7_0_11</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/base_v_tpg_0_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
       <spirit:name>xilinx_veriloghlssynthesis_view_fileset</spirit:name>
       <spirit:file>
         <spirit:name>hdl/verilog/base_v_tpg_0_0_AXIvideo2MultiPixStr.v</spirit:name>
@@ -1843,11 +1893,11 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternCrossHa1iI.v</spirit:name>
+        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternCrossHa0iy.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternCrossHa1iI_rom.dat</spirit:name>
+        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternCrossHa0iy_rom.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
@@ -2019,11 +2069,11 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidBlYie.v</spirit:name>
+        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidBlXh4.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidBlYie_rom.dat</spirit:name>
+        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidBlXh4_rom.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
@@ -2031,24 +2081,24 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidGrZio.v</spirit:name>
+        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidGrYie.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidGrZio_rom.dat</spirit:name>
-        <spirit:userFileType>mif</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidRe0iy.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidRe0iy_rom.dat</spirit:name>
+        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidGrYie_rom.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidRed.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidReZio.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidReZio_rom.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidWhite.v</spirit:name>
@@ -2115,10 +2165,6 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/base_v_tpg_0_0_v_tpg_mac_muladd_OgC.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/verilog/base_v_tpg_0_0_v_tpg_mac_muladd_wdI.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
@@ -2135,7 +2181,7 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/base_v_tpg_0_0_v_tpg_mul_mul_9nsPgM.v</spirit:name>
+        <spirit:name>hdl/verilog/base_v_tpg_0_0_v_tpg_mul_mul_9nsOgC.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2222,11 +2268,11 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternCrossHa1iI.v</spirit:name>
+        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternCrossHa0iy.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternCrossHa1iI_rom.dat</spirit:name>
+        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternCrossHa0iy_rom.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
@@ -2398,11 +2444,11 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidBlYie.v</spirit:name>
+        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidBlXh4.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidBlYie_rom.dat</spirit:name>
+        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidBlXh4_rom.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
@@ -2410,24 +2456,24 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidGrZio.v</spirit:name>
+        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidGrYie.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidGrZio_rom.dat</spirit:name>
-        <spirit:userFileType>mif</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidRe0iy.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidRe0iy_rom.dat</spirit:name>
+        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidGrYie_rom.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidRed.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidReZio.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidReZio_rom.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/base_v_tpg_0_0_tpgPatternSolidWhite.v</spirit:name>
@@ -2494,10 +2540,6 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/base_v_tpg_0_0_v_tpg_mac_muladd_OgC.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/verilog/base_v_tpg_0_0_v_tpg_mac_muladd_wdI.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
@@ -2514,116 +2556,12 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/base_v_tpg_0_0_v_tpg_mul_mul_9nsPgM.v</spirit:name>
+        <spirit:name>hdl/verilog/base_v_tpg_0_0_v_tpg_mul_mul_9nsOgC.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/base_v_tpg_0_0_v_tpg.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_anylanguagehls_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>hls/hls_commands.txt</spirit:name>
-        <spirit:userFileType>text</spirit:userFileType>
-        <spirit:userFileType>USED_IN_hls</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/v_tpg_config.h</spirit:name>
-        <spirit:fileType>cSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_c_source</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/v_tpg.cpp</spirit:name>
-        <spirit:fileType>cppSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/v_tpg.h</spirit:name>
-        <spirit:fileType>cSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/v_tpg_zoneplate.h</spirit:name>
-        <spirit:fileType>cSource</spirit:fileType>
-      </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>base_v_tpg_0_0.xdc</spirit:name>
-        <spirit:userFileType>xdc</spirit:userFileType>
-        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
-        <spirit:define>
-          <spirit:name>processing_order</spirit:name>
-          <spirit:value>late</spirit:value>
-        </spirit:define>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/v_tpg_v7_0_rfs.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:logicalName>v_tpg_v7_0_11</spirit:logicalName>
-      </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_verilogsynthesiswrapper_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>synth/base_v_tpg_0_0.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>hdl/v_tpg_v7_0_rfs.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>v_tpg_v7_0_11</spirit:logicalName>
-      </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_verilogsimulationwrapper_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>sim/base_v_tpg_0_0.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>base_v_tpg_0_0.dcp</spirit:name>
-        <spirit:userFileType>dcp</spirit:userFileType>
-        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>base_v_tpg_0_0_stub.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>base_v_tpg_0_0_stub.vhdl</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>base_v_tpg_0_0_sim_netlist.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>base_v_tpg_0_0_sim_netlist.vhdl</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>

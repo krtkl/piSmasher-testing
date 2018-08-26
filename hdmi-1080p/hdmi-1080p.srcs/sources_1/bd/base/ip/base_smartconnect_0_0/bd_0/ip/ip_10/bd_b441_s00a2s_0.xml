@@ -618,7 +618,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.FREQ_HZ">1.53845e+08</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.FREQ_HZ">1.99998e+08</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -825,7 +825,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK2</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK3</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -893,7 +893,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.ACLK.FREQ_HZ">1.53845e+08</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.ACLK.FREQ_HZ">1.99998e+08</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -911,7 +911,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.ACLK.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK2</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.ACLK.CLK_DOMAIN">base_processing_system7_0_0_FCLK_CLK3</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -947,11 +947,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Aug 20 02:27:22 UTC 2018</spirit:value>
+            <spirit:value>Fri Aug 24 20:09:48 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:db2a9add</spirit:value>
+            <spirit:value>8:17037938</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -967,11 +967,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Aug 20 02:27:22 UTC 2018</spirit:value>
+            <spirit:value>Fri Aug 24 20:09:48 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:db2a9add</spirit:value>
+            <spirit:value>8:17037938</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -990,11 +990,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Aug 20 02:27:22 UTC 2018</spirit:value>
+            <spirit:value>Fri Aug 24 20:09:48 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:de9c076d</spirit:value>
+            <spirit:value>8:12b5e488</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1010,11 +1010,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Aug 20 02:27:22 UTC 2018</spirit:value>
+            <spirit:value>Fri Aug 24 20:09:48 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:de9c076d</spirit:value>
+            <spirit:value>8:12b5e488</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>

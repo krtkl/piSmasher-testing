@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-// Date        : Sun Aug 19 20:35:14 2018
+// Date        : Sun Aug 19 20:35:08 2018
 // Host        : WIN-MJ2I8SI0RJV running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               z:/Projects/piSmasher/piSmasher-testing/hdmi-720p/hdmi-720p.srcs/sources_1/bd/base/ip/base_auto_pc_0_1/base_auto_pc_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top base_auto_pc_0 -prefix
+//               base_auto_pc_0_ base_auto_pc_0_stub.v
 // Design      : base_auto_pc_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-3

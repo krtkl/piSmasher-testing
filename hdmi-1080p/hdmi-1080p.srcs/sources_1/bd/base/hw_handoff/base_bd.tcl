@@ -121,6 +121,59 @@ if { $nRet != 0 } {
 ##################################################################
 
 
+# Hierarchical cell: hdmi_audio
+proc create_hier_cell_hdmi_audio { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_hdmi_audio() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I -from 2 -to 0 HDMI_RX_I2S
+  create_bd_pin -dir I HDMI_RX_LRCLK
+  create_bd_pin -dir I HDMI_RX_SCLK
+  create_bd_pin -dir O -from 2 -to 0 HDMI_TX_I2S
+  create_bd_pin -dir O HDMI_TX_LRCLK
+  create_bd_pin -dir O HDMI_TX_SCLK
+
+  # Create port connections
+  connect_bd_net -net HDMI_RX_I2S_1 [get_bd_pins HDMI_RX_I2S] [get_bd_pins HDMI_TX_I2S]
+  connect_bd_net -net HDMI_RX_LRCLK_1 [get_bd_pins HDMI_RX_LRCLK] [get_bd_pins HDMI_TX_LRCLK]
+  connect_bd_net -net HDMI_RX_SCLK_1 [get_bd_pins HDMI_RX_SCLK] [get_bd_pins HDMI_TX_SCLK]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
 # Hierarchical cell: hdmi
 proc create_hier_cell_hdmi { parentCell nameHier } {
 
@@ -172,9 +225,11 @@ proc create_hier_cell_hdmi { parentCell nameHier } {
   create_bd_pin -dir O -from 23 -to 0 HDMI_TX_DATA
   create_bd_pin -dir O HDMI_TX_DE
   create_bd_pin -dir O HDMI_TX_HS
-  create_bd_pin -dir O -type clk HDMI_TX_PCLK
+  create_bd_pin -dir I -type clk HDMI_TX_PCLK_in
+  create_bd_pin -dir O HDMI_TX_PCLK_out
   create_bd_pin -dir O HDMI_TX_VS
   create_bd_pin -dir I -type clk aclk
+  create_bd_pin -dir I dcm_locked
   create_bd_pin -dir I -type rst ext_reset_in
   create_bd_pin -dir O -type intr mm2s_introut
   create_bd_pin -dir I -type rst peripheral_aresetn
@@ -194,23 +249,6 @@ proc create_hier_cell_hdmi { parentCell nameHier } {
    CONFIG.c_s2mm_genlock_mode {3} \
    CONFIG.c_s2mm_linebuffer_depth {512} \
  ] $axi_vdma_0
-
-  # Create instance: clk_wiz_0, and set properties
-  set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
-  set_property -dict [ list \
-   CONFIG.AXI_DRP {false} \
-   CONFIG.CLKOUT1_JITTER {293.452} \
-   CONFIG.CLKOUT1_PHASE_ERROR {313.046} \
-   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {148.5} \
-   CONFIG.MMCM_CLKFBOUT_MULT_F {31.250} \
-   CONFIG.MMCM_CLKOUT0_DIVIDE_F {4.625} \
-   CONFIG.MMCM_DIVCLK_DIVIDE {7} \
-   CONFIG.PHASE_DUTY_CONFIG {false} \
-   CONFIG.PRIM_SOURCE {Global_buffer} \
-   CONFIG.RESET_PORT {resetn} \
-   CONFIG.RESET_TYPE {ACTIVE_LOW} \
-   CONFIG.USE_DYN_RECONFIG {false} \
- ] $clk_wiz_0
 
   # Create instance: hdmi_rx_ila, and set properties
   set hdmi_rx_ila [ create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 hdmi_rx_ila ]
@@ -369,12 +407,12 @@ proc create_hier_cell_hdmi { parentCell nameHier } {
   connect_bd_net -net capture_generate_mm2s_introut [get_bd_pins mm2s_introut] [get_bd_pins axi_vdma_0/mm2s_introut]
   connect_bd_net -net capture_generate_s2mm_introut [get_bd_pins s2mm_introut] [get_bd_pins axi_vdma_0/s2mm_introut]
   connect_bd_net -net capture_generate_tpg_introut [get_bd_pins tpg_introut] [get_bd_pins v_tpg_0/interrupt]
-  connect_bd_net -net clk_wiz_0_locked [get_bd_pins clk_wiz_0/locked] [get_bd_pins proc_sys_reset_tx_pclk/dcm_locked]
-  connect_bd_net -net ext_reset_in_1 [get_bd_pins ext_reset_in] [get_bd_pins clk_wiz_0/resetn] [get_bd_pins proc_sys_reset_rx_pclk/ext_reset_in] [get_bd_pins proc_sys_reset_tx_pclk/ext_reset_in]
+  connect_bd_net -net dcm_locked_1 [get_bd_pins dcm_locked] [get_bd_pins proc_sys_reset_tx_pclk/dcm_locked]
+  connect_bd_net -net ext_reset_in_1 [get_bd_pins ext_reset_in] [get_bd_pins proc_sys_reset_rx_pclk/ext_reset_in] [get_bd_pins proc_sys_reset_tx_pclk/ext_reset_in]
   connect_bd_net -net hdmi_tx_HDMI_TX_DATA [get_bd_pins HDMI_TX_DATA] [get_bd_pins hdmi_tx_ila/probe0] [get_bd_pins v_axi4s_vid_out_0/vid_data]
   connect_bd_net -net hdmi_tx_HDMI_TX_DE [get_bd_pins HDMI_TX_DE] [get_bd_pins hdmi_tx_ila/probe3] [get_bd_pins v_axi4s_vid_out_0/vid_active_video]
   connect_bd_net -net hdmi_tx_HDMI_TX_HS [get_bd_pins HDMI_TX_HS] [get_bd_pins hdmi_tx_ila/probe1] [get_bd_pins v_axi4s_vid_out_0/vid_hsync]
-  connect_bd_net -net hdmi_tx_HDMI_TX_PCLK [get_bd_pins HDMI_TX_PCLK] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins hdmi_tx_ila/clk] [get_bd_pins proc_sys_reset_tx_pclk/slowest_sync_clk] [get_bd_pins v_axi4s_vid_out_0/vid_io_out_clk] [get_bd_pins vtc_gen/clk]
+  connect_bd_net -net hdmi_tx_HDMI_TX_PCLK [get_bd_pins HDMI_TX_PCLK_in] [get_bd_pins HDMI_TX_PCLK_out] [get_bd_pins hdmi_tx_ila/clk] [get_bd_pins proc_sys_reset_tx_pclk/slowest_sync_clk] [get_bd_pins v_axi4s_vid_out_0/vid_io_out_clk] [get_bd_pins vtc_gen/clk]
   connect_bd_net -net hdmi_tx_HDMI_TX_VS [get_bd_pins HDMI_TX_VS] [get_bd_pins hdmi_tx_ila/probe2] [get_bd_pins v_axi4s_vid_out_0/vid_vsync]
   connect_bd_net -net hdmi_tx_vtc_introut [get_bd_pins vtc_gen_introut] [get_bd_pins vtc_gen/irq]
   connect_bd_net -net proc_sys_reset_100MHz_peripheral_aresetn [get_bd_pins peripheral_aresetn] [get_bd_pins axi_vdma_0/axi_resetn] [get_bd_pins stream_ila/resetn] [get_bd_pins v_axi4s_vid_out_0/aresetn] [get_bd_pins v_tpg_0/ap_rst_n] [get_bd_pins v_vid_in_axi4s_0/aresetn] [get_bd_pins vtc_det/s_axi_aresetn] [get_bd_pins vtc_gen/s_axi_aresetn]
@@ -382,7 +420,7 @@ proc create_hier_cell_hdmi { parentCell nameHier } {
   connect_bd_net -net proc_sys_reset_rx_pclk_peripheral_reset [get_bd_pins proc_sys_reset_rx_pclk/peripheral_reset] [get_bd_pins v_vid_in_axi4s_0/vid_io_in_reset]
   connect_bd_net -net proc_sys_reset_tx_pclk_peripheral_aresetn [get_bd_pins proc_sys_reset_tx_pclk/peripheral_aresetn] [get_bd_pins vtc_gen/resetn]
   connect_bd_net -net proc_sys_reset_tx_pclk_peripheral_reset [get_bd_pins proc_sys_reset_tx_pclk/peripheral_reset] [get_bd_pins v_axi4s_vid_out_0/vid_io_out_reset]
-  connect_bd_net -net slowest_sync_clk_1 [get_bd_pins aclk] [get_bd_pins axi_vdma_0/m_axi_mm2s_aclk] [get_bd_pins axi_vdma_0/m_axi_s2mm_aclk] [get_bd_pins axi_vdma_0/m_axis_mm2s_aclk] [get_bd_pins axi_vdma_0/s_axi_lite_aclk] [get_bd_pins axi_vdma_0/s_axis_s2mm_aclk] [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins stream_ila/clk] [get_bd_pins v_axi4s_vid_out_0/aclk] [get_bd_pins v_tpg_0/ap_clk] [get_bd_pins v_vid_in_axi4s_0/aclk] [get_bd_pins vtc_det/s_axi_aclk] [get_bd_pins vtc_gen/s_axi_aclk]
+  connect_bd_net -net slowest_sync_clk_1 [get_bd_pins aclk] [get_bd_pins axi_vdma_0/m_axi_mm2s_aclk] [get_bd_pins axi_vdma_0/m_axi_s2mm_aclk] [get_bd_pins axi_vdma_0/m_axis_mm2s_aclk] [get_bd_pins axi_vdma_0/s_axi_lite_aclk] [get_bd_pins axi_vdma_0/s_axis_s2mm_aclk] [get_bd_pins stream_ila/clk] [get_bd_pins v_axi4s_vid_out_0/aclk] [get_bd_pins v_tpg_0/ap_clk] [get_bd_pins v_vid_in_axi4s_0/aclk] [get_bd_pins vtc_det/s_axi_aclk] [get_bd_pins vtc_gen/s_axi_aclk]
   connect_bd_net -net v_axi4s_vid_out_0_vtg_ce [get_bd_pins v_axi4s_vid_out_0/vtg_ce] [get_bd_pins vtc_gen/gen_clken]
   connect_bd_net -net vcc_dout [get_bd_pins v_axi4s_vid_out_0/aclken] [get_bd_pins v_axi4s_vid_out_0/vid_io_out_ce] [get_bd_pins v_vid_in_axi4s_0/aclken] [get_bd_pins v_vid_in_axi4s_0/axis_enable] [get_bd_pins v_vid_in_axi4s_0/vid_io_in_ce] [get_bd_pins vcc/dout] [get_bd_pins vtc_det/clken] [get_bd_pins vtc_det/det_clken] [get_bd_pins vtc_gen/clken]
   connect_bd_net -net vtc_det_irq [get_bd_pins vtc_det_introut] [get_bd_pins vtc_det/irq]
@@ -439,7 +477,7 @@ proc create_hier_cell_ethernet { parentCell nameHier } {
   create_bd_pin -dir I -type clk clkin
   create_bd_pin -dir I -type rst ext_reset_in
   create_bd_pin -dir I -type clk gmii_clk_0
-  create_bd_pin -dir I -type clk gmii_clk_1
+  create_bd_pin -dir I gmii_clk_1
 
   # Create instance: gmii_to_rgmii_0, and set properties
   set gmii_to_rgmii_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:gmii_to_rgmii:4.0 gmii_to_rgmii_0 ]
@@ -474,7 +512,7 @@ proc create_hier_cell_ethernet { parentCell nameHier } {
   # Create port connections
   connect_bd_net -net clkin_1 [get_bd_pins clkin] [get_bd_pins gmii_to_rgmii_0/clkin] [get_bd_pins proc_sys_reset_200MHz/slowest_sync_clk]
   connect_bd_net -net ext_reset_in_1 [get_bd_pins ext_reset_in] [get_bd_pins proc_sys_reset_200MHz/ext_reset_in]
-  connect_bd_net -net gmii_clk_0_1 [get_bd_pins gmii_clk_0] [get_bd_pins gmii_to_rgmii_0/gmii_clk]
+  connect_bd_net -net gmii_clk_1 [get_bd_pins gmii_clk_0] [get_bd_pins gmii_to_rgmii_0/gmii_clk]
   connect_bd_net -net gmii_clk_1_1 [get_bd_pins gmii_clk_1] [get_bd_pins gmii_to_rgmii_1/gmii_clk]
   connect_bd_net -net gmii_to_rgmii_0_ref_clk_out [get_bd_pins gmii_to_rgmii_0/ref_clk_out] [get_bd_pins gmii_to_rgmii_1/ref_clk_in]
   connect_bd_net -net rx_reset_1 [get_bd_pins gmii_to_rgmii_0/rx_reset] [get_bd_pins gmii_to_rgmii_0/tx_reset] [get_bd_pins gmii_to_rgmii_1/rx_reset] [get_bd_pins gmii_to_rgmii_1/tx_reset] [get_bd_pins proc_sys_reset_200MHz/peripheral_reset]
@@ -523,23 +561,9 @@ proc create_hier_cell_audio { parentCell nameHier } {
   create_bd_pin -dir I AC_BCLK
   create_bd_pin -dir O AC_DIN
   create_bd_pin -dir I AC_DOUT
-  create_bd_pin -dir O -type clk AC_MCLK
+  create_bd_pin -dir I AC_MCLK_in
+  create_bd_pin -dir O -type clk AC_MCLK_out
   create_bd_pin -dir I AC_WCLK
-  create_bd_pin -dir I -type clk clk_in1
-  create_bd_pin -dir I -type rst resetn
-
-  # Create instance: clk_wiz_0, and set properties
-  set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
-  set_property -dict [ list \
-   CONFIG.CLKOUT1_JITTER {329.708} \
-   CONFIG.CLKOUT1_PHASE_ERROR {267.741} \
-   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {12} \
-   CONFIG.MMCM_CLKFBOUT_MULT_F {45.250} \
-   CONFIG.MMCM_CLKOUT0_DIVIDE_F {82.875} \
-   CONFIG.MMCM_DIVCLK_DIVIDE {7} \
-   CONFIG.RESET_PORT {resetn} \
-   CONFIG.RESET_TYPE {ACTIVE_LOW} \
- ] $clk_wiz_0
 
   # Create instance: system_ila_0, and set properties
   set system_ila_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 system_ila_0 ]
@@ -552,10 +576,8 @@ proc create_hier_cell_audio { parentCell nameHier } {
   # Create port connections
   connect_bd_net -net AC_BCLK_1 [get_bd_pins AC_BCLK] [get_bd_pins system_ila_0/clk]
   connect_bd_net -net AC_DOUT_1 [get_bd_pins AC_DIN] [get_bd_pins AC_DOUT] [get_bd_pins system_ila_0/probe0]
+  connect_bd_net -net AC_MCLK_in_1 [get_bd_pins AC_MCLK_in] [get_bd_pins AC_MCLK_out]
   connect_bd_net -net AC_WCLK_1 [get_bd_pins AC_WCLK] [get_bd_pins system_ila_0/probe1]
-  connect_bd_net -net clk_in1_1 [get_bd_pins clk_in1] [get_bd_pins clk_wiz_0/clk_in1]
-  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins AC_MCLK] [get_bd_pins clk_wiz_0/clk_out1]
-  connect_bd_net -net resetn_1 [get_bd_pins resetn] [get_bd_pins clk_wiz_0/resetn]
 
   # Restore current instance
   current_bd_instance $oldCurInst
@@ -614,23 +636,24 @@ proc create_root_design { parentCell } {
  ] $ETH0_CLK125
   set ETH1_CLK125 [ create_bd_port -dir I -type clk ETH1_CLK125 ]
   set_property -dict [ list \
+   CONFIG.CLK_DOMAIN {base_gmii_clk_0} \
    CONFIG.FREQ_HZ {125000000} \
  ] $ETH1_CLK125
   set HDMI_RX_DATA [ create_bd_port -dir I -from 23 -to 0 -type data HDMI_RX_DATA ]
   set HDMI_RX_DE [ create_bd_port -dir I HDMI_RX_DE ]
   set HDMI_RX_HS [ create_bd_port -dir I HDMI_RX_HS ]
-  set HDMI_RX_I2S0 [ create_bd_port -dir I HDMI_RX_I2S0 ]
+  set HDMI_RX_I2S [ create_bd_port -dir I -from 2 -to 0 HDMI_RX_I2S ]
   set HDMI_RX_LRCLK [ create_bd_port -dir I HDMI_RX_LRCLK ]
   set HDMI_RX_PCLK [ create_bd_port -dir I -type clk HDMI_RX_PCLK ]
   set_property -dict [ list \
-   CONFIG.FREQ_HZ {74250000} \
+   CONFIG.FREQ_HZ {148500000} \
  ] $HDMI_RX_PCLK
   set HDMI_RX_SCLK [ create_bd_port -dir I HDMI_RX_SCLK ]
   set HDMI_RX_VS [ create_bd_port -dir I HDMI_RX_VS ]
   set HDMI_TX_DATA [ create_bd_port -dir O -from 23 -to 0 HDMI_TX_DATA ]
   set HDMI_TX_DE [ create_bd_port -dir O HDMI_TX_DE ]
   set HDMI_TX_HS [ create_bd_port -dir O HDMI_TX_HS ]
-  set HDMI_TX_I2S0 [ create_bd_port -dir O -type data HDMI_TX_I2S0 ]
+  set HDMI_TX_I2S [ create_bd_port -dir O -from 2 -to 0 HDMI_TX_I2S ]
   set HDMI_TX_LRCLK [ create_bd_port -dir O HDMI_TX_LRCLK ]
   set HDMI_TX_PCLK [ create_bd_port -dir O -type clk HDMI_TX_PCLK ]
   set HDMI_TX_SCLK [ create_bd_port -dir O HDMI_TX_SCLK ]
@@ -645,11 +668,38 @@ proc create_root_design { parentCell } {
    CONFIG.NUM_MI {4} \
  ] $axi_interconnect_0
 
+  # Create instance: clk_wiz_0, and set properties
+  set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
+  set_property -dict [ list \
+   CONFIG.AXI_DRP {false} \
+   CONFIG.CLKOUT1_JITTER {120.534} \
+   CONFIG.CLKOUT1_PHASE_ERROR {146.901} \
+   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {148.5} \
+   CONFIG.CLKOUT2_JITTER {185.733} \
+   CONFIG.CLKOUT2_PHASE_ERROR {146.901} \
+   CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {12} \
+   CONFIG.CLKOUT2_USED {true} \
+   CONFIG.MMCM_CLKFBOUT_MULT_F {33.875} \
+   CONFIG.MMCM_CLKIN2_PERIOD {10.000} \
+   CONFIG.MMCM_CLKOUT0_DIVIDE_F {9.125} \
+   CONFIG.MMCM_CLKOUT1_DIVIDE {113} \
+   CONFIG.MMCM_DIVCLK_DIVIDE {5} \
+   CONFIG.NUM_OUT_CLKS {2} \
+   CONFIG.PHASE_DUTY_CONFIG {false} \
+   CONFIG.PRIM_SOURCE {Global_buffer} \
+   CONFIG.RESET_PORT {resetn} \
+   CONFIG.RESET_TYPE {ACTIVE_LOW} \
+   CONFIG.USE_DYN_RECONFIG {false} \
+ ] $clk_wiz_0
+
   # Create instance: ethernet
   create_hier_cell_ethernet [current_bd_instance .] ethernet
 
   # Create instance: hdmi
   create_hier_cell_hdmi [current_bd_instance .] hdmi
+
+  # Create instance: hdmi_audio
+  create_hier_cell_hdmi_audio [current_bd_instance .] hdmi_audio
 
   # Create instance: proc_sys_reset_150MHz, and set properties
   set proc_sys_reset_150MHz [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_150MHz ]
@@ -1492,33 +1542,37 @@ proc create_root_design { parentCell } {
   connect_bd_net -net AC_DIN_1 [get_bd_ports AC_DOUT] [get_bd_pins audio/AC_DOUT]
   connect_bd_net -net AC_WCLK_1 [get_bd_ports AC_WCLK] [get_bd_pins audio/AC_WCLK]
   connect_bd_net -net ARESETN_1 [get_bd_pins axi_interconnect_0/ARESETN] [get_bd_pins proc_sys_reset_150MHz/interconnect_aresetn]
-  connect_bd_net -net ETH0_CLK125_1 [get_bd_ports ETH0_CLK125] [get_bd_pins ethernet/gmii_clk_0]
-  connect_bd_net -net ETH1_CLK125_1 [get_bd_ports ETH1_CLK125] [get_bd_pins ethernet/gmii_clk_1]
   connect_bd_net -net HDMI_RX_DATA_1 [get_bd_ports HDMI_RX_DATA] [get_bd_pins hdmi/HDMI_RX_DATA]
   connect_bd_net -net HDMI_RX_DE_1 [get_bd_ports HDMI_RX_DE] [get_bd_pins hdmi/HDMI_RX_DE]
   connect_bd_net -net HDMI_RX_HS_1 [get_bd_ports HDMI_RX_HS] [get_bd_pins hdmi/HDMI_RX_HS]
-  connect_bd_net -net HDMI_RX_I2S0_1 [get_bd_ports HDMI_RX_I2S0] [get_bd_ports HDMI_TX_I2S0]
-  connect_bd_net -net HDMI_RX_LRCLK_1 [get_bd_ports HDMI_RX_LRCLK] [get_bd_ports HDMI_TX_LRCLK]
+  connect_bd_net -net HDMI_RX_I2S_1 [get_bd_ports HDMI_RX_I2S] [get_bd_pins hdmi_audio/HDMI_RX_I2S]
+  connect_bd_net -net HDMI_RX_LRCLK_1 [get_bd_ports HDMI_RX_LRCLK] [get_bd_pins hdmi_audio/HDMI_RX_LRCLK]
   connect_bd_net -net HDMI_RX_PCLK_1 [get_bd_ports HDMI_RX_PCLK] [get_bd_pins hdmi/HDMI_RX_PCLK]
-  connect_bd_net -net HDMI_RX_SCLK_1 [get_bd_ports HDMI_RX_SCLK] [get_bd_ports HDMI_TX_SCLK]
+  connect_bd_net -net HDMI_RX_SCLK_1 [get_bd_ports HDMI_RX_SCLK] [get_bd_pins hdmi_audio/HDMI_RX_SCLK]
   connect_bd_net -net HDMI_RX_VS_1 [get_bd_ports HDMI_RX_VS] [get_bd_pins hdmi/HDMI_RX_VS]
   connect_bd_net -net audio_AC_DIN [get_bd_ports AC_DIN] [get_bd_pins audio/AC_DIN]
-  connect_bd_net -net audio_AC_MCLK [get_bd_ports AC_MCLK] [get_bd_pins audio/AC_MCLK]
+  connect_bd_net -net audio_AC_MCLK [get_bd_ports AC_MCLK] [get_bd_pins audio/AC_MCLK_out]
+  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins hdmi/HDMI_TX_PCLK_in]
+  connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins audio/AC_MCLK_in] [get_bd_pins clk_wiz_0/clk_out2]
+  connect_bd_net -net clk_wiz_0_locked [get_bd_pins clk_wiz_0/locked] [get_bd_pins hdmi/dcm_locked]
+  connect_bd_net -net gmii_clk_0_1 [get_bd_ports ETH0_CLK125] [get_bd_pins ethernet/gmii_clk_0]
+  connect_bd_net -net gmii_clk_1_1 [get_bd_ports ETH1_CLK125] [get_bd_pins ethernet/gmii_clk_1]
   connect_bd_net -net hdmi_HDMI_TX_DATA [get_bd_ports HDMI_TX_DATA] [get_bd_pins hdmi/HDMI_TX_DATA]
   connect_bd_net -net hdmi_HDMI_TX_DE [get_bd_ports HDMI_TX_DE] [get_bd_pins hdmi/HDMI_TX_DE]
   connect_bd_net -net hdmi_HDMI_TX_HS [get_bd_ports HDMI_TX_HS] [get_bd_pins hdmi/HDMI_TX_HS]
-  connect_bd_net -net hdmi_HDMI_TX_PCLK_0 [get_bd_ports HDMI_TX_PCLK] [get_bd_pins hdmi/HDMI_TX_PCLK]
+  connect_bd_net -net hdmi_HDMI_TX_PCLK_out [get_bd_ports HDMI_TX_PCLK] [get_bd_pins hdmi/HDMI_TX_PCLK_out]
   connect_bd_net -net hdmi_HDMI_TX_VS [get_bd_ports HDMI_TX_VS] [get_bd_pins hdmi/HDMI_TX_VS]
+  connect_bd_net -net hdmi_audio_HDMI_TX_I2S [get_bd_ports HDMI_TX_I2S] [get_bd_pins hdmi_audio/HDMI_TX_I2S]
+  connect_bd_net -net hdmi_audio_HDMI_TX_LRCLK [get_bd_ports HDMI_TX_LRCLK] [get_bd_pins hdmi_audio/HDMI_TX_LRCLK]
+  connect_bd_net -net hdmi_audio_HDMI_TX_SCLK [get_bd_ports HDMI_TX_SCLK] [get_bd_pins hdmi_audio/HDMI_TX_SCLK]
   connect_bd_net -net hdmi_mm2s_introut [get_bd_pins hdmi/mm2s_introut] [get_bd_pins xlconcat_0/In4]
   connect_bd_net -net hdmi_s2mm_introut [get_bd_pins hdmi/s2mm_introut] [get_bd_pins xlconcat_0/In5]
   connect_bd_net -net hdmi_tpg_introut [get_bd_pins hdmi/tpg_introut] [get_bd_pins xlconcat_0/In3]
   connect_bd_net -net hdmi_vtc_det_introut [get_bd_pins hdmi/vtc_det_introut] [get_bd_pins xlconcat_0/In1]
   connect_bd_net -net hdmi_vtc_gen_introut [get_bd_pins hdmi/vtc_gen_introut] [get_bd_pins xlconcat_0/In2]
-  connect_bd_net -net proc_sys_reset_100MHz_peripheral_aresetn [get_bd_pins audio/resetn] [get_bd_pins axi_interconnect_0/M00_ARESETN] [get_bd_pins axi_interconnect_0/M01_ARESETN] [get_bd_pins axi_interconnect_0/M02_ARESETN] [get_bd_pins axi_interconnect_0/M03_ARESETN] [get_bd_pins axi_interconnect_0/S00_ARESETN] [get_bd_pins hdmi/peripheral_aresetn] [get_bd_pins proc_sys_reset_150MHz/peripheral_aresetn] [get_bd_pins smartconnect_0/aresetn]
-  connect_bd_net -net processing_system7_0_FCLK_CLK1 [get_bd_pins audio/clk_in1] [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins axi_interconnect_0/M01_ACLK] [get_bd_pins axi_interconnect_0/M02_ACLK] [get_bd_pins axi_interconnect_0/M03_ACLK] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins hdmi/aclk] [get_bd_pins proc_sys_reset_150MHz/slowest_sync_clk] [get_bd_pins processing_system7_0/FCLK_CLK2] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0/S_AXI_HP0_ACLK] [get_bd_pins smartconnect_0/aclk]
-  connect_bd_net -net processing_system7_0_FCLK_CLK3 [get_bd_pins ethernet/clkin] [get_bd_pins processing_system7_0/FCLK_CLK3]
-  connect_bd_net -net processing_system7_0_FCLK_RESET1_N [get_bd_pins hdmi/ext_reset_in] [get_bd_pins proc_sys_reset_150MHz/ext_reset_in] [get_bd_pins processing_system7_0/FCLK_RESET2_N]
-  connect_bd_net -net processing_system7_0_FCLK_RESET3_N [get_bd_pins ethernet/ext_reset_in] [get_bd_pins processing_system7_0/FCLK_RESET3_N]
+  connect_bd_net -net proc_sys_reset_100MHz_peripheral_aresetn [get_bd_pins axi_interconnect_0/M00_ARESETN] [get_bd_pins axi_interconnect_0/M01_ARESETN] [get_bd_pins axi_interconnect_0/M02_ARESETN] [get_bd_pins axi_interconnect_0/M03_ARESETN] [get_bd_pins axi_interconnect_0/S00_ARESETN] [get_bd_pins hdmi/peripheral_aresetn] [get_bd_pins proc_sys_reset_150MHz/peripheral_aresetn] [get_bd_pins smartconnect_0/aresetn]
+  connect_bd_net -net processing_system7_0_FCLK_CLK3 [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins axi_interconnect_0/M01_ACLK] [get_bd_pins axi_interconnect_0/M02_ACLK] [get_bd_pins axi_interconnect_0/M03_ACLK] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins ethernet/clkin] [get_bd_pins hdmi/aclk] [get_bd_pins proc_sys_reset_150MHz/slowest_sync_clk] [get_bd_pins processing_system7_0/FCLK_CLK3] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0/S_AXI_HP0_ACLK] [get_bd_pins smartconnect_0/aclk]
+  connect_bd_net -net processing_system7_0_FCLK_RESET3_N [get_bd_pins clk_wiz_0/resetn] [get_bd_pins ethernet/ext_reset_in] [get_bd_pins hdmi/ext_reset_in] [get_bd_pins proc_sys_reset_150MHz/ext_reset_in] [get_bd_pins processing_system7_0/FCLK_RESET3_N]
   connect_bd_net -net xlconcat_0_dout [get_bd_pins processing_system7_0/IRQ_F2P] [get_bd_pins xlconcat_0/dout]
 
   # Create address segments

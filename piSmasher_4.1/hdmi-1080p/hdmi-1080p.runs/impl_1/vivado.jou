@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Fri Aug 24 20:51:03 2018
+# Process ID: 5824
+# Current directory: Z:/Projects/piSmasher/piSmasher-testing/piSmasher_4.1/hdmi-1080p/hdmi-1080p.runs/impl_1
+# Command line: vivado.exe -log base_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source base_wrapper.tcl -notrace
+# Log file: Z:/Projects/piSmasher/piSmasher-testing/piSmasher_4.1/hdmi-1080p/hdmi-1080p.runs/impl_1/base_wrapper.vdi
+# Journal file: Z:/Projects/piSmasher/piSmasher-testing/piSmasher_4.1/hdmi-1080p/hdmi-1080p.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source base_wrapper.tcl -notrace

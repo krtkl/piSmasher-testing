@@ -61,7 +61,7 @@ module base_system_ila_0_1 (
   probe3
 );
 
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.clk, FREQ_HZ 74250000, PHASE 0.000, CLK_DOMAIN base_HDMI_RX_PCLK" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.clk, FREQ_HZ 148500000, PHASE 0.000, CLK_DOMAIN base_HDMI_RX_PCLK" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.clk CLK" *)
 input wire clk;
 input wire [23 : 0] probe0;

@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Thu Aug 23 17:07:16 UTC 2018
+VLNV: xilinx.com:ip:v_axi4s_vid_out:4.0
+SynthRuntime: 105

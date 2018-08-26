@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-//Date        : Sun Aug 19 19:27:05 2018
+//Date        : Fri Aug 24 13:09:32 2018
 //Host        : WIN-MJ2I8SI0RJV running 64-bit major release  (build 9200)
 //Command     : generate_target base.bd
 //Design      : base
@@ -13,43 +13,34 @@ module audio_imp_ONXNST
    (AC_BCLK,
     AC_DIN,
     AC_DOUT,
-    AC_MCLK,
-    AC_WCLK,
-    clk_in1,
-    resetn);
+    AC_MCLK_in,
+    AC_MCLK_out,
+    AC_WCLK);
   input AC_BCLK;
   output AC_DIN;
   input AC_DOUT;
-  output AC_MCLK;
+  input AC_MCLK_in;
+  output AC_MCLK_out;
   input AC_WCLK;
-  input clk_in1;
-  input resetn;
 
   wire AC_BCLK_1;
   wire AC_DOUT_1;
+  wire AC_MCLK_in_1;
   wire AC_WCLK_1;
-  wire clk_in1_1;
-  wire clk_wiz_0_clk_out1;
-  wire resetn_1;
 
   assign AC_BCLK_1 = AC_BCLK;
   assign AC_DIN = AC_DOUT_1;
   assign AC_DOUT_1 = AC_DOUT;
-  assign AC_MCLK = clk_wiz_0_clk_out1;
+  assign AC_MCLK_in_1 = AC_MCLK_in;
+  assign AC_MCLK_out = AC_MCLK_in_1;
   assign AC_WCLK_1 = AC_WCLK;
-  assign clk_in1_1 = clk_in1;
-  assign resetn_1 = resetn;
-  base_clk_wiz_0_1 clk_wiz_0
-       (.clk_in1(clk_in1_1),
-        .clk_out1(clk_wiz_0_clk_out1),
-        .resetn(resetn_1));
   base_system_ila_0_3 system_ila_0
        (.clk(AC_BCLK_1),
         .probe0(AC_DOUT_1),
         .probe1(AC_WCLK_1));
 endmodule
 
-(* CORE_GENERATION_INFO = "base,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=base,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=33,numReposBlks=24,numNonXlnxBlks=0,numHierBlks=9,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=34,da_board_cnt=2,da_clkrst_cnt=30,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "base.hwdef" *) 
+(* CORE_GENERATION_INFO = "base,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=base,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=33,numReposBlks=23,numNonXlnxBlks=0,numHierBlks=10,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=34,da_board_cnt=2,da_clkrst_cnt=30,da_ps7_cnt=1,synth_mode=Global}" *) (* HW_HANDOFF = "base.hwdef" *) 
 module base
    (AC_BCLK,
     AC_DIN,
@@ -102,7 +93,7 @@ module base
     HDMI_RX_DATA,
     HDMI_RX_DE,
     HDMI_RX_HS,
-    HDMI_RX_I2S0,
+    HDMI_RX_I2S,
     HDMI_RX_LRCLK,
     HDMI_RX_PCLK,
     HDMI_RX_SCLK,
@@ -110,7 +101,7 @@ module base
     HDMI_TX_DATA,
     HDMI_TX_DE,
     HDMI_TX_HS,
-    HDMI_TX_I2S0,
+    HDMI_TX_I2S,
     HDMI_TX_LRCLK,
     HDMI_TX_PCLK,
     HDMI_TX_SCLK,
@@ -135,7 +126,7 @@ module base
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR RAS_N" *) inout DDR_ras_n;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR RESET_N" *) inout DDR_reset_n;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR WE_N" *) inout DDR_we_n;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.ETH0_CLK125 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.ETH0_CLK125, CLK_DOMAIN base_ETH0_CLK125, FREQ_HZ 125000000, PHASE 0.000" *) input ETH0_CLK125;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.ETH0_CLK125 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.ETH0_CLK125, CLK_DOMAIN base_gmii_clk_0, FREQ_HZ 125000000, PHASE 0.000" *) input ETH0_CLK125;
   (* X_INTERFACE_INFO = "xilinx.com:interface:mdio:1.0 ETH0_MDIO MDC" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ETH0_MDIO, CAN_DEBUG false" *) output ETH0_MDIO_mdc;
   (* X_INTERFACE_INFO = "xilinx.com:interface:mdio:1.0 ETH0_MDIO MDIO_I" *) input ETH0_MDIO_mdio_i;
   (* X_INTERFACE_INFO = "xilinx.com:interface:mdio:1.0 ETH0_MDIO MDIO_O" *) output ETH0_MDIO_mdio_o;
@@ -146,7 +137,7 @@ module base
   (* X_INTERFACE_INFO = "xilinx.com:interface:rgmii:1.0 ETH0_RGMII TD" *) output [3:0]ETH0_RGMII_td;
   (* X_INTERFACE_INFO = "xilinx.com:interface:rgmii:1.0 ETH0_RGMII TX_CTL" *) output ETH0_RGMII_tx_ctl;
   (* X_INTERFACE_INFO = "xilinx.com:interface:rgmii:1.0 ETH0_RGMII TXC" *) output ETH0_RGMII_txc;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.ETH1_CLK125 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.ETH1_CLK125, CLK_DOMAIN base_ETH1_CLK125, FREQ_HZ 125000000, PHASE 0.000" *) input ETH1_CLK125;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.ETH1_CLK125 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.ETH1_CLK125, CLK_DOMAIN base_gmii_clk_0, FREQ_HZ 125000000, PHASE 0.000" *) input ETH1_CLK125;
   (* X_INTERFACE_INFO = "xilinx.com:interface:mdio:1.0 ETH1_MDIO MDC" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ETH1_MDIO, CAN_DEBUG false" *) output ETH1_MDIO_mdc;
   (* X_INTERFACE_INFO = "xilinx.com:interface:mdio:1.0 ETH1_MDIO MDIO_I" *) input ETH1_MDIO_mdio_i;
   (* X_INTERFACE_INFO = "xilinx.com:interface:mdio:1.0 ETH1_MDIO MDIO_O" *) output ETH1_MDIO_mdio_o;
@@ -166,17 +157,17 @@ module base
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.HDMI_RX_DATA DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.HDMI_RX_DATA, LAYERED_METADATA undef" *) input [23:0]HDMI_RX_DATA;
   input HDMI_RX_DE;
   input HDMI_RX_HS;
-  input HDMI_RX_I2S0;
+  input [2:0]HDMI_RX_I2S;
   input HDMI_RX_LRCLK;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.HDMI_RX_PCLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.HDMI_RX_PCLK, CLK_DOMAIN base_HDMI_RX_PCLK, FREQ_HZ 74250000, PHASE 0.000" *) input HDMI_RX_PCLK;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.HDMI_RX_PCLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.HDMI_RX_PCLK, CLK_DOMAIN base_HDMI_RX_PCLK, FREQ_HZ 148500000, PHASE 0.000" *) input HDMI_RX_PCLK;
   input HDMI_RX_SCLK;
   input HDMI_RX_VS;
   output [23:0]HDMI_TX_DATA;
   output HDMI_TX_DE;
   output HDMI_TX_HS;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.HDMI_TX_I2S0 DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.HDMI_TX_I2S0, LAYERED_METADATA undef" *) output HDMI_TX_I2S0;
+  output [2:0]HDMI_TX_I2S;
   output HDMI_TX_LRCLK;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.HDMI_TX_PCLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.HDMI_TX_PCLK, CLK_DOMAIN /hdmi/clk_wiz_0_clk_out1, FREQ_HZ 148499034, PHASE 0.0" *) output HDMI_TX_PCLK;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.HDMI_TX_PCLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.HDMI_TX_PCLK, CLK_DOMAIN /clk_wiz_0_clk_out1, FREQ_HZ 148491665, PHASE 0.0" *) output HDMI_TX_PCLK;
   output HDMI_TX_SCLK;
   output HDMI_TX_VS;
 
@@ -184,12 +175,10 @@ module base
   wire AC_DIN_1;
   wire AC_WCLK_1;
   wire [0:0]ARESETN_1;
-  wire ETH0_CLK125_1;
-  wire ETH1_CLK125_1;
   wire [23:0]HDMI_RX_DATA_1;
   wire HDMI_RX_DE_1;
   wire HDMI_RX_HS_1;
-  wire HDMI_RX_I2S0_1;
+  wire [2:0]HDMI_RX_I2S_1;
   wire HDMI_RX_LRCLK_1;
   wire HDMI_RX_PCLK_1;
   wire HDMI_RX_SCLK_1;
@@ -263,6 +252,9 @@ module base
   wire [0:0]axi_interconnect_0_M03_AXI_WREADY;
   wire [3:0]axi_interconnect_0_M03_AXI_WSTRB;
   wire [0:0]axi_interconnect_0_M03_AXI_WVALID;
+  wire clk_wiz_0_clk_out1;
+  wire clk_wiz_0_clk_out2;
+  wire clk_wiz_0_locked;
   wire ethernet_ETH0_MDIO_MDC;
   wire ethernet_ETH0_MDIO_MDIO_I;
   wire ethernet_ETH0_MDIO_MDIO_O;
@@ -283,10 +275,12 @@ module base
   wire [3:0]ethernet_ETH1_RGMII_TD;
   wire ethernet_ETH1_RGMII_TXC;
   wire ethernet_ETH1_RGMII_TX_CTL;
+  wire gmii_clk_0_1;
+  wire gmii_clk_1_1;
   wire [23:0]hdmi_HDMI_TX_DATA;
   wire hdmi_HDMI_TX_DE;
   wire hdmi_HDMI_TX_HS;
-  wire hdmi_HDMI_TX_PCLK_0;
+  wire hdmi_HDMI_TX_PCLK_out;
   wire hdmi_HDMI_TX_VS;
   wire [31:0]hdmi_M_AXI_MM2S_ARADDR;
   wire [1:0]hdmi_M_AXI_MM2S_ARBURST;
@@ -317,6 +311,9 @@ module base
   wire hdmi_M_AXI_S2MM_WREADY;
   wire [3:0]hdmi_M_AXI_S2MM_WSTRB;
   wire hdmi_M_AXI_S2MM_WVALID;
+  wire [2:0]hdmi_audio_HDMI_TX_I2S;
+  wire hdmi_audio_HDMI_TX_LRCLK;
+  wire hdmi_audio_HDMI_TX_SCLK;
   wire hdmi_mm2s_introut;
   wire hdmi_s2mm_introut;
   wire hdmi_tpg_introut;
@@ -338,9 +335,7 @@ module base
   wire processing_system7_0_DDR_RAS_N;
   wire processing_system7_0_DDR_RESET_N;
   wire processing_system7_0_DDR_WE_N;
-  wire processing_system7_0_FCLK_CLK1;
   wire processing_system7_0_FCLK_CLK3;
-  wire processing_system7_0_FCLK_RESET1_N;
   wire processing_system7_0_FCLK_RESET3_N;
   wire processing_system7_0_FIXED_IO_DDR_VRN;
   wire processing_system7_0_FIXED_IO_DDR_VRP;
@@ -454,14 +449,12 @@ module base
   assign AC_DIN_1 = AC_DOUT;
   assign AC_MCLK = audio_AC_MCLK;
   assign AC_WCLK_1 = AC_WCLK;
-  assign ETH0_CLK125_1 = ETH0_CLK125;
   assign ETH0_MDIO_mdc = ethernet_ETH0_MDIO_MDC;
   assign ETH0_MDIO_mdio_o = ethernet_ETH0_MDIO_MDIO_O;
   assign ETH0_MDIO_mdio_t = ethernet_ETH0_MDIO_MDIO_T;
   assign ETH0_RGMII_td[3:0] = ethernet_ETH0_RGMII_TD;
   assign ETH0_RGMII_tx_ctl = ethernet_ETH0_RGMII_TX_CTL;
   assign ETH0_RGMII_txc = ethernet_ETH0_RGMII_TXC;
-  assign ETH1_CLK125_1 = ETH1_CLK125;
   assign ETH1_MDIO_mdc = ethernet_ETH1_MDIO_MDC;
   assign ETH1_MDIO_mdio_o = ethernet_ETH1_MDIO_MDIO_O;
   assign ETH1_MDIO_mdio_t = ethernet_ETH1_MDIO_MDIO_T;
@@ -471,7 +464,7 @@ module base
   assign HDMI_RX_DATA_1 = HDMI_RX_DATA[23:0];
   assign HDMI_RX_DE_1 = HDMI_RX_DE;
   assign HDMI_RX_HS_1 = HDMI_RX_HS;
-  assign HDMI_RX_I2S0_1 = HDMI_RX_I2S0;
+  assign HDMI_RX_I2S_1 = HDMI_RX_I2S[2:0];
   assign HDMI_RX_LRCLK_1 = HDMI_RX_LRCLK;
   assign HDMI_RX_PCLK_1 = HDMI_RX_PCLK;
   assign HDMI_RX_SCLK_1 = HDMI_RX_SCLK;
@@ -479,10 +472,10 @@ module base
   assign HDMI_TX_DATA[23:0] = hdmi_HDMI_TX_DATA;
   assign HDMI_TX_DE = hdmi_HDMI_TX_DE;
   assign HDMI_TX_HS = hdmi_HDMI_TX_HS;
-  assign HDMI_TX_I2S0 = HDMI_RX_I2S0_1;
-  assign HDMI_TX_LRCLK = HDMI_RX_LRCLK_1;
-  assign HDMI_TX_PCLK = hdmi_HDMI_TX_PCLK_0;
-  assign HDMI_TX_SCLK = HDMI_RX_SCLK_1;
+  assign HDMI_TX_I2S[2:0] = hdmi_audio_HDMI_TX_I2S;
+  assign HDMI_TX_LRCLK = hdmi_audio_HDMI_TX_LRCLK;
+  assign HDMI_TX_PCLK = hdmi_HDMI_TX_PCLK_out;
+  assign HDMI_TX_SCLK = hdmi_audio_HDMI_TX_SCLK;
   assign HDMI_TX_VS = hdmi_HDMI_TX_VS;
   assign ethernet_ETH0_MDIO_MDIO_I = ETH0_MDIO_mdio_i;
   assign ethernet_ETH0_RGMII_RD = ETH0_RGMII_rd[3:0];
@@ -492,18 +485,19 @@ module base
   assign ethernet_ETH1_RGMII_RD = ETH1_RGMII_rd[3:0];
   assign ethernet_ETH1_RGMII_RXC = ETH1_RGMII_rxc;
   assign ethernet_ETH1_RGMII_RX_CTL = ETH1_RGMII_rx_ctl;
+  assign gmii_clk_0_1 = ETH0_CLK125;
+  assign gmii_clk_1_1 = ETH1_CLK125;
   audio_imp_ONXNST audio
        (.AC_BCLK(AC_BCLK_1),
         .AC_DIN(audio_AC_DIN),
         .AC_DOUT(AC_DIN_1),
-        .AC_MCLK(audio_AC_MCLK),
-        .AC_WCLK(AC_WCLK_1),
-        .clk_in1(processing_system7_0_FCLK_CLK1),
-        .resetn(proc_sys_reset_100MHz_peripheral_aresetn));
+        .AC_MCLK_in(clk_wiz_0_clk_out2),
+        .AC_MCLK_out(audio_AC_MCLK),
+        .AC_WCLK(AC_WCLK_1));
   base_axi_interconnect_0_0 axi_interconnect_0
-       (.ACLK(processing_system7_0_FCLK_CLK1),
+       (.ACLK(processing_system7_0_FCLK_CLK3),
         .ARESETN(ARESETN_1),
-        .M00_ACLK(processing_system7_0_FCLK_CLK1),
+        .M00_ACLK(processing_system7_0_FCLK_CLK3),
         .M00_ARESETN(proc_sys_reset_100MHz_peripheral_aresetn),
         .M00_AXI_araddr(axi_interconnect_0_M00_AXI_ARADDR),
         .M00_AXI_arready(axi_interconnect_0_M00_AXI_ARREADY),
@@ -521,7 +515,7 @@ module base
         .M00_AXI_wdata(axi_interconnect_0_M00_AXI_WDATA),
         .M00_AXI_wready(axi_interconnect_0_M00_AXI_WREADY),
         .M00_AXI_wvalid(axi_interconnect_0_M00_AXI_WVALID),
-        .M01_ACLK(processing_system7_0_FCLK_CLK1),
+        .M01_ACLK(processing_system7_0_FCLK_CLK3),
         .M01_ARESETN(proc_sys_reset_100MHz_peripheral_aresetn),
         .M01_AXI_araddr(axi_interconnect_0_M01_AXI_ARADDR),
         .M01_AXI_arready(axi_interconnect_0_M01_AXI_ARREADY),
@@ -540,7 +534,7 @@ module base
         .M01_AXI_wready(axi_interconnect_0_M01_AXI_WREADY),
         .M01_AXI_wstrb(axi_interconnect_0_M01_AXI_WSTRB),
         .M01_AXI_wvalid(axi_interconnect_0_M01_AXI_WVALID),
-        .M02_ACLK(processing_system7_0_FCLK_CLK1),
+        .M02_ACLK(processing_system7_0_FCLK_CLK3),
         .M02_ARESETN(proc_sys_reset_100MHz_peripheral_aresetn),
         .M02_AXI_araddr(axi_interconnect_0_M02_AXI_ARADDR),
         .M02_AXI_arready(axi_interconnect_0_M02_AXI_ARREADY),
@@ -559,7 +553,7 @@ module base
         .M02_AXI_wready(axi_interconnect_0_M02_AXI_WREADY),
         .M02_AXI_wstrb(axi_interconnect_0_M02_AXI_WSTRB),
         .M02_AXI_wvalid(axi_interconnect_0_M02_AXI_WVALID),
-        .M03_ACLK(processing_system7_0_FCLK_CLK1),
+        .M03_ACLK(processing_system7_0_FCLK_CLK3),
         .M03_ARESETN(proc_sys_reset_100MHz_peripheral_aresetn),
         .M03_AXI_araddr(axi_interconnect_0_M03_AXI_ARADDR),
         .M03_AXI_arready(axi_interconnect_0_M03_AXI_ARREADY),
@@ -578,7 +572,7 @@ module base
         .M03_AXI_wready(axi_interconnect_0_M03_AXI_WREADY),
         .M03_AXI_wstrb(axi_interconnect_0_M03_AXI_WSTRB),
         .M03_AXI_wvalid(axi_interconnect_0_M03_AXI_WVALID),
-        .S00_ACLK(processing_system7_0_FCLK_CLK1),
+        .S00_ACLK(processing_system7_0_FCLK_CLK3),
         .S00_ARESETN(proc_sys_reset_100MHz_peripheral_aresetn),
         .S00_AXI_araddr(processing_system7_0_M_AXI_GP0_ARADDR),
         .S00_AXI_arburst(processing_system7_0_M_AXI_GP0_ARBURST),
@@ -618,6 +612,12 @@ module base
         .S00_AXI_wready(processing_system7_0_M_AXI_GP0_WREADY),
         .S00_AXI_wstrb(processing_system7_0_M_AXI_GP0_WSTRB),
         .S00_AXI_wvalid(processing_system7_0_M_AXI_GP0_WVALID));
+  base_clk_wiz_0_0 clk_wiz_0
+       (.clk_in1(processing_system7_0_FCLK_CLK3),
+        .clk_out1(clk_wiz_0_clk_out1),
+        .clk_out2(clk_wiz_0_clk_out2),
+        .locked(clk_wiz_0_locked),
+        .resetn(processing_system7_0_FCLK_RESET3_N));
   ethernet_imp_DTOT56 ethernet
        (.GMII_0_col(processing_system7_0_GMII_ETHERNET_0_COL),
         .GMII_0_crs(processing_system7_0_GMII_ETHERNET_0_CRS),
@@ -669,8 +669,8 @@ module base
         .RGMII_1_txc(ethernet_ETH1_RGMII_TXC),
         .clkin(processing_system7_0_FCLK_CLK3),
         .ext_reset_in(processing_system7_0_FCLK_RESET3_N),
-        .gmii_clk_0(ETH0_CLK125_1),
-        .gmii_clk_1(ETH1_CLK125_1));
+        .gmii_clk_0(gmii_clk_0_1),
+        .gmii_clk_1(gmii_clk_1_1));
   hdmi_imp_1OI4F5 hdmi
        (.HDMI_RX_DATA(HDMI_RX_DATA_1),
         .HDMI_RX_DE(HDMI_RX_DE_1),
@@ -680,7 +680,8 @@ module base
         .HDMI_TX_DATA(hdmi_HDMI_TX_DATA),
         .HDMI_TX_DE(hdmi_HDMI_TX_DE),
         .HDMI_TX_HS(hdmi_HDMI_TX_HS),
-        .HDMI_TX_PCLK(hdmi_HDMI_TX_PCLK_0),
+        .HDMI_TX_PCLK_in(clk_wiz_0_clk_out1),
+        .HDMI_TX_PCLK_out(hdmi_HDMI_TX_PCLK_out),
         .HDMI_TX_VS(hdmi_HDMI_TX_VS),
         .M_AXI_MM2S_araddr(hdmi_M_AXI_MM2S_ARADDR),
         .M_AXI_MM2S_arburst(hdmi_M_AXI_MM2S_ARBURST),
@@ -778,22 +779,30 @@ module base
         .S_AXI_LITE_VDMA_wdata(axi_interconnect_0_M00_AXI_WDATA),
         .S_AXI_LITE_VDMA_wready(axi_interconnect_0_M00_AXI_WREADY),
         .S_AXI_LITE_VDMA_wvalid(axi_interconnect_0_M00_AXI_WVALID),
-        .aclk(processing_system7_0_FCLK_CLK1),
-        .ext_reset_in(processing_system7_0_FCLK_RESET1_N),
+        .aclk(processing_system7_0_FCLK_CLK3),
+        .dcm_locked(clk_wiz_0_locked),
+        .ext_reset_in(processing_system7_0_FCLK_RESET3_N),
         .mm2s_introut(hdmi_mm2s_introut),
         .peripheral_aresetn(proc_sys_reset_100MHz_peripheral_aresetn),
         .s2mm_introut(hdmi_s2mm_introut),
         .tpg_introut(hdmi_tpg_introut),
         .vtc_det_introut(hdmi_vtc_det_introut),
         .vtc_gen_introut(hdmi_vtc_gen_introut));
+  hdmi_audio_imp_1B6TZCR hdmi_audio
+       (.HDMI_RX_I2S(HDMI_RX_I2S_1),
+        .HDMI_RX_LRCLK(HDMI_RX_LRCLK_1),
+        .HDMI_RX_SCLK(HDMI_RX_SCLK_1),
+        .HDMI_TX_I2S(hdmi_audio_HDMI_TX_I2S),
+        .HDMI_TX_LRCLK(hdmi_audio_HDMI_TX_LRCLK),
+        .HDMI_TX_SCLK(hdmi_audio_HDMI_TX_SCLK));
   base_proc_sys_reset_0_2 proc_sys_reset_150MHz
        (.aux_reset_in(1'b1),
         .dcm_locked(1'b1),
-        .ext_reset_in(processing_system7_0_FCLK_RESET1_N),
+        .ext_reset_in(processing_system7_0_FCLK_RESET3_N),
         .interconnect_aresetn(ARESETN_1),
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(proc_sys_reset_100MHz_peripheral_aresetn),
-        .slowest_sync_clk(processing_system7_0_FCLK_CLK1));
+        .slowest_sync_clk(processing_system7_0_FCLK_CLK3));
   base_processing_system7_0_0 processing_system7_0
        (.DDR_Addr(DDR_addr[14:0]),
         .DDR_BankAddr(DDR_ba[2:0]),
@@ -842,14 +851,12 @@ module base
         .ENET1_MDIO_MDC(processing_system7_0_MDIO_ETHERNET_1_MDC),
         .ENET1_MDIO_O(processing_system7_0_MDIO_ETHERNET_1_MDIO_O),
         .ENET1_MDIO_T(processing_system7_0_MDIO_ETHERNET_1_MDIO_T),
-        .FCLK_CLK2(processing_system7_0_FCLK_CLK1),
         .FCLK_CLK3(processing_system7_0_FCLK_CLK3),
-        .FCLK_RESET2_N(processing_system7_0_FCLK_RESET1_N),
         .FCLK_RESET3_N(processing_system7_0_FCLK_RESET3_N),
         .GPIO_I({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .IRQ_F2P(xlconcat_0_dout),
         .MIO(FIXED_IO_mio[53:0]),
-        .M_AXI_GP0_ACLK(processing_system7_0_FCLK_CLK1),
+        .M_AXI_GP0_ACLK(processing_system7_0_FCLK_CLK3),
         .M_AXI_GP0_ARADDR(processing_system7_0_M_AXI_GP0_ARADDR),
         .M_AXI_GP0_ARBURST(processing_system7_0_M_AXI_GP0_ARBURST),
         .M_AXI_GP0_ARCACHE(processing_system7_0_M_AXI_GP0_ARCACHE),
@@ -891,7 +898,7 @@ module base
         .PS_CLK(FIXED_IO_ps_clk),
         .PS_PORB(FIXED_IO_ps_porb),
         .PS_SRSTB(FIXED_IO_ps_srstb),
-        .S_AXI_HP0_ACLK(processing_system7_0_FCLK_CLK1),
+        .S_AXI_HP0_ACLK(processing_system7_0_FCLK_CLK3),
         .S_AXI_HP0_ARADDR(smartconnect_0_M00_AXI_ARADDR),
         .S_AXI_HP0_ARBURST(smartconnect_0_M00_AXI_ARBURST),
         .S_AXI_HP0_ARCACHE(smartconnect_0_M00_AXI_ARCACHE),
@@ -998,7 +1005,7 @@ module base
         .S01_AXI_wready(hdmi_M_AXI_S2MM_WREADY),
         .S01_AXI_wstrb(hdmi_M_AXI_S2MM_WSTRB),
         .S01_AXI_wvalid(hdmi_M_AXI_S2MM_WVALID),
-        .aclk(processing_system7_0_FCLK_CLK1),
+        .aclk(processing_system7_0_FCLK_CLK3),
         .aresetn(proc_sys_reset_100MHz_peripheral_aresetn));
   base_xlconcat_0_0 xlconcat_0
        (.In0({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -1981,7 +1988,7 @@ module ethernet_imp_DTOT56
   wire Conn8_TX_ER;
   wire clkin_1;
   wire ext_reset_in_1;
-  wire gmii_clk_0_1;
+  wire \^gmii_clk_1 ;
   wire gmii_clk_1_1;
   wire gmii_to_rgmii_0_ref_clk_out;
   wire [0:0]rx_reset_1;
@@ -2034,13 +2041,13 @@ module ethernet_imp_DTOT56
   assign RGMII_1_td[3:0] = Conn6_TD;
   assign RGMII_1_tx_ctl = Conn6_TX_CTL;
   assign RGMII_1_txc = Conn6_TXC;
+  assign \^gmii_clk_1  = gmii_clk_0;
   assign clkin_1 = clkin;
   assign ext_reset_in_1 = ext_reset_in;
-  assign gmii_clk_0_1 = gmii_clk_0;
   assign gmii_clk_1_1 = gmii_clk_1;
   base_gmii_to_rgmii_0_0 gmii_to_rgmii_0
        (.clkin(clkin_1),
-        .gmii_clk(gmii_clk_0_1),
+        .gmii_clk(\^gmii_clk_1 ),
         .gmii_col(Conn4_COL),
         .gmii_crs(Conn4_CRS),
         .gmii_rx_clk(Conn4_RX_CLK),
@@ -2106,6 +2113,32 @@ module ethernet_imp_DTOT56
         .slowest_sync_clk(clkin_1));
 endmodule
 
+module hdmi_audio_imp_1B6TZCR
+   (HDMI_RX_I2S,
+    HDMI_RX_LRCLK,
+    HDMI_RX_SCLK,
+    HDMI_TX_I2S,
+    HDMI_TX_LRCLK,
+    HDMI_TX_SCLK);
+  input [2:0]HDMI_RX_I2S;
+  input HDMI_RX_LRCLK;
+  input HDMI_RX_SCLK;
+  output [2:0]HDMI_TX_I2S;
+  output HDMI_TX_LRCLK;
+  output HDMI_TX_SCLK;
+
+  wire [2:0]HDMI_RX_I2S_1;
+  wire HDMI_RX_LRCLK_1;
+  wire HDMI_RX_SCLK_1;
+
+  assign HDMI_RX_I2S_1 = HDMI_RX_I2S[2:0];
+  assign HDMI_RX_LRCLK_1 = HDMI_RX_LRCLK;
+  assign HDMI_RX_SCLK_1 = HDMI_RX_SCLK;
+  assign HDMI_TX_I2S[2:0] = HDMI_RX_I2S_1;
+  assign HDMI_TX_LRCLK = HDMI_RX_LRCLK_1;
+  assign HDMI_TX_SCLK = HDMI_RX_SCLK_1;
+endmodule
+
 module hdmi_imp_1OI4F5
    (HDMI_RX_DATA,
     HDMI_RX_DE,
@@ -2115,7 +2148,8 @@ module hdmi_imp_1OI4F5
     HDMI_TX_DATA,
     HDMI_TX_DE,
     HDMI_TX_HS,
-    HDMI_TX_PCLK,
+    HDMI_TX_PCLK_in,
+    HDMI_TX_PCLK_out,
     HDMI_TX_VS,
     M_AXI_MM2S_araddr,
     M_AXI_MM2S_arburst,
@@ -2214,6 +2248,7 @@ module hdmi_imp_1OI4F5
     S_AXI_LITE_VDMA_wready,
     S_AXI_LITE_VDMA_wvalid,
     aclk,
+    dcm_locked,
     ext_reset_in,
     mm2s_introut,
     peripheral_aresetn,
@@ -2229,7 +2264,8 @@ module hdmi_imp_1OI4F5
   output [23:0]HDMI_TX_DATA;
   output HDMI_TX_DE;
   output HDMI_TX_HS;
-  output HDMI_TX_PCLK;
+  input HDMI_TX_PCLK_in;
+  output HDMI_TX_PCLK_out;
   output HDMI_TX_VS;
   output [31:0]M_AXI_MM2S_araddr;
   output [1:0]M_AXI_MM2S_arburst;
@@ -2328,6 +2364,7 @@ module hdmi_imp_1OI4F5
   output [0:0]S_AXI_LITE_VDMA_wready;
   input [0:0]S_AXI_LITE_VDMA_wvalid;
   input aclk;
+  input dcm_locked;
   input ext_reset_in;
   output mm2s_introut;
   input peripheral_aresetn;
@@ -2446,7 +2483,7 @@ module hdmi_imp_1OI4F5
   wire capture_generate_mm2s_introut;
   wire capture_generate_s2mm_introut;
   wire capture_generate_tpg_introut;
-  wire clk_wiz_0_locked;
+  wire dcm_locked_1;
   wire ext_reset_in_1;
   wire [23:0]hdmi_tx_HDMI_TX_DATA;
   wire hdmi_tx_HDMI_TX_DE;
@@ -2514,7 +2551,7 @@ module hdmi_imp_1OI4F5
   assign HDMI_TX_DATA[23:0] = hdmi_tx_HDMI_TX_DATA;
   assign HDMI_TX_DE = hdmi_tx_HDMI_TX_DE;
   assign HDMI_TX_HS = hdmi_tx_HDMI_TX_HS;
-  assign HDMI_TX_PCLK = hdmi_tx_HDMI_TX_PCLK;
+  assign HDMI_TX_PCLK_out = hdmi_tx_HDMI_TX_PCLK;
   assign HDMI_TX_VS = hdmi_tx_HDMI_TX_VS;
   assign M_AXI_MM2S_araddr[31:0] = capture_generate_M_AXI_MM2S_ARADDR;
   assign M_AXI_MM2S_arburst[1:0] = capture_generate_M_AXI_MM2S_ARBURST;
@@ -2594,7 +2631,9 @@ module hdmi_imp_1OI4F5
   assign capture_generate_M_AXI_S2MM_BRESP = M_AXI_S2MM_bresp[1:0];
   assign capture_generate_M_AXI_S2MM_BVALID = M_AXI_S2MM_bvalid;
   assign capture_generate_M_AXI_S2MM_WREADY = M_AXI_S2MM_wready;
+  assign dcm_locked_1 = dcm_locked;
   assign ext_reset_in_1 = ext_reset_in;
+  assign hdmi_tx_HDMI_TX_PCLK = HDMI_TX_PCLK_in;
   assign mm2s_introut = capture_generate_mm2s_introut;
   assign proc_sys_reset_100MHz_peripheral_aresetn = peripheral_aresetn;
   assign s2mm_introut = capture_generate_s2mm_introut;
@@ -2668,11 +2707,6 @@ module hdmi_imp_1OI4F5
         .s_axis_s2mm_tready(v_vid_in_axi4s_0_video_out_TREADY),
         .s_axis_s2mm_tuser(v_vid_in_axi4s_0_video_out_TUSER),
         .s_axis_s2mm_tvalid(v_vid_in_axi4s_0_video_out_TVALID));
-  base_clk_wiz_0_0 clk_wiz_0
-       (.clk_in1(slowest_sync_clk_1),
-        .clk_out1(hdmi_tx_HDMI_TX_PCLK),
-        .locked(clk_wiz_0_locked),
-        .resetn(ext_reset_in_1));
   base_system_ila_0_1 hdmi_rx_ila
        (.clk(HDMI_RX_PCLK_1),
         .probe0(HDMI_RX_DATA_1),
@@ -2695,7 +2729,7 @@ module hdmi_imp_1OI4F5
         .slowest_sync_clk(HDMI_RX_PCLK_1));
   base_proc_sys_reset_pclk_0 proc_sys_reset_tx_pclk
        (.aux_reset_in(1'b1),
-        .dcm_locked(clk_wiz_0_locked),
+        .dcm_locked(dcm_locked_1),
         .ext_reset_in(ext_reset_in_1),
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(proc_sys_reset_tx_pclk_peripheral_aresetn),

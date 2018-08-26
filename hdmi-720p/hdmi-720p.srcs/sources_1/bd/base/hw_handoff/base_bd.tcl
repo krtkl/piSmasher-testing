@@ -121,6 +121,59 @@ if { $nRet != 0 } {
 ##################################################################
 
 
+# Hierarchical cell: hdmi_audio
+proc create_hier_cell_hdmi_audio { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_hdmi_audio() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+
+  # Create pins
+  create_bd_pin -dir I -from 2 -to 0 HDMI_RX_I2S
+  create_bd_pin -dir I HDMI_RX_LRCLK
+  create_bd_pin -dir I HDMI_RX_SCLK
+  create_bd_pin -dir O -from 2 -to 0 HDMI_TX_I2S
+  create_bd_pin -dir O HDMI_TX_LRCLK
+  create_bd_pin -dir O HDMI_TX_SCLK
+
+  # Create port connections
+  connect_bd_net -net HDMI_RX_I2S_1 [get_bd_pins HDMI_RX_I2S] [get_bd_pins HDMI_TX_I2S]
+  connect_bd_net -net HDMI_RX_LRCLK_1 [get_bd_pins HDMI_RX_LRCLK] [get_bd_pins HDMI_TX_LRCLK]
+  connect_bd_net -net HDMI_RX_SCLK_1 [get_bd_pins HDMI_RX_SCLK] [get_bd_pins HDMI_TX_SCLK]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
 # Hierarchical cell: hdmi
 proc create_hier_cell_hdmi { parentCell nameHier } {
 
@@ -619,7 +672,7 @@ proc create_root_design { parentCell } {
   set HDMI_RX_DATA [ create_bd_port -dir I -from 23 -to 0 -type data HDMI_RX_DATA ]
   set HDMI_RX_DE [ create_bd_port -dir I HDMI_RX_DE ]
   set HDMI_RX_HS [ create_bd_port -dir I HDMI_RX_HS ]
-  set HDMI_RX_I2S0 [ create_bd_port -dir I HDMI_RX_I2S0 ]
+  set HDMI_RX_I2S [ create_bd_port -dir I -from 2 -to 0 HDMI_RX_I2S ]
   set HDMI_RX_LRCLK [ create_bd_port -dir I HDMI_RX_LRCLK ]
   set HDMI_RX_PCLK [ create_bd_port -dir I -type clk HDMI_RX_PCLK ]
   set_property -dict [ list \
@@ -630,7 +683,7 @@ proc create_root_design { parentCell } {
   set HDMI_TX_DATA [ create_bd_port -dir O -from 23 -to 0 HDMI_TX_DATA ]
   set HDMI_TX_DE [ create_bd_port -dir O HDMI_TX_DE ]
   set HDMI_TX_HS [ create_bd_port -dir O HDMI_TX_HS ]
-  set HDMI_TX_I2S0 [ create_bd_port -dir O -type data HDMI_TX_I2S0 ]
+  set HDMI_TX_I2S [ create_bd_port -dir O -from 2 -to 0 HDMI_TX_I2S ]
   set HDMI_TX_LRCLK [ create_bd_port -dir O HDMI_TX_LRCLK ]
   set HDMI_TX_PCLK [ create_bd_port -dir O -type clk HDMI_TX_PCLK ]
   set HDMI_TX_SCLK [ create_bd_port -dir O HDMI_TX_SCLK ]
@@ -650,6 +703,9 @@ proc create_root_design { parentCell } {
 
   # Create instance: hdmi
   create_hier_cell_hdmi [current_bd_instance .] hdmi
+
+  # Create instance: hdmi_audio
+  create_hier_cell_hdmi_audio [current_bd_instance .] hdmi_audio
 
   # Create instance: proc_sys_reset_100MHz, and set properties
   set proc_sys_reset_100MHz [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_100MHz ]
@@ -1497,10 +1553,10 @@ proc create_root_design { parentCell } {
   connect_bd_net -net HDMI_RX_DATA_1 [get_bd_ports HDMI_RX_DATA] [get_bd_pins hdmi/HDMI_RX_DATA]
   connect_bd_net -net HDMI_RX_DE_1 [get_bd_ports HDMI_RX_DE] [get_bd_pins hdmi/HDMI_RX_DE]
   connect_bd_net -net HDMI_RX_HS_1 [get_bd_ports HDMI_RX_HS] [get_bd_pins hdmi/HDMI_RX_HS]
-  connect_bd_net -net HDMI_RX_I2S0_1 [get_bd_ports HDMI_RX_I2S0] [get_bd_ports HDMI_TX_I2S0]
-  connect_bd_net -net HDMI_RX_LRCLK_1 [get_bd_ports HDMI_RX_LRCLK] [get_bd_ports HDMI_TX_LRCLK]
+  connect_bd_net -net HDMI_RX_I2S_1 [get_bd_ports HDMI_RX_I2S] [get_bd_pins hdmi_audio/HDMI_RX_I2S]
+  connect_bd_net -net HDMI_RX_LRCLK_1 [get_bd_ports HDMI_RX_LRCLK] [get_bd_pins hdmi_audio/HDMI_RX_LRCLK]
   connect_bd_net -net HDMI_RX_PCLK_1 [get_bd_ports HDMI_RX_PCLK] [get_bd_pins hdmi/HDMI_RX_PCLK]
-  connect_bd_net -net HDMI_RX_SCLK_1 [get_bd_ports HDMI_RX_SCLK] [get_bd_ports HDMI_TX_SCLK]
+  connect_bd_net -net HDMI_RX_SCLK_1 [get_bd_ports HDMI_RX_SCLK] [get_bd_pins hdmi_audio/HDMI_RX_SCLK]
   connect_bd_net -net HDMI_RX_VS_1 [get_bd_ports HDMI_RX_VS] [get_bd_pins hdmi/HDMI_RX_VS]
   connect_bd_net -net audio_AC_DIN [get_bd_ports AC_DIN] [get_bd_pins audio/AC_DIN]
   connect_bd_net -net audio_AC_MCLK [get_bd_ports AC_MCLK] [get_bd_pins audio/AC_MCLK]
@@ -1509,6 +1565,9 @@ proc create_root_design { parentCell } {
   connect_bd_net -net hdmi_HDMI_TX_HS [get_bd_ports HDMI_TX_HS] [get_bd_pins hdmi/HDMI_TX_HS]
   connect_bd_net -net hdmi_HDMI_TX_PCLK_0 [get_bd_ports HDMI_TX_PCLK] [get_bd_pins hdmi/HDMI_TX_PCLK]
   connect_bd_net -net hdmi_HDMI_TX_VS [get_bd_ports HDMI_TX_VS] [get_bd_pins hdmi/HDMI_TX_VS]
+  connect_bd_net -net hdmi_audio_HDMI_TX_I2S [get_bd_ports HDMI_TX_I2S] [get_bd_pins hdmi_audio/HDMI_TX_I2S]
+  connect_bd_net -net hdmi_audio_HDMI_TX_LRCLK [get_bd_ports HDMI_TX_LRCLK] [get_bd_pins hdmi_audio/HDMI_TX_LRCLK]
+  connect_bd_net -net hdmi_audio_HDMI_TX_SCLK [get_bd_ports HDMI_TX_SCLK] [get_bd_pins hdmi_audio/HDMI_TX_SCLK]
   connect_bd_net -net hdmi_mm2s_introut [get_bd_pins hdmi/mm2s_introut] [get_bd_pins xlconcat_0/In4]
   connect_bd_net -net hdmi_s2mm_introut [get_bd_pins hdmi/s2mm_introut] [get_bd_pins xlconcat_0/In5]
   connect_bd_net -net hdmi_tpg_introut [get_bd_pins hdmi/tpg_introut] [get_bd_pins xlconcat_0/In3]

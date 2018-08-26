@@ -75,7 +75,7 @@ module bd_b441_m00awn_0 (
   m_axis_arb_tdata
 );
 
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME aclk, ASSOCIATED_BUSIF S_AXIS_ARB:M_AXIS_ARB:S_SC, ASSOCIATED_RESET s_sc_aresetn, ASSOCIATED_CLKEN s_sc_aclken, FREQ_HZ 1.53845e+08, PHASE 0.000, CLK_DOMAIN base_processing_system7_0_0_FCLK_CLK2" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME aclk, ASSOCIATED_BUSIF S_AXIS_ARB:M_AXIS_ARB:S_SC, ASSOCIATED_RESET s_sc_aresetn, ASSOCIATED_CLKEN s_sc_aclken, FREQ_HZ 1.99998e+08, PHASE 0.000, CLK_DOMAIN base_processing_system7_0_0_FCLK_CLK3" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 aclk CLK" *)
 input wire s_sc_aclk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME aresetn, POLARITY ACTIVE_LOW" *)
@@ -91,7 +91,7 @@ input wire [1 : 0] s_sc_send;
 output wire [1 : 0] s_sc_recv;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 S_SC PAYLD" *)
 input wire [137 : 0] s_sc_payld;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_sc_aclk, ASSOCIATED_BUSIF M_SC, ASSOCIATED_RESET m_sc_aresetn, ASSOCIATED_CLKEN m_sc_aclken, FREQ_HZ 1.53845e+08, PHASE 0.000, CLK_DOMAIN base_processing_system7_0_0_FCLK_CLK2" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_sc_aclk, ASSOCIATED_BUSIF M_SC, ASSOCIATED_RESET m_sc_aresetn, ASSOCIATED_CLKEN m_sc_aclken, FREQ_HZ 1.99998e+08, PHASE 0.000, CLK_DOMAIN base_processing_system7_0_0_FCLK_CLK3" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 m_sc_aclk CLK" *)
 input wire m_sc_aclk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_sc_aresetn, POLARITY ACTIVE_LOW" *)
@@ -111,7 +111,7 @@ output wire [137 : 0] m_sc_payld;
 output wire m_axis_arb_tvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS_ARB TREADY" *)
 input wire m_axis_arb_tready;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXIS_ARB, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 1.53845e+08, PHASE 0.000, CLK_DOMAIN base_processing_system7_0_0_FCLK_CLK2, LAYERED_METADATA undef" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXIS_ARB, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 1.99998e+08, PHASE 0.000, CLK_DOMAIN base_processing_system7_0_0_FCLK_CLK3, LAYERED_METADATA undef" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS_ARB TDATA" *)
 output wire [15 : 0] m_axis_arb_tdata;
 

@@ -86,7 +86,7 @@ module base_v_axi4s_vid_out_0_0 (
   status
 );
 
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME aclk_intf, ASSOCIATED_BUSIF video_in, FREQ_HZ 1.53845e+08, PHASE 0.000, CLK_DOMAIN base_processing_system7_0_0_FCLK_CLK2" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME aclk_intf, ASSOCIATED_BUSIF video_in, FREQ_HZ 1.99998e+08, PHASE 0.000, CLK_DOMAIN base_processing_system7_0_0_FCLK_CLK3" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 aclk_intf CLK" *)
 input wire aclk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME aclken_intf, POLARITY ACTIVE_LOW" *)
@@ -103,11 +103,11 @@ input wire s_axis_video_tvalid;
 output wire s_axis_video_tready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 video_in TUSER" *)
 input wire s_axis_video_tuser;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME video_in, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 1.53845e+08, PHASE 0.000, CLK_DOMAIN base_processing_system7_0_0_FCLK_CLK2, LAYERED_METADATA undef" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME video_in, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 1.99998e+08, PHASE 0.000, CLK_DOMAIN base_processing_system7_0_0_FCLK_CLK3, LAYERED_METADATA undef" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 video_in TLAST" *)
 input wire s_axis_video_tlast;
 input wire fid;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME vid_io_out_clk_intf, ASSOCIATED_BUSIF vid_io_out, FREQ_HZ 148499034, PHASE 0.0, CLK_DOMAIN /hdmi/clk_wiz_0_clk_out1" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME vid_io_out_clk_intf, ASSOCIATED_BUSIF vid_io_out, FREQ_HZ 148491665, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 vid_io_out_clk_intf CLK" *)
 input wire vid_io_out_clk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME vid_io_out_ce_intf, POLARITY ACTIVE_LOW" *)

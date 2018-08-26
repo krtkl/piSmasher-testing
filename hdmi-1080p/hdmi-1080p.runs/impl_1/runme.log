@@ -13,46 +13,15 @@ source base_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
-add_files: Time (s): cpu = 00:00:25 ; elapsed = 00:00:49 . Memory (MB): peak = 418.602 ; gain = 178.574
+add_files: Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 419.105 ; gain = 179.367
 Command: link_design -top base_wrapper -part xc7z020clg400-3
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_proc_sys_reset_0_2/base_proc_sys_reset_0_2.dcp' for cell 'base_i/proc_sys_reset_150MHz'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_processing_system7_0_0/base_processing_system7_0_0.dcp' for cell 'base_i/processing_system7_0'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/base_smartconnect_0_0.dcp' for cell 'base_i/smartconnect_0'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_xlconcat_0_0/base_xlconcat_0_0.dcp' for cell 'base_i/xlconcat_0'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_clk_wiz_0_1/base_clk_wiz_0_1.dcp' for cell 'base_i/audio/clk_wiz_0'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_system_ila_0_3/base_system_ila_0_3.dcp' for cell 'base_i/audio/system_ila_0'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_xbar_0/base_xbar_0.dcp' for cell 'base_i/axi_interconnect_0/xbar'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0.dcp' for cell 'base_i/axi_interconnect_0/s00_couplers/auto_pc'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_0_0/base_gmii_to_rgmii_0_0.dcp' for cell 'base_i/ethernet/gmii_to_rgmii_0'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/base_gmii_to_rgmii_1_0.dcp' for cell 'base_i/ethernet/gmii_to_rgmii_1'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_proc_sys_reset_0_0/base_proc_sys_reset_0_0.dcp' for cell 'base_i/ethernet/proc_sys_reset_200MHz'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_axi_vdma_0_0/base_axi_vdma_0_0.dcp' for cell 'base_i/hdmi/axi_vdma_0'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_clk_wiz_0_0/base_clk_wiz_0_0.dcp' for cell 'base_i/hdmi/clk_wiz_0'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_system_ila_0_1/base_system_ila_0_1.dcp' for cell 'base_i/hdmi/hdmi_rx_ila'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_system_ila_0_2/base_system_ila_0_2.dcp' for cell 'base_i/hdmi/hdmi_tx_ila'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_proc_sys_reset_0_1/base_proc_sys_reset_0_1.dcp' for cell 'base_i/hdmi/proc_sys_reset_rx_pclk'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_proc_sys_reset_pclk_0/base_proc_sys_reset_pclk_0.dcp' for cell 'base_i/hdmi/proc_sys_reset_tx_pclk'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_system_ila_0_0/base_system_ila_0_0.dcp' for cell 'base_i/hdmi/stream_ila'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_v_axi4s_vid_out_0_0/base_v_axi4s_vid_out_0_0.dcp' for cell 'base_i/hdmi/v_axi4s_vid_out_0'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_v_tpg_0_0/base_v_tpg_0_0.dcp' for cell 'base_i/hdmi/v_tpg_0'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_v_vid_in_axi4s_0_0/base_v_vid_in_axi4s_0_0.dcp' for cell 'base_i/hdmi/v_vid_in_axi4s_0'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_xlconstant_0_0/base_xlconstant_0_0.dcp' for cell 'base_i/hdmi/vcc'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_v_tc_0_1/base_v_tc_0_1.dcp' for cell 'base_i/hdmi/vtc_det'
-INFO: [Project 1-454] Reading design checkpoint 'z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_v_tc_0_0/base_v_tc_0_0.dcp' for cell 'base_i/hdmi/vtc_gen'
-INFO: [Netlist 29-17] Analyzing 1962 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 1952 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2018.2.1
 INFO: [Device 21-403] Loading part xc7z020clg400-3
 INFO: [Project 1-570] Preparing netlist for logic optimization
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. base_i/audio/clk_wiz_0/inst/clkin1_ibufg 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'base_i/audio/clk_wiz_0/clk_in1' is not directly connected to top level port. Synthesis is ignored for z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_clk_wiz_0_1/base_clk_wiz_0_1/base_clk_wiz_0_1.edf but preserved for implementation. [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_clk_wiz_0_1/base_clk_wiz_0_1/base_clk_wiz_0_1.edf:314]
-INFO: [Chipscope 16-324] Core: base_i/audio/system_ila_0/inst/ila_lib UUID: 3030c897-aceb-56d4-88df-f23eba76dd19 
-INFO: [Chipscope 16-324] Core: base_i/hdmi/hdmi_rx_ila/inst/ila_lib UUID: ccfb401e-8313-5d99-99c4-4ba9deb7edab 
-INFO: [Chipscope 16-324] Core: base_i/hdmi/hdmi_tx_ila/inst/ila_lib UUID: dcb803f5-e11d-59d3-9864-2bb6cbaafcae 
-INFO: [Chipscope 16-324] Core: base_i/hdmi/stream_ila/inst/ila_lib UUID: e6d4de4e-954f-5f31-bb97-82c3ca7761c0 
 WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
 WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
 WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
@@ -115,10 +84,10 @@ Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.
 Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_proc_sys_reset_pclk_0/base_proc_sys_reset_pclk_0_board.xdc] for cell 'base_i/hdmi/proc_sys_reset_tx_pclk/U0'
 Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_proc_sys_reset_pclk_0/base_proc_sys_reset_pclk_0.xdc] for cell 'base_i/hdmi/proc_sys_reset_tx_pclk/U0'
 Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_proc_sys_reset_pclk_0/base_proc_sys_reset_pclk_0.xdc] for cell 'base_i/hdmi/proc_sys_reset_tx_pclk/U0'
-Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_clk_wiz_0_0/base_clk_wiz_0_0_board.xdc] for cell 'base_i/hdmi/clk_wiz_0/inst'
-Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_clk_wiz_0_0/base_clk_wiz_0_0_board.xdc] for cell 'base_i/hdmi/clk_wiz_0/inst'
-Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_clk_wiz_0_0/base_clk_wiz_0_0.xdc] for cell 'base_i/hdmi/clk_wiz_0/inst'
-Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_clk_wiz_0_0/base_clk_wiz_0_0.xdc] for cell 'base_i/hdmi/clk_wiz_0/inst'
+Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_clk_wiz_0_0/base_clk_wiz_0_0_board.xdc] for cell 'base_i/clk_wiz_0/inst'
+Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_clk_wiz_0_0/base_clk_wiz_0_0_board.xdc] for cell 'base_i/clk_wiz_0/inst'
+Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_clk_wiz_0_0/base_clk_wiz_0_0.xdc] for cell 'base_i/clk_wiz_0/inst'
+Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_clk_wiz_0_0/base_clk_wiz_0_0.xdc] for cell 'base_i/clk_wiz_0/inst'
 Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'base_i/hdmi/hdmi_rx_ila/inst/ila_lib/inst'
 Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'base_i/hdmi/hdmi_rx_ila/inst/ila_lib/inst'
 Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'base_i/hdmi/hdmi_rx_ila/inst/ila_lib/inst'
@@ -127,13 +96,6 @@ Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.
 Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_system_ila_0_2/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'base_i/hdmi/hdmi_tx_ila/inst/ila_lib/inst'
 Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_system_ila_0_2/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'base_i/hdmi/hdmi_tx_ila/inst/ila_lib/inst'
 Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_system_ila_0_2/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'base_i/hdmi/hdmi_tx_ila/inst/ila_lib/inst'
-Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_clk_wiz_0_1/base_clk_wiz_0_1_board.xdc] for cell 'base_i/audio/clk_wiz_0/inst'
-Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_clk_wiz_0_1/base_clk_wiz_0_1_board.xdc] for cell 'base_i/audio/clk_wiz_0/inst'
-Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_clk_wiz_0_1/base_clk_wiz_0_1.xdc] for cell 'base_i/audio/clk_wiz_0/inst'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_clk_wiz_0_1/base_clk_wiz_0_1.xdc:57]
-INFO: [Timing 38-2] Deriving generated clocks [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_clk_wiz_0_1/base_clk_wiz_0_1.xdc:57]
-get_clocks: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1557.402 ; gain = 610.422
-Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_clk_wiz_0_1/base_clk_wiz_0_1.xdc] for cell 'base_i/audio/clk_wiz_0/inst'
 Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_system_ila_0_3/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'base_i/audio/system_ila_0/inst/ila_lib/inst'
 Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_system_ila_0_3/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'base_i/audio/system_ila_0/inst/ila_lib/inst'
 Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_system_ila_0_3/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'base_i/audio/system_ila_0/inst/ila_lib/inst'
@@ -141,6 +103,9 @@ Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hd
 Parsing XDC File [Z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/constrs_1/new/top.xdc]
 Finished Parsing XDC File [Z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/constrs_1/new/top.xdc]
 Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_0_0/synth/base_gmii_to_rgmii_0_0_clocks.xdc] for cell 'base_i/ethernet/gmii_to_rgmii_0/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_0_0/synth/base_gmii_to_rgmii_0_0_clocks.xdc:4]
+INFO: [Timing 38-2] Deriving generated clocks [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_0_0/synth/base_gmii_to_rgmii_0_0_clocks.xdc:4]
+get_clocks: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1555.434 ; gain = 611.348
 INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'base_gmii_to_rgmii_0_0_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_0_0/synth/base_gmii_to_rgmii_0_0_clocks.xdc:7]
 Finished Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_0_0/synth/base_gmii_to_rgmii_0_0_clocks.xdc] for cell 'base_i/ethernet/gmii_to_rgmii_0/U0'
 Parsing XDC File [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_clocks.xdc] for cell 'base_i/ethernet/gmii_to_rgmii_1/U0'
@@ -182,22 +147,22 @@ Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.
 Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'base_i/hdmi/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
 Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'base_i/hdmi/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
 Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'base_i/hdmi/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
-Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'base_i/hdmi/v_axi4s_vid_out_0/inst/CDC_SINGLE_LOCKED_INST/xpm_cdc_single_inst'
-Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'base_i/hdmi/v_axi4s_vid_out_0/inst/CDC_SINGLE_LOCKED_INST/xpm_cdc_single_inst'
 Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'base_i/hdmi/v_axi4s_vid_out_0/inst/CDC_SINGLE_REMAP_UNDERFLOW_INST/xpm_cdc_single_inst'
 Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'base_i/hdmi/v_axi4s_vid_out_0/inst/CDC_SINGLE_REMAP_UNDERFLOW_INST/xpm_cdc_single_inst'
 Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'base_i/hdmi/v_vid_in_axi4s_0/inst/CDC_SINGLE_REMAP_OVERFLOW_INST/xpm_cdc_single_inst'
 Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'base_i/hdmi/v_vid_in_axi4s_0/inst/CDC_SINGLE_REMAP_OVERFLOW_INST/xpm_cdc_single_inst'
 Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'base_i/hdmi/v_vid_in_axi4s_0/inst/CDC_SINGLE_RESET_PULSE_INST/xpm_cdc_single_inst'
 Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'base_i/hdmi/v_vid_in_axi4s_0/inst/CDC_SINGLE_RESET_PULSE_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'base_i/hdmi/v_axi4s_vid_out_0/inst/CDC_SINGLE_LOCKED_INST/xpm_cdc_single_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'base_i/hdmi/v_axi4s_vid_out_0/inst/CDC_SINGLE_LOCKED_INST/xpm_cdc_single_inst'
 Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'base_i/hdmi/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
 Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'base_i/hdmi/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
-Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'base_i/hdmi/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
-Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'base_i/hdmi/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
-Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'base_i/hdmi/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
-Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'base_i/hdmi/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
 Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'base_i/hdmi/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
 Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'base_i/hdmi/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'base_i/hdmi/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'base_i/hdmi/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'base_i/hdmi/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'base_i/hdmi/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
 Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'base_i/hdmi/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
 Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'base_i/hdmi/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
 Sourcing Tcl File [C:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'base_i/hdmi/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
@@ -259,9 +224,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 169 instances
   RAM32X1D => RAM32X1D (RAMD32, RAMD32): 5 instances
 
-43 Infos, 33 Warnings, 3 Critical Warnings and 0 Errors encountered.
+15 Infos, 31 Warnings, 3 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:12 . Memory (MB): peak = 1559.453 ; gain = 1140.852
+link_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 1557.250 ; gain = 1138.145
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -272,75 +237,74 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1559.453 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1557.250 ; gain = 0.000
 
 Starting Cache Timing Information Task
 INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'base_gmii_to_rgmii_0_0_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_0_0/synth/base_gmii_to_rgmii_0_0_clocks.xdc:7]
 INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'base_gmii_to_rgmii_1_0_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_clocks.xdc:7]
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 1e3fb19c5
+Ending Cache Timing Information Task | Checksum: 23a391671
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1559.453 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1557.250 ; gain = 0.000
 
 Starting Logic Optimization Task
 
 Phase 1 Generate And Synthesize Debug Cores
 INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
 INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.200 . Memory (MB): peak = 1559.453 ; gain = 0.000
-Phase 1 Generate And Synthesize Debug Cores | Checksum: 25e88cf33
+INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:3.0", from Vivado IP cache entry "fce6c6457cda923f".
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.186 . Memory (MB): peak = 1557.250 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 1a6f6580e
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:03:01 . Memory (MB): peak = 1559.453 ; gain = 0.000
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:48 . Memory (MB): peak = 1557.250 ; gain = 0.000
 
 Phase 2 Retarget
-INFO: [Opt 31-138] Pushed 18 inverter(s) to 82 load pin(s).
+INFO: [Opt 31-138] Pushed 17 inverter(s) to 77 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 2 Retarget | Checksum: 207a43a65
+Phase 2 Retarget | Checksum: 135609ec8
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:03:08 . Memory (MB): peak = 1561.250 ; gain = 1.797
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:54 . Memory (MB): peak = 1557.250 ; gain = 0.000
 INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
 
 Phase 3 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 3 Constant propagation | Checksum: 1be061d85
+Phase 3 Constant propagation | Checksum: 10193a145
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:03:10 . Memory (MB): peak = 1561.250 ; gain = 1.797
-INFO: [Opt 31-389] Phase Constant propagation created 104 cells and removed 1455 cells
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:56 . Memory (MB): peak = 1557.250 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 105 cells and removed 1456 cells
 
 Phase 4 Sweep
-Phase 4 Sweep | Checksum: 1e34d01a8
+Phase 4 Sweep | Checksum: 14a9fe191
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:03:17 . Memory (MB): peak = 1561.250 ; gain = 1.797
-INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 3677 cells
+Time (s): cpu = 00:00:23 ; elapsed = 00:01:02 . Memory (MB): peak = 1557.250 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 3693 cells
 
 Phase 5 BUFG optimization
-INFO: [Opt 31-194] Inserted BUFG base_i/processing_system7_0/inst/FCLK_CLK2_BUFG_inst to drive 15876 load(s) on clock net clk
-INFO: [Opt 31-194] Inserted BUFG HDMI_RX_PCLK_IBUF_BUFG_inst to drive 2654 load(s) on clock net HDMI_RX_PCLK_IBUF_BUFG
-INFO: [Opt 31-194] Inserted BUFG AC_BCLK_IBUF_BUFG_inst to drive 166 load(s) on clock net AC_BCLK_IBUF_BUFG
-INFO: [Opt 31-193] Inserted 3 BUFG(s) on clock nets
-Phase 5 BUFG optimization | Checksum: 2523b8c48
+INFO: [Opt 31-194] Inserted BUFG base_i/processing_system7_0/inst/FCLK_CLK3_BUFG_inst to drive 15912 load(s) on clock net clk
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 5 BUFG optimization | Checksum: d2dad849
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:03:19 . Memory (MB): peak = 1561.250 ; gain = 1.797
-INFO: [Opt 31-662] Phase BUFG optimization created 3 cells of which 3 are BUFGs and removed 0 cells.
+Time (s): cpu = 00:00:25 ; elapsed = 00:01:03 . Memory (MB): peak = 1557.250 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 2 cells of which 2 are BUFGs and removed 2 cells.
 
 Phase 6 Shift Register Optimization
-Phase 6 Shift Register Optimization | Checksum: 1294c0b64
+Phase 6 Shift Register Optimization | Checksum: 19edb2b7b
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:03:25 . Memory (MB): peak = 1561.250 ; gain = 1.797
+Time (s): cpu = 00:00:29 ; elapsed = 00:01:08 . Memory (MB): peak = 1557.250 ; gain = 0.000
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 7 Post Processing Netlist
-Phase 7 Post Processing Netlist | Checksum: 1ea5454bd
+Phase 7 Post Processing Netlist | Checksum: 1e73e38cb
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:03:26 . Memory (MB): peak = 1561.250 ; gain = 1.797
+Time (s): cpu = 00:00:30 ; elapsed = 00:01:09 . Memory (MB): peak = 1557.250 ; gain = 0.000
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.165 . Memory (MB): peak = 1561.250 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 2a294ec55
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.138 . Memory (MB): peak = 1557.250 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 13840e4b0
 
-Time (s): cpu = 00:00:35 ; elapsed = 00:03:26 . Memory (MB): peak = 1561.250 ; gain = 1.797
+Time (s): cpu = 00:00:31 ; elapsed = 00:01:09 . Memory (MB): peak = 1557.250 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -349,7 +313,7 @@ INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as o
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Pwropt 34-9] Applying IDT optimizations ...
 INFO: [Pwropt 34-10] Applying ODC optimizations ...
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.225 | TNS=-15.508 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.704 | TNS=-105.354 |
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
@@ -361,12 +325,12 @@ INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
 Number of BRAM Ports augmented: 27 newly gated: 0 Total Ports: 56
 Number of Flops added for Enable Generation: 3
 
-Ending PowerOpt Patch Enables Task | Checksum: 1cce9f2a1
+Ending PowerOpt Patch Enables Task | Checksum: 1e4f162ca
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.515 . Memory (MB): peak = 2073.137 ; gain = 0.000
-Ending Power Optimization Task | Checksum: 1cce9f2a1
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.442 . Memory (MB): peak = 2056.797 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1e4f162ca
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:23 . Memory (MB): peak = 2073.137 ; gain = 511.887
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:20 . Memory (MB): peak = 2056.797 ; gain = 499.547
 
 Starting Final Cleanup Task
 
@@ -374,33 +338,31 @@ Starting Logic Optimization Task
 INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'base_gmii_to_rgmii_0_0_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_0_0/synth/base_gmii_to_rgmii_0_0_clocks.xdc:7]
 INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'base_gmii_to_rgmii_1_0_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_clocks.xdc:7]
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Opt 31-194] Inserted BUFG ETH0_CLK125_IBUF_BUFG_inst to drive 47 load(s) on clock net ETH0_CLK125_IBUF_BUFG
-INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
-Ending Logic Optimization Task | Checksum: 26076e456
+Ending Logic Optimization Task | Checksum: 10ab0485d
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2073.137 ; gain = 0.000
-Ending Final Cleanup Task | Checksum: 26076e456
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2056.797 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 10ab0485d
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2056.797 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-85 Infos, 33 Warnings, 3 Critical Warnings and 0 Errors encountered.
+54 Infos, 31 Warnings, 3 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:01:38 ; elapsed = 00:04:07 . Memory (MB): peak = 2073.137 ; gain = 513.684
+opt_design: Time (s): cpu = 00:01:23 ; elapsed = 00:01:44 . Memory (MB): peak = 2056.797 ; gain = 499.547
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.254 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.278 . Memory (MB): peak = 2056.797 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'Z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.runs/impl_1/base_wrapper_opt.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 2073.137 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 2056.797 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_drc -file base_wrapper_drc_opted.rpt -pb base_wrapper_drc_opted.pb -rpx base_wrapper_drc_opted.rpx
 Command: report_drc -file base_wrapper_drc_opted.rpt -pb base_wrapper_drc_opted.pb -rpx base_wrapper_drc_opted.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Coretcl 2-168] The results of DRC are in file Z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.runs/impl_1/base_wrapper_drc_opted.rpt.
 report_drc completed successfully
-report_drc: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 2073.137 ; gain = 0.000
+report_drc: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 2056.797 ; gain = 0.000
 INFO: [Chipscope 16-240] Debug cores have already been implemented
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
@@ -419,15 +381,15 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.126 . Memory (MB): peak = 2073.137 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1a9c2d48b
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.107 . Memory (MB): peak = 2056.797 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: cd1a98c4
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.162 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.148 . Memory (MB): peak = 2056.797 ; gain = 0.000
 INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'base_gmii_to_rgmii_0_0_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_0_0/synth/base_gmii_to_rgmii_0_0_clocks.xdc:7]
 INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'base_gmii_to_rgmii_1_0_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_1_0/synth/base_gmii_to_rgmii_1_0_clocks.xdc:7]
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.127 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'base_gmii_to_rgmii_0_0_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_0_0/synth/base_gmii_to_rgmii_0_0_clocks.xdc:7]
@@ -438,35 +400,48 @@ WARNING: [Place 30-574] Poor placement for routing between an IO pin and BUFG. T
 	AC_BCLK_IBUF_inst (IBUF.O) is locked to IOB_X1Y71
 	AC_BCLK_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y3
 Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 116fe4fd7
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 45796ae2
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: acc125d9
+Phase 1.3 Build Placer Netlist Model | Checksum: 11662f4c4
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:31 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:27 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: acc125d9
+Phase 1.4 Constrain Clocks/Macros | Checksum: 11662f4c4
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:31 . Memory (MB): peak = 2073.137 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: acc125d9
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:27 . Memory (MB): peak = 2056.797 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 11662f4c4
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:32 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:27 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: a525246b
+Phase 2.1 Floorplanning | Checksum: ce681796
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:35 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:30 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 2.2 Physical Synthesis In Placer
 INFO: [Physopt 32-65] No nets found for high-fanout optimization.
 INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.138 . Memory (MB): peak = 2073.137 ; gain = 0.000
+INFO: [Physopt 32-46] Identified 33 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-81] Processed net base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/x_reg_523_reg_n_3_[9]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/p_tmp_s_reg_657_reg_n_3_[7]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/x_reg_523_reg_n_3_[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/p_tmp_s_reg_657_reg_n_3_[5]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/p_tmp_s_reg_657_reg_n_3_[0]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/p_tmp_s_reg_657_reg_n_3_[3]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/p_tmp_s_reg_657_reg_n_3_[6]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/p_tmp_s_reg_657_reg_n_3_[4]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/p_tmp_s_reg_657_reg_n_3_[1]. Replicated 1 times.
+INFO: [Physopt 32-232] Optimized 9 nets. Created 9 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 9 nets or cells. Created 9 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 2056.797 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -476,71 +451,77 @@ Summary of Physical Synthesis Optimizations
 |  Optimization       |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -----------------------------------------------------------------------------------------------------------------------------
 |  Very High Fanout   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Total              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Cell      |            9  |              0  |                     9  |           0  |           1  |  00:00:04  |
+|  Total              |            9  |              0  |                     9  |           0  |           2  |  00:00:05  |
 -----------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.2 Physical Synthesis In Placer | Checksum: 8211d2fc
+Phase 2.2 Physical Synthesis In Placer | Checksum: 1d3ab4e1d
 
-Time (s): cpu = 00:02:02 ; elapsed = 00:01:23 . Memory (MB): peak = 2073.137 ; gain = 0.000
-Phase 2 Global Placement | Checksum: 19b2c34fb
+Time (s): cpu = 00:01:56 ; elapsed = 00:01:19 . Memory (MB): peak = 2056.797 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 120e7d436
 
-Time (s): cpu = 00:02:04 ; elapsed = 00:01:24 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:01:58 ; elapsed = 00:01:20 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 19b2c34fb
+Phase 3.1 Commit Multi Column Macros | Checksum: 120e7d436
 
-Time (s): cpu = 00:02:05 ; elapsed = 00:01:25 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:01:58 ; elapsed = 00:01:20 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 153335d53
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: dfcfe772
 
-Time (s): cpu = 00:02:19 ; elapsed = 00:01:35 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:02:07 ; elapsed = 00:01:27 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 16dbda971
+Phase 3.3 Area Swap Optimization | Checksum: c2d5d79a
 
-Time (s): cpu = 00:02:20 ; elapsed = 00:01:35 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:27 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 1aa5aedcf
+Phase 3.4 Pipeline Register Optimization | Checksum: 15b71bc0a
 
-Time (s): cpu = 00:02:20 ; elapsed = 00:01:36 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:27 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 3.5 Timing Path Optimizer
-Phase 3.5 Timing Path Optimizer | Checksum: 1aa5aedcf
+Phase 3.5 Timing Path Optimizer | Checksum: 15b71bc0a
 
-Time (s): cpu = 00:02:20 ; elapsed = 00:01:36 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:27 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 3.6 Fast Optimization
-Phase 3.6 Fast Optimization | Checksum: 1a575bc43
+Phase 3.6 Fast Optimization | Checksum: 16db510a4
 
-Time (s): cpu = 00:02:49 ; elapsed = 00:02:05 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:51 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 3.7 Small Shape Detail Placement
-Phase 3.7 Small Shape Detail Placement | Checksum: b0119160
 
-Time (s): cpu = 00:03:09 ; elapsed = 00:02:39 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Phase 3.7.1 Place Remaining
+Phase 3.7.1 Place Remaining | Checksum: 158bac1bd
+
+Time (s): cpu = 00:02:48 ; elapsed = 00:02:15 . Memory (MB): peak = 2056.797 ; gain = 0.000
+Phase 3.7 Small Shape Detail Placement | Checksum: 158bac1bd
+
+Time (s): cpu = 00:02:48 ; elapsed = 00:02:16 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 3.8 Re-assign LUT pins
-Phase 3.8 Re-assign LUT pins | Checksum: 1641ca1ea
+Phase 3.8 Re-assign LUT pins | Checksum: 14fea7fc5
 
-Time (s): cpu = 00:03:11 ; elapsed = 00:02:41 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:02:50 ; elapsed = 00:02:18 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 3.9 Pipeline Register Optimization
-Phase 3.9 Pipeline Register Optimization | Checksum: febd65ce
+Phase 3.9 Pipeline Register Optimization | Checksum: 1d017b296
 
-Time (s): cpu = 00:03:11 ; elapsed = 00:02:41 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:02:51 ; elapsed = 00:02:18 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 3.10 Fast Optimization
-Phase 3.10 Fast Optimization | Checksum: f52acd92
+Phase 3.10 Fast Optimization | Checksum: 1592bf47a
 
-Time (s): cpu = 00:03:29 ; elapsed = 00:02:54 . Memory (MB): peak = 2073.137 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: f52acd92
+Time (s): cpu = 00:03:04 ; elapsed = 00:02:28 . Memory (MB): peak = 2056.797 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1592bf47a
 
-Time (s): cpu = 00:03:29 ; elapsed = 00:02:55 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:03:04 ; elapsed = 00:02:29 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -550,60 +531,60 @@ INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as o
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 24dc2be80
+Post Placement Optimization Initialization | Checksum: 25aa7c7e6
 
 Phase 4.1.1.1 BUFG Insertion
-INFO: [Place 46-33] Processed net base_i/hdmi/vtc_gen/U0/U_VIDEO_CTRL/GEN_HAS_IRQ.irq_i_1_n_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net base_i/hdmi/vtc_gen/U0/U_VIDEO_CTRL/GEN_HAS_IRQ.irq_i_1_n_3, BUFG insertion was skipped due to placement/routing conflicts.
 INFO: [Place 46-31] BUFG insertion identified 1 candidate nets, 0 success, 1 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
-Phase 4.1.1.1 BUFG Insertion | Checksum: 24dc2be80
+Phase 4.1.1.1 BUFG Insertion | Checksum: 25aa7c7e6
 
-Time (s): cpu = 00:03:45 ; elapsed = 00:03:05 . Memory (MB): peak = 2073.137 ; gain = 0.000
-INFO: [Place 30-746] Post Placement Timing Summary WNS=-1.318. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 1870671eb
+Time (s): cpu = 00:03:19 ; elapsed = 00:02:38 . Memory (MB): peak = 2056.797 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-2.811. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 235bb353a
 
-Time (s): cpu = 00:04:23 ; elapsed = 00:03:37 . Memory (MB): peak = 2073.137 ; gain = 0.000
-Phase 4.1 Post Commit Optimization | Checksum: 1870671eb
+Time (s): cpu = 00:03:49 ; elapsed = 00:03:03 . Memory (MB): peak = 2056.797 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 235bb353a
 
-Time (s): cpu = 00:04:24 ; elapsed = 00:03:38 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:03:49 ; elapsed = 00:03:03 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 1870671eb
+Phase 4.2 Post Placement Cleanup | Checksum: 235bb353a
 
-Time (s): cpu = 00:04:24 ; elapsed = 00:03:38 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:03:50 ; elapsed = 00:03:04 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 1870671eb
+Phase 4.3 Placer Reporting | Checksum: 235bb353a
 
-Time (s): cpu = 00:04:25 ; elapsed = 00:03:38 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:03:50 ; elapsed = 00:03:04 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 4.4 Final Placement Cleanup
-Phase 4.4 Final Placement Cleanup | Checksum: eea83bae
+Phase 4.4 Final Placement Cleanup | Checksum: 220b34f6c
 
-Time (s): cpu = 00:04:25 ; elapsed = 00:03:39 . Memory (MB): peak = 2073.137 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: eea83bae
+Time (s): cpu = 00:03:50 ; elapsed = 00:03:04 . Memory (MB): peak = 2056.797 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 220b34f6c
 
-Time (s): cpu = 00:04:25 ; elapsed = 00:03:39 . Memory (MB): peak = 2073.137 ; gain = 0.000
-Ending Placer Task | Checksum: 4a8aca46
+Time (s): cpu = 00:03:51 ; elapsed = 00:03:05 . Memory (MB): peak = 2056.797 ; gain = 0.000
+Ending Placer Task | Checksum: 14e78e24b
 
-Time (s): cpu = 00:04:26 ; elapsed = 00:03:39 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:03:51 ; elapsed = 00:03:05 . Memory (MB): peak = 2056.797 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-117 Infos, 34 Warnings, 3 Critical Warnings and 0 Errors encountered.
+98 Infos, 32 Warnings, 3 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:04:33 ; elapsed = 00:03:45 . Memory (MB): peak = 2073.137 ; gain = 0.000
+place_design: Time (s): cpu = 00:03:58 ; elapsed = 00:03:10 . Memory (MB): peak = 2056.797 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 2056.797 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'Z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.runs/impl_1/base_wrapper_placed.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 2073.137 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 2056.797 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_io -file base_wrapper_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.153 . Memory (MB): peak = 2073.137 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.137 . Memory (MB): peak = 2056.797 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file base_wrapper_utilization_placed.rpt -pb base_wrapper_utilization_placed.pb
-report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.795 . Memory (MB): peak = 2073.137 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.626 . Memory (MB): peak = 2056.797 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file base_wrapper_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.397 . Memory (MB): peak = 2073.137 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.315 . Memory (MB): peak = 2056.797 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -621,168 +602,142 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: d4b643e ConstDB: 0 ShapeSum: 3d3f6608 RouteDB: 0
+Checksum: PlaceDB: 652c6b09 ConstDB: 0 ShapeSum: e94c7742 RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 1262b9bde
+Phase 1 Build RT Design | Checksum: 10627cbcb
 
-Time (s): cpu = 00:00:50 ; elapsed = 00:00:39 . Memory (MB): peak = 2073.137 ; gain = 0.000
-Post Restoration Checksum: NetGraph: ca945f06 NumContArr: 5b973cd8 Constraints: 0 Timing: 0
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:35 . Memory (MB): peak = 2056.797 ; gain = 0.000
+Post Restoration Checksum: NetGraph: d3eff558 NumContArr: 3237d673 Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 1262b9bde
+Phase 2.1 Create Timer | Checksum: 10627cbcb
 
-Time (s): cpu = 00:00:52 ; elapsed = 00:00:41 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:37 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 1262b9bde
+Phase 2.2 Fix Topology Constraints | Checksum: 10627cbcb
 
-Time (s): cpu = 00:00:52 ; elapsed = 00:00:41 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:38 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 1262b9bde
+Phase 2.3 Pre Route Cleanup | Checksum: 10627cbcb
 
-Time (s): cpu = 00:00:52 ; elapsed = 00:00:41 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:38 . Memory (MB): peak = 2056.797 ; gain = 0.000
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 1a5684626
+Phase 2.4 Update Timing | Checksum: 19468302a
 
-Time (s): cpu = 00:01:16 ; elapsed = 00:00:57 . Memory (MB): peak = 2073.137 ; gain = 0.000
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.283 | TNS=-19.219| WHS=-0.492 | THS=-1569.123|
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:53 . Memory (MB): peak = 2056.797 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.793 | TNS=-125.736| WHS=-0.375 | THS=-1543.745|
 
 
 Phase 2.5 Update Timing for Bus Skew
 
 Phase 2.5.1 Update Timing
-Phase 2.5.1 Update Timing | Checksum: 19549b1a4
+Phase 2.5.1 Update Timing | Checksum: 130ae8391
 
-Time (s): cpu = 00:01:31 ; elapsed = 00:01:05 . Memory (MB): peak = 2073.137 ; gain = 0.000
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.283 | TNS=-16.909| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:01:26 ; elapsed = 00:01:01 . Memory (MB): peak = 2056.797 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.793 | TNS=-119.226| WHS=N/A    | THS=N/A    |
 
-Phase 2.5 Update Timing for Bus Skew | Checksum: 231b88d10
+Phase 2.5 Update Timing for Bus Skew | Checksum: fa9d1da2
 
-Time (s): cpu = 00:01:31 ; elapsed = 00:01:05 . Memory (MB): peak = 2073.137 ; gain = 0.000
-Phase 2 Router Initialization | Checksum: 22a39106a
+Time (s): cpu = 00:01:26 ; elapsed = 00:01:02 . Memory (MB): peak = 2056.797 ; gain = 0.000
+Phase 2 Router Initialization | Checksum: 16e5d7f73
 
-Time (s): cpu = 00:01:31 ; elapsed = 00:01:06 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:01:26 ; elapsed = 00:01:02 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: c93a6d34
+Phase 3 Initial Routing | Checksum: 2b200da60
 
-Time (s): cpu = 00:01:40 ; elapsed = 00:01:10 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:07 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 3266
- Number of Nodes with overlaps = 820
- Number of Nodes with overlaps = 570
- Number of Nodes with overlaps = 286
- Number of Nodes with overlaps = 45
- Number of Nodes with overlaps = 22
- Number of Nodes with overlaps = 15
- Number of Nodes with overlaps = 6
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.803 | TNS=-30.775| WHS=N/A    | THS=N/A    |
-
-Phase 4.1 Global Iteration 0 | Checksum: 100435357
-
-Time (s): cpu = 00:03:15 ; elapsed = 00:02:19 . Memory (MB): peak = 2073.137 ; gain = 0.000
-
-Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 913
- Number of Nodes with overlaps = 298
- Number of Nodes with overlaps = 124
- Number of Nodes with overlaps = 134
- Number of Nodes with overlaps = 7
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.750 | TNS=-30.736| WHS=N/A    | THS=N/A    |
-
-Phase 4.2 Global Iteration 1 | Checksum: 1f1aeca02
-
-Time (s): cpu = 00:04:10 ; elapsed = 00:03:01 . Memory (MB): peak = 2073.137 ; gain = 0.000
-
-Phase 4.3 Global Iteration 2
- Number of Nodes with overlaps = 463
- Number of Nodes with overlaps = 194
- Number of Nodes with overlaps = 88
- Number of Nodes with overlaps = 9
- Number of Nodes with overlaps = 3
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.681 | TNS=-30.596| WHS=N/A    | THS=N/A    |
-
-Phase 4.3 Global Iteration 2 | Checksum: 164a28c1a
-
-Time (s): cpu = 00:04:46 ; elapsed = 00:03:29 . Memory (MB): peak = 2073.137 ; gain = 0.000
-
-Phase 4.4 Global Iteration 3
- Number of Nodes with overlaps = 855
- Number of Nodes with overlaps = 144
- Number of Nodes with overlaps = 110
- Number of Nodes with overlaps = 48
- Number of Nodes with overlaps = 36
- Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 3339
+ Number of Nodes with overlaps = 880
+ Number of Nodes with overlaps = 363
+ Number of Nodes with overlaps = 152
+ Number of Nodes with overlaps = 74
+ Number of Nodes with overlaps = 46
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 12
  Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.690 | TNS=-30.960| WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.129 | TNS=-844.495| WHS=N/A    | THS=N/A    |
 
-Phase 4.4 Global Iteration 3 | Checksum: eeb79c93
+Phase 4.1 Global Iteration 0 | Checksum: 1b82bd121
 
-Time (s): cpu = 00:05:34 ; elapsed = 00:04:06 . Memory (MB): peak = 2073.137 ; gain = 0.000
-Phase 4 Rip-up And Reroute | Checksum: eeb79c93
+Time (s): cpu = 00:03:20 ; elapsed = 00:02:23 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
-Time (s): cpu = 00:05:34 ; elapsed = 00:04:06 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 785
+ Number of Nodes with overlaps = 348
+ Number of Nodes with overlaps = 169
+ Number of Nodes with overlaps = 65
+ Number of Nodes with overlaps = 22
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.188 | TNS=-848.823| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1c7dff19e
+
+Time (s): cpu = 00:04:27 ; elapsed = 00:03:16 . Memory (MB): peak = 2056.797 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: 1c7dff19e
+
+Time (s): cpu = 00:04:28 ; elapsed = 00:03:16 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 10ffe75b4
+Phase 5.1.1 Update Timing | Checksum: 14daa0cbc
 
-Time (s): cpu = 00:05:38 ; elapsed = 00:04:08 . Memory (MB): peak = 2073.137 ; gain = 0.000
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.561 | TNS=-27.252| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:04:31 ; elapsed = 00:03:18 . Memory (MB): peak = 2056.797 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.009 | TNS=-821.019| WHS=N/A    | THS=N/A    |
 
  Number of Nodes with overlaps = 0
-Phase 5.1 Delay CleanUp | Checksum: 2618c1e89
+Phase 5.1 Delay CleanUp | Checksum: 1d57395fa
 
-Time (s): cpu = 00:05:42 ; elapsed = 00:04:11 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:04:59 ; elapsed = 00:03:32 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 2618c1e89
+Phase 5.2 Clock Skew Optimization | Checksum: 1d57395fa
 
-Time (s): cpu = 00:05:43 ; elapsed = 00:04:11 . Memory (MB): peak = 2073.137 ; gain = 0.000
-Phase 5 Delay and Skew Optimization | Checksum: 2618c1e89
+Time (s): cpu = 00:04:59 ; elapsed = 00:03:33 . Memory (MB): peak = 2056.797 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: 1d57395fa
 
-Time (s): cpu = 00:05:43 ; elapsed = 00:04:11 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:04:59 ; elapsed = 00:03:33 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 16741b902
+Phase 6.1.1 Update Timing | Checksum: 1ce9bdeef
 
-Time (s): cpu = 00:05:47 ; elapsed = 00:04:14 . Memory (MB): peak = 2073.137 ; gain = 0.000
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.561 | TNS=-24.424| WHS=-0.049 | THS=-0.049 |
+Time (s): cpu = 00:05:04 ; elapsed = 00:03:35 . Memory (MB): peak = 2056.797 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.009 | TNS=-467.751| WHS=0.056  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 192b4e573
+Phase 6.1 Hold Fix Iter | Checksum: 13cbc5997
 
-Time (s): cpu = 00:05:47 ; elapsed = 00:04:14 . Memory (MB): peak = 2073.137 ; gain = 0.000
-Phase 6 Post Hold Fix | Checksum: 112cd8816
+Time (s): cpu = 00:05:04 ; elapsed = 00:03:36 . Memory (MB): peak = 2056.797 ; gain = 0.000
+Phase 6 Post Hold Fix | Checksum: 13cbc5997
 
-Time (s): cpu = 00:05:47 ; elapsed = 00:04:14 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:05:04 ; elapsed = 00:03:36 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 5.13576 %
-  Global Horizontal Routing Utilization  = 6.57877 %
+  Global Vertical Routing Utilization    = 5.46702 %
+  Global Horizontal Routing Utilization  = 7.08063 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -792,10 +747,10 @@ Router Utilization Summary
   Number of Node Overlaps             = 0
 
 Congestion Report
-North Dir 1x1 Area, Max Cong = 67.5676%, No Congested Regions.
-South Dir 1x1 Area, Max Cong = 51.3514%, No Congested Regions.
+North Dir 1x1 Area, Max Cong = 66.6667%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 59.4595%, No Congested Regions.
 East Dir 1x1 Area, Max Cong = 79.4118%, No Congested Regions.
-West Dir 1x1 Area, Max Cong = 80.8824%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 76.4706%, No Congested Regions.
 
 ------------------------------
 Reporting congestion hotspots
@@ -817,59 +772,54 @@ Direction: West
 Congested clusters found at Level 0
 Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
 
-Phase 7 Route finalize | Checksum: 13bb3f5e8
+Phase 7 Route finalize | Checksum: 1a0c8e101
 
-Time (s): cpu = 00:05:48 ; elapsed = 00:04:15 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:05:05 ; elapsed = 00:03:36 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 13bb3f5e8
+Phase 8 Verifying routed nets | Checksum: 1a0c8e101
 
-Time (s): cpu = 00:05:48 ; elapsed = 00:04:15 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:05:05 ; elapsed = 00:03:36 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 130434107
+Phase 9 Depositing Routes | Checksum: 19f774191
 
-Time (s): cpu = 00:05:52 ; elapsed = 00:04:19 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:05:11 ; elapsed = 00:03:43 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Phase 10 Post Router Timing
-
-Phase 10.1 Update Timing
-Phase 10.1 Update Timing | Checksum: 17807a6fe
-
-Time (s): cpu = 00:05:56 ; elapsed = 00:04:21 . Memory (MB): peak = 2073.137 ; gain = 0.000
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.561 | TNS=-24.424| WHS=0.060  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-3.009 | TNS=-467.751| WHS=0.056  | THS=0.000  |
 
 WARNING: [Route 35-328] Router estimated timing not met.
 Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
-Phase 10 Post Router Timing | Checksum: 17807a6fe
+Phase 10 Post Router Timing | Checksum: 19f774191
 
-Time (s): cpu = 00:05:56 ; elapsed = 00:04:21 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:05:11 ; elapsed = 00:03:43 . Memory (MB): peak = 2056.797 ; gain = 0.000
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:05:56 ; elapsed = 00:04:21 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Time (s): cpu = 00:05:11 ; elapsed = 00:03:43 . Memory (MB): peak = 2056.797 ; gain = 0.000
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-138 Infos, 36 Warnings, 3 Critical Warnings and 0 Errors encountered.
+117 Infos, 34 Warnings, 3 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:06:06 ; elapsed = 00:04:27 . Memory (MB): peak = 2073.137 ; gain = 0.000
+route_design: Time (s): cpu = 00:05:20 ; elapsed = 00:03:48 . Memory (MB): peak = 2056.797 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:25 ; elapsed = 00:00:10 . Memory (MB): peak = 2073.137 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:23 ; elapsed = 00:00:09 . Memory (MB): peak = 2056.797 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'Z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.runs/impl_1/base_wrapper_routed.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:29 ; elapsed = 00:00:16 . Memory (MB): peak = 2073.137 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:29 ; elapsed = 00:00:18 . Memory (MB): peak = 2056.797 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_drc -file base_wrapper_drc_routed.rpt -pb base_wrapper_drc_routed.pb -rpx base_wrapper_drc_routed.rpx
 Command: report_drc -file base_wrapper_drc_routed.rpt -pb base_wrapper_drc_routed.pb -rpx base_wrapper_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Coretcl 2-168] The results of DRC are in file Z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.runs/impl_1/base_wrapper_drc_routed.rpt.
 report_drc completed successfully
-report_drc: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 2073.137 ; gain = 0.000
+report_drc: Time (s): cpu = 00:00:27 ; elapsed = 00:00:15 . Memory (MB): peak = 2056.797 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_methodology -file base_wrapper_methodology_drc_routed.rpt -pb base_wrapper_methodology_drc_routed.pb -rpx base_wrapper_methodology_drc_routed.rpx
 Command: report_methodology -file base_wrapper_methodology_drc_routed.rpt -pb base_wrapper_methodology_drc_routed.pb -rpx base_wrapper_methodology_drc_routed.rpx
 INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'base_gmii_to_rgmii_0_0_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_0_0/synth/base_gmii_to_rgmii_0_0_clocks.xdc:7]
@@ -881,7 +831,7 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 2 threads
 INFO: [Coretcl 2-1520] The results of Report Methodology are in file Z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.runs/impl_1/base_wrapper_methodology_drc_routed.rpt.
 report_methodology completed successfully
-report_methodology: Time (s): cpu = 00:00:46 ; elapsed = 00:00:26 . Memory (MB): peak = 2103.063 ; gain = 29.926
+report_methodology: Time (s): cpu = 00:00:49 ; elapsed = 00:00:28 . Memory (MB): peak = 2084.340 ; gain = 27.543
 INFO: [runtcl-4] Executing : report_power -file base_wrapper_power_routed.rpt -pb base_wrapper_power_summary_routed.pb -rpx base_wrapper_power_routed.rpx
 Command: report_power -file base_wrapper_power_routed.rpt -pb base_wrapper_power_summary_routed.pb -rpx base_wrapper_power_routed.rpx
 INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'base_gmii_to_rgmii_0_0_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_0_0/synth/base_gmii_to_rgmii_0_0_clocks.xdc:7]
@@ -892,23 +842,94 @@ Running Vector-less Activity Propagation...
 Finished Running Vector-less Activity Propagation
 WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
 Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
-157 Infos, 37 Warnings, 3 Critical Warnings and 0 Errors encountered.
+136 Infos, 35 Warnings, 3 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
-report_power: Time (s): cpu = 00:00:34 ; elapsed = 00:00:21 . Memory (MB): peak = 2162.734 ; gain = 59.672
+report_power: Time (s): cpu = 00:00:35 ; elapsed = 00:00:21 . Memory (MB): peak = 2143.781 ; gain = 59.441
 INFO: [runtcl-4] Executing : report_route_status -file base_wrapper_route_status.rpt -pb base_wrapper_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file base_wrapper_timing_summary_routed.rpt -pb base_wrapper_timing_summary_routed.pb -rpx base_wrapper_timing_summary_routed.rpx -warn_on_violation 
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max, Timing Stage: Requireds.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
 CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
 WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
-report_timing_summary: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2171.070 ; gain = 3.324
 INFO: [runtcl-4] Executing : report_incremental_reuse -file base_wrapper_incremental_reuse_routed.rpt
 INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
 INFO: [runtcl-4] Executing : report_clock_utilization -file base_wrapper_clock_utilization_routed.rpt
-report_clock_utilization: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2171.070 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file base_wrapper_bus_skew_routed.rpt -pb base_wrapper_bus_skew_routed.pb -rpx base_wrapper_bus_skew_routed.rpx
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max, Timing Stage: Requireds.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 24 13:57:39 2018...
+
+*** Running vivado
+    with args -log base_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source base_wrapper.tcl -notrace
+
+
+****** Vivado v2018.2.1 (64-bit)
+  **** SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+  **** IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script 'C:/Users/Russell Bush/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source base_wrapper.tcl -notrace
+Command: open_checkpoint base_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 226.625 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1801 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2.1
+INFO: [Device 21-403] Loading part xc7z020clg400-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+WARNING: [Chipscope 16-359] Could not find a valid clock port for hub dbg_hub. C_CLK_INPUT_FREQ_HZ will get an empty value in the LTX file
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1412.969 ; gain = 0.000
+Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1412.969 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 347 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 256 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 88 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2018.2.1 (64-bit) build 2288692
+open_checkpoint: Time (s): cpu = 00:00:43 ; elapsed = 00:00:51 . Memory (MB): peak = 1412.969 ; gain = 1194.148
 INFO: [Memdata 28-167] Found XPM memory block base_i/smartconnect_0/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the base_i/smartconnect_0/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
 INFO: [Memdata 28-167] Found XPM memory block base_i/smartconnect_0/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the base_i/smartconnect_0/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
 INFO: [Memdata 28-167] Found XPM memory block base_i/smartconnect_0/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the base_i/smartconnect_0/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
@@ -931,7 +952,9 @@ Command: write_bitstream -force base_wrapper.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
 Running DRC as a precondition to command write_bitstream
-INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
 INFO: [DRC 23-27] Running DRC with 2 threads
 WARNING: [DRC DPIP-1] Input pipelining: DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/tmp4_reg_692_reg input base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/tmp4_reg_692_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/tmp_63_reg_682_reg input base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/tmp_63_reg_682_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
@@ -944,17 +967,17 @@ WARNING: [DRC DPIP-1] Input pipelining: DSP base_i/hdmi/v_tpg_0/inst/tpgBackgrou
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/v_tpg_mac_muladd_Bew_U58/base_v_tpg_0_0_v_tpg_mac_muladd_Bew_DSP48_5_U/p output base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/v_tpg_mac_muladd_Bew_U58/base_v_tpg_0_0_v_tpg_mac_muladd_Bew_DSP48_5_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/v_tpg_mac_muladd_wdI_U53/base_v_tpg_0_0_v_tpg_mac_muladd_wdI_DSP48_0_U/p output base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/v_tpg_mac_muladd_wdI_U53/base_v_tpg_0_0_v_tpg_mac_muladd_wdI_DSP48_0_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_am_addmul_1Mgi_U83/base_v_tpg_0_0_v_tpg_am_addmul_1Mgi_DSP48_6_U/m output base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_am_addmul_1Mgi_U83/base_v_tpg_0_0_v_tpg_am_addmul_1Mgi_DSP48_6_U/m/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mac_muladd_OgC_U85/base_v_tpg_0_0_v_tpg_mac_muladd_OgC_DSP48_8_U/p output base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mac_muladd_OgC_U85/base_v_tpg_0_0_v_tpg_mac_muladd_OgC_DSP48_8_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mul_mul_9nsPgM_U86/base_v_tpg_0_0_v_tpg_mul_mul_9nsPgM_DSP48_9_U/p output base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mul_mul_9nsPgM_U86/base_v_tpg_0_0_v_tpg_mul_mul_9nsPgM_DSP48_9_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mac_muladd_Ngs_U85/base_v_tpg_0_0_v_tpg_mac_muladd_Ngs_DSP48_7_U/p output base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mac_muladd_Ngs_U85/base_v_tpg_0_0_v_tpg_mac_muladd_Ngs_DSP48_7_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mul_mul_9nsOgC_U86/base_v_tpg_0_0_v_tpg_mul_mul_9nsOgC_DSP48_8_U/p output base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mul_mul_9nsOgC_U86/base_v_tpg_0_0_v_tpg_mul_mul_9nsOgC_DSP48_8_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/tmp4_reg_692_reg multiplier stage base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/tmp4_reg_692_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/tmp_63_reg_682_reg multiplier stage base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/tmp_63_reg_682_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/tmp_67_reg_687_reg multiplier stage base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/tmp_67_reg_687_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/v_tpg_mac_muladd_Bew_U58/base_v_tpg_0_0_v_tpg_mac_muladd_Bew_DSP48_5_U/p multiplier stage base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/v_tpg_mac_muladd_Bew_U58/base_v_tpg_0_0_v_tpg_mac_muladd_Bew_DSP48_5_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/v_tpg_mac_muladd_wdI_U53/base_v_tpg_0_0_v_tpg_mac_muladd_wdI_DSP48_0_U/p multiplier stage base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternRainbow_fu_722/v_tpg_mac_muladd_wdI_U53/base_v_tpg_0_0_v_tpg_mac_muladd_wdI_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_am_addmul_1Mgi_U83/base_v_tpg_0_0_v_tpg_am_addmul_1Mgi_DSP48_6_U/m multiplier stage base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_am_addmul_1Mgi_U83/base_v_tpg_0_0_v_tpg_am_addmul_1Mgi_DSP48_6_U/m/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mac_muladd_OgC_U85/base_v_tpg_0_0_v_tpg_mac_muladd_OgC_DSP48_8_U/p multiplier stage base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mac_muladd_OgC_U85/base_v_tpg_0_0_v_tpg_mac_muladd_OgC_DSP48_8_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mul_mul_9nsPgM_U86/base_v_tpg_0_0_v_tpg_mul_mul_9nsPgM_DSP48_9_U/p multiplier stage base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mul_mul_9nsPgM_U86/base_v_tpg_0_0_v_tpg_mul_mul_9nsPgM_DSP48_9_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC RTSTAT-10] No routable loads: 53 net(s) have no routable loads. The problem bus(es) and/or net(s) are base_i/hdmi/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, base_i/hdmi/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow, base_i/hdmi/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, base_i/hdmi/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, base_i/hdmi/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, base_i/hdmi/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i... and (the first 15 of 51 listed).
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mac_muladd_Ngs_U85/base_v_tpg_0_0_v_tpg_mac_muladd_Ngs_DSP48_7_U/p multiplier stage base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mac_muladd_Ngs_U85/base_v_tpg_0_0_v_tpg_mac_muladd_Ngs_DSP48_7_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mul_mul_9nsOgC_U86/base_v_tpg_0_0_v_tpg_mul_mul_9nsOgC_DSP48_8_U/p multiplier stage base_i/hdmi/v_tpg_0/inst/tpgBackground_U0/grp_tpgPatternZonePlate_fu_863/v_tpg_mul_mul_9nsOgC_U86/base_v_tpg_0_0_v_tpg_mul_mul_9nsOgC_DSP48_8_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC RTSTAT-10] No routable loads: 53 net(s) have no routable loads. The problem bus(es) and/or net(s) are base_i/hdmi/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, base_i/hdmi/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow, base_i/hdmi/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, base_i/hdmi/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, base_i/hdmi/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, base_i/hdmi/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i... and (the first 15 of 51 listed).
 INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (base_i/hdmi/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
 INFO: [Vivado 12-3199] DRC finished with 0 Errors, 22 Warnings, 1 Advisories
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
@@ -968,8 +991,9 @@ Creating bitstream...
 Writing bitstream ./base_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-186] 'Z:/Projects/piSmasher/piSmasher-testing/hdmi-1080p/hdmi-1080p.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Fri Aug 24 14:00:30 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-195 Infos, 60 Warnings, 4 Critical Warnings and 0 Errors encountered.
+43 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:01:43 ; elapsed = 00:01:26 . Memory (MB): peak = 2634.234 ; gain = 463.164
-INFO: [Common 17-206] Exiting Vivado at Sun Aug 19 20:21:41 2018...
+write_bitstream: Time (s): cpu = 00:01:41 ; elapsed = 00:01:23 . Memory (MB): peak = 1908.734 ; gain = 495.766
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 24 14:00:32 2018...

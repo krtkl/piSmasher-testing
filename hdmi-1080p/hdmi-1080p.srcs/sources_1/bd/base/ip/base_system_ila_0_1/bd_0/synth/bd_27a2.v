@@ -13,7 +13,7 @@ module bd_27a2
     probe1,
     probe2,
     probe3);
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK, CLK_DOMAIN base_HDMI_RX_PCLK, FREQ_HZ 74250000, PHASE 0.000" *) input clk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK, CLK_DOMAIN base_HDMI_RX_PCLK, FREQ_HZ 148500000, PHASE 0.000" *) input clk;
   input [23:0]probe0;
   input [0:0]probe1;
   input [0:0]probe2;

@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-//Date        : Sun Aug 19 20:26:44 2018
+//Date        : Wed Aug 22 13:51:08 2018
 //Host        : WIN-MJ2I8SI0RJV running 64-bit major release  (build 9200)
 //Command     : generate_target base.bd
 //Design      : base
@@ -49,7 +49,7 @@ module audio_imp_ONXNST
         .probe1(AC_WCLK_1));
 endmodule
 
-(* CORE_GENERATION_INFO = "base,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=base,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=33,numReposBlks=24,numNonXlnxBlks=0,numHierBlks=9,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=34,da_board_cnt=2,da_clkrst_cnt=30,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "base.hwdef" *) 
+(* CORE_GENERATION_INFO = "base,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=base,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=34,numReposBlks=24,numNonXlnxBlks=0,numHierBlks=10,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=34,da_board_cnt=2,da_clkrst_cnt=30,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "base.hwdef" *) 
 module base
    (AC_BCLK,
     AC_DIN,
@@ -102,7 +102,7 @@ module base
     HDMI_RX_DATA,
     HDMI_RX_DE,
     HDMI_RX_HS,
-    HDMI_RX_I2S0,
+    HDMI_RX_I2S,
     HDMI_RX_LRCLK,
     HDMI_RX_PCLK,
     HDMI_RX_SCLK,
@@ -110,7 +110,7 @@ module base
     HDMI_TX_DATA,
     HDMI_TX_DE,
     HDMI_TX_HS,
-    HDMI_TX_I2S0,
+    HDMI_TX_I2S,
     HDMI_TX_LRCLK,
     HDMI_TX_PCLK,
     HDMI_TX_SCLK,
@@ -166,7 +166,7 @@ module base
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.HDMI_RX_DATA DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.HDMI_RX_DATA, LAYERED_METADATA undef" *) input [23:0]HDMI_RX_DATA;
   input HDMI_RX_DE;
   input HDMI_RX_HS;
-  input HDMI_RX_I2S0;
+  input [2:0]HDMI_RX_I2S;
   input HDMI_RX_LRCLK;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.HDMI_RX_PCLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.HDMI_RX_PCLK, CLK_DOMAIN base_HDMI_RX_PCLK, FREQ_HZ 74250000, PHASE 0.000" *) input HDMI_RX_PCLK;
   input HDMI_RX_SCLK;
@@ -174,7 +174,7 @@ module base
   output [23:0]HDMI_TX_DATA;
   output HDMI_TX_DE;
   output HDMI_TX_HS;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.HDMI_TX_I2S0 DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.HDMI_TX_I2S0, LAYERED_METADATA undef" *) output HDMI_TX_I2S0;
+  output [2:0]HDMI_TX_I2S;
   output HDMI_TX_LRCLK;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.HDMI_TX_PCLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.HDMI_TX_PCLK, CLK_DOMAIN /hdmi/clk_wiz_0_clk_out1, FREQ_HZ 74252988, PHASE 0.0" *) output HDMI_TX_PCLK;
   output HDMI_TX_SCLK;
@@ -189,7 +189,7 @@ module base
   wire [23:0]HDMI_RX_DATA_1;
   wire HDMI_RX_DE_1;
   wire HDMI_RX_HS_1;
-  wire HDMI_RX_I2S0_1;
+  wire [2:0]HDMI_RX_I2S_1;
   wire HDMI_RX_LRCLK_1;
   wire HDMI_RX_PCLK_1;
   wire HDMI_RX_SCLK_1;
@@ -317,6 +317,9 @@ module base
   wire hdmi_M_AXI_S2MM_WREADY;
   wire [3:0]hdmi_M_AXI_S2MM_WSTRB;
   wire hdmi_M_AXI_S2MM_WVALID;
+  wire [2:0]hdmi_audio_HDMI_TX_I2S;
+  wire hdmi_audio_HDMI_TX_LRCLK;
+  wire hdmi_audio_HDMI_TX_SCLK;
   wire hdmi_mm2s_introut;
   wire hdmi_s2mm_introut;
   wire hdmi_tpg_introut;
@@ -471,7 +474,7 @@ module base
   assign HDMI_RX_DATA_1 = HDMI_RX_DATA[23:0];
   assign HDMI_RX_DE_1 = HDMI_RX_DE;
   assign HDMI_RX_HS_1 = HDMI_RX_HS;
-  assign HDMI_RX_I2S0_1 = HDMI_RX_I2S0;
+  assign HDMI_RX_I2S_1 = HDMI_RX_I2S[2:0];
   assign HDMI_RX_LRCLK_1 = HDMI_RX_LRCLK;
   assign HDMI_RX_PCLK_1 = HDMI_RX_PCLK;
   assign HDMI_RX_SCLK_1 = HDMI_RX_SCLK;
@@ -479,10 +482,10 @@ module base
   assign HDMI_TX_DATA[23:0] = hdmi_HDMI_TX_DATA;
   assign HDMI_TX_DE = hdmi_HDMI_TX_DE;
   assign HDMI_TX_HS = hdmi_HDMI_TX_HS;
-  assign HDMI_TX_I2S0 = HDMI_RX_I2S0_1;
-  assign HDMI_TX_LRCLK = HDMI_RX_LRCLK_1;
+  assign HDMI_TX_I2S[2:0] = hdmi_audio_HDMI_TX_I2S;
+  assign HDMI_TX_LRCLK = hdmi_audio_HDMI_TX_LRCLK;
   assign HDMI_TX_PCLK = hdmi_HDMI_TX_PCLK_0;
-  assign HDMI_TX_SCLK = HDMI_RX_SCLK_1;
+  assign HDMI_TX_SCLK = hdmi_audio_HDMI_TX_SCLK;
   assign HDMI_TX_VS = hdmi_HDMI_TX_VS;
   assign ethernet_ETH0_MDIO_MDIO_I = ETH0_MDIO_mdio_i;
   assign ethernet_ETH0_RGMII_RD = ETH0_RGMII_rd[3:0];
@@ -786,6 +789,13 @@ module base
         .tpg_introut(hdmi_tpg_introut),
         .vtc_det_introut(hdmi_vtc_det_introut),
         .vtc_gen_introut(hdmi_vtc_gen_introut));
+  hdmi_audio_imp_1B6TZCR hdmi_audio
+       (.HDMI_RX_I2S(HDMI_RX_I2S_1),
+        .HDMI_RX_LRCLK(HDMI_RX_LRCLK_1),
+        .HDMI_RX_SCLK(HDMI_RX_SCLK_1),
+        .HDMI_TX_I2S(hdmi_audio_HDMI_TX_I2S),
+        .HDMI_TX_LRCLK(hdmi_audio_HDMI_TX_LRCLK),
+        .HDMI_TX_SCLK(hdmi_audio_HDMI_TX_SCLK));
   base_proc_sys_reset_0_2 proc_sys_reset_100MHz
        (.aux_reset_in(1'b1),
         .dcm_locked(1'b1),
@@ -2104,6 +2114,32 @@ module ethernet_imp_DTOT56
         .mb_debug_sys_rst(1'b0),
         .peripheral_reset(rx_reset_1),
         .slowest_sync_clk(clkin_1));
+endmodule
+
+module hdmi_audio_imp_1B6TZCR
+   (HDMI_RX_I2S,
+    HDMI_RX_LRCLK,
+    HDMI_RX_SCLK,
+    HDMI_TX_I2S,
+    HDMI_TX_LRCLK,
+    HDMI_TX_SCLK);
+  input [2:0]HDMI_RX_I2S;
+  input HDMI_RX_LRCLK;
+  input HDMI_RX_SCLK;
+  output [2:0]HDMI_TX_I2S;
+  output HDMI_TX_LRCLK;
+  output HDMI_TX_SCLK;
+
+  wire [2:0]HDMI_RX_I2S_1;
+  wire HDMI_RX_LRCLK_1;
+  wire HDMI_RX_SCLK_1;
+
+  assign HDMI_RX_I2S_1 = HDMI_RX_I2S[2:0];
+  assign HDMI_RX_LRCLK_1 = HDMI_RX_LRCLK;
+  assign HDMI_RX_SCLK_1 = HDMI_RX_SCLK;
+  assign HDMI_TX_I2S[2:0] = HDMI_RX_I2S_1;
+  assign HDMI_TX_LRCLK = HDMI_RX_LRCLK_1;
+  assign HDMI_TX_SCLK = HDMI_RX_SCLK_1;
 endmodule
 
 module hdmi_imp_1OI4F5

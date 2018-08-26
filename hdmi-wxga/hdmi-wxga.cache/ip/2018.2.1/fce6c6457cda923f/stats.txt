@@ -1,4 +1,4 @@
-NumberHits:0
-Timestamp: Mon Aug 20 06:00:04 UTC 2018
+NumberHits:2
+Timestamp: Wed Aug 22 20:06:28 UTC 2018
 VLNV: xilinx.com:ip:xsdbm:3.0
 SynthRuntime: 82

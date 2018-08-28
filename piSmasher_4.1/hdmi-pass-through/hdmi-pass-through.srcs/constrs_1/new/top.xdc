@@ -124,7 +124,7 @@ set_property PACKAGE_PIN K14 [get_ports HDMI_RX_SCLK];          # JA2.20
 # Port pins available only on JC1
 set_property PACKAGE_PIN U5 [get_ports {HDMI_RX_I2S[1]}];       # JC1.13
 set_property PACKAGE_PIN V11 [get_ports {HDMI_RX_I2S[2]}];      # JC1.17
-set_property PACKAGE_PIN V10 [get_ports {HDMI_RX_I2S[3]}];      # JC2.19
+set_property PACKAGE_PIN V10 [get_ports {HDMI_RX_I2S[3]}];      # JC1.19
 
 set_property IOSTANDARD LVCMOS18 [get_ports [list {HDMI_RX_I2S[*]} HDMI_RX_LRCLK HDMI_RX_SCLK]]
 
@@ -135,14 +135,14 @@ set_property IOSTANDARD LVCMOS18 [get_ports [list {HDMI_RX_I2S[*]} HDMI_RX_LRCLK
 # Data
 set_property PACKAGE_PIN L19 [get_ports {HDMI_TX_DATA[0]}];     # JA2.23
 set_property PACKAGE_PIN L20 [get_ports {HDMI_TX_DATA[1]}];     # JA2.25
-set_property PACKAGE_PIN K19 [get_ports {HDMI_TX_DATA[2]}];     # JA2.28
+set_property PACKAGE_PIN K19 [get_ports {HDMI_TX_DATA[2]}];     # JA2.26
 set_property PACKAGE_PIN N17 [get_ports {HDMI_TX_DATA[3]}];     # JB2.5
 set_property PACKAGE_PIN P18 [get_ports {HDMI_TX_DATA[4]}];     # JB2.7
 set_property PACKAGE_PIN P15 [get_ports {HDMI_TX_DATA[5]}];     # JB2.8
 set_property PACKAGE_PIN P16 [get_ports {HDMI_TX_DATA[6]}];     # JB2.6
 set_property PACKAGE_PIN T17 [get_ports {HDMI_TX_DATA[7]}];     # JB2.11
 set_property PACKAGE_PIN J19 [get_ports {HDMI_TX_DATA[8]}];     # JA2.24
-set_property PACKAGE_PIN M17 [get_ports {HDMI_TX_DATA[9]}];     # JA2.9
+set_property PACKAGE_PIN M17 [get_ports {HDMI_TX_DATA[9]}];     # JA2.29
 set_property PACKAGE_PIN R18 [get_ports {HDMI_TX_DATA[10]}];    # JB2.13
 set_property PACKAGE_PIN R16 [get_ports {HDMI_TX_DATA[11]}];    # JB2.14
 set_property PACKAGE_PIN R17 [get_ports {HDMI_TX_DATA[12]}];    # JB2.12
@@ -154,7 +154,7 @@ set_property PACKAGE_PIN M19 [get_ports {HDMI_TX_DATA[17]}];    # JA2.32
 set_property PACKAGE_PIN M20 [get_ports {HDMI_TX_DATA[18]}];    # JA2.30
 set_property PACKAGE_PIN W19 [get_ports {HDMI_TX_DATA[19]}];    # JB2.18
 set_property PACKAGE_PIN T20 [get_ports {HDMI_TX_DATA[20]}];    # JB2.23
-set_property PACKAGE_PIN U20 [get_ports {HDMI_TX_DATA[21]}];    # JB2.21
+set_property PACKAGE_PIN U20 [get_ports {HDMI_TX_DATA[21]}];    # JB2.25
 set_property PACKAGE_PIN V16 [get_ports {HDMI_TX_DATA[22]}];    # JB2.26
 set_property PACKAGE_PIN W16 [get_ports {HDMI_TX_DATA[23]}];    # JB2.24
 

@@ -117,7 +117,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports [list {HDMI_RX_DATA[*]} HDMI_RX_DE H
 set_property PACKAGE_PIN H18 [get_ports {HDMI_RX_I2S[0]}]
 set_property PACKAGE_PIN J18 [get_ports {HDMI_RX_I2S[1]}]
 set_property PACKAGE_PIN K18 [get_ports {HDMI_RX_I2S[2]}]
-#set_property PACKAGE_PIN K17 [get_ports {HDMI_RX_I2S[3]}];      # JA2.38
+set_property PACKAGE_PIN Y13 [get_ports {HDMI_RX_I2S[3]}];      # JC1.12
 set_property PACKAGE_PIN J14 [get_ports HDMI_RX_LRCLK]
 set_property PACKAGE_PIN K14 [get_ports HDMI_RX_SCLK]
 
@@ -166,7 +166,7 @@ set_property SLEW FAST [get_ports [list {HDMI_TX_DATA[*]} HDMI_TX_DE HDMI_TX_HS 
 set_property PACKAGE_PIN R19 [get_ports {HDMI_TX_I2S[0]}]
 set_property PACKAGE_PIN J15 [get_ports {HDMI_TX_I2S[1]}]
 set_property PACKAGE_PIN L17 [get_ports {HDMI_TX_I2S[2]}]
-#set_property PACKAGE_PIN T19 [get_ports {HDMI_TX_I2S[3]}];      # JB1.4
+set_property PACKAGE_PIN T19 [get_ports {HDMI_TX_I2S[3]}];      # JB1.4
 set_property PACKAGE_PIN N15 [get_ports HDMI_TX_SCLK]
 set_property PACKAGE_PIN N16 [get_ports HDMI_TX_LRCLK]
 

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date             : Sat Aug 25 14:56:52 2018
+| Date             : Tue Aug 28 17:34:43 2018
 | Host             : WIN-MJ2I8SI0RJV running 64-bit major release  (build 9200)
 | Command          : report_power -file base_wrapper_power_routed.rpt -pb base_wrapper_power_summary_routed.pb -rpx base_wrapper_power_routed.rpx
 | Design           : base_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.630        |
+| Total On-Chip Power (W)  | 1.631        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.489        |
+| Dynamic (W)              | 1.490        |
 | Device Static (W)        | 0.141        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 81.2         |
@@ -54,7 +54,7 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.030 |       18 |       --- |             --- |
 | Slice Logic              |     0.002 |     6258 |       --- |             --- |
-|   LUT as Logic           |     0.001 |     1745 |     53200 |            3.28 |
+|   LUT as Logic           |     0.001 |     1749 |     53200 |            3.29 |
 |   Register               |    <0.001 |     3350 |    106400 |            3.15 |
 |   CARRY4                 |    <0.001 |       64 |     13300 |            0.48 |
 |   LUT as Shift Register  |    <0.001 |      156 |     17400 |            0.90 |
@@ -62,13 +62,13 @@ Table of Contents
 |   LUT as Distributed RAM |    <0.001 |       24 |     17400 |            0.14 |
 |   F7/F8 Muxes            |    <0.001 |       17 |     53200 |            0.03 |
 |   Others                 |     0.000 |      568 |       --- |             --- |
-| Signals                  |     0.005 |     4699 |       --- |             --- |
+| Signals                  |     0.005 |     4701 |       --- |             --- |
 | Block RAM                |     0.004 |      4.5 |       140 |            3.21 |
 | MMCM                     |     0.114 |        1 |         4 |           25.00 |
-| I/O                      |     0.126 |      101 |       125 |           80.80 |
+| I/O                      |     0.127 |      103 |       125 |           82.40 |
 | PS7                      |     1.208 |        1 |       --- |             --- |
 | Static Power             |     0.141 |          |           |                 |
-| Total                    |     1.630 |          |           |                 |
+| Total                    |     1.631 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -78,9 +78,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.057 |       0.043 |      0.015 |
+| Vccint    |       1.000 |     0.057 |       0.042 |      0.015 |
 | Vccaux    |       1.800 |     0.088 |       0.073 |      0.015 |
-| Vcco33    |       3.300 |     0.033 |       0.032 |      0.001 |
+| Vcco33    |       3.300 |     0.034 |       0.033 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -163,10 +163,10 @@ Table of Contents
 +------------------------------------------------------------------------------------+-----------+
 | Name                                                                               | Power (W) |
 +------------------------------------------------------------------------------------+-----------+
-| base_wrapper                                                                       |     1.489 |
+| base_wrapper                                                                       |     1.490 |
 |   ETH0_MDIO_mdio_iobuf                                                             |     0.002 |
 |   ETH1_MDIO_mdio_iobuf                                                             |     0.002 |
-|   base_i                                                                           |     1.416 |
+|   base_i                                                                           |     1.415 |
 |     audio                                                                          |     0.122 |
 |       clk_wiz_0                                                                    |     0.114 |
 |         inst                                                                       |     0.114 |
@@ -330,11 +330,11 @@ Table of Contents
 |           i_base_gmii_to_rgmii_0_0_clocking                                        |    <0.001 |
 |           i_base_gmii_to_rgmii_0_0_resets                                          |    <0.001 |
 |             idelayctrl_reset_gen                                                   |    <0.001 |
-|           i_gmii_to_rgmii_block                                                    |     0.033 |
+|           i_gmii_to_rgmii_block                                                    |     0.032 |
 |             base_gmii_to_rgmii_0_0_core                                            |     0.009 |
 |               i_gmii_to_rgmii                                                      |     0.009 |
 |                 i_MANAGEMENT                                                       |     0.001 |
-|                   MDIO_INTERFACE_1                                                 |     0.001 |
+|                   MDIO_INTERFACE_1                                                 |    <0.001 |
 |                   SYNC_MDC                                                         |    <0.001 |
 |                   SYNC_MDIO_IN                                                     |    <0.001 |
 |                 i_gmii_to_rgmii                                                    |     0.007 |
@@ -344,12 +344,12 @@ Table of Contents
 |                 i_reset_sync_mgmt_reset                                            |    <0.001 |
 |                 i_reset_sync_rx_reset                                              |    <0.001 |
 |                 i_reset_sync_tx_reset                                              |    <0.001 |
-|       gmii_to_rgmii_1                                                              |     0.033 |
-|         U0                                                                         |     0.033 |
+|       gmii_to_rgmii_1                                                              |     0.032 |
+|         U0                                                                         |     0.032 |
 |           base_gmii_to_rgmii_1_0_core                                              |     0.009 |
 |             i_gmii_to_rgmii                                                        |     0.009 |
 |               i_MANAGEMENT                                                         |     0.001 |
-|                 MDIO_INTERFACE_1                                                   |     0.001 |
+|                 MDIO_INTERFACE_1                                                   |    <0.001 |
 |                 SYNC_MDC                                                           |    <0.001 |
 |                 SYNC_MDIO_IN                                                       |    <0.001 |
 |               i_gmii_to_rgmii                                                      |     0.007 |
@@ -359,8 +359,8 @@ Table of Contents
 |               i_reset_sync_mgmt_reset                                              |    <0.001 |
 |               i_reset_sync_rx_reset                                                |    <0.001 |
 |               i_reset_sync_tx_reset                                                |    <0.001 |
-|       proc_sys_reset_200MHz                                                        |     0.001 |
-|         U0                                                                         |     0.001 |
+|       proc_sys_reset_200MHz                                                        |     0.002 |
+|         U0                                                                         |     0.002 |
 |           EXT_LPF                                                                  |    <0.001 |
 |             ACTIVE_LOW_AUX.ACT_LO_AUX                                              |    <0.001 |
 |             ACTIVE_LOW_EXT.ACT_LO_EXT                                              |    <0.001 |

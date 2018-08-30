@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date                      : Sat Aug 25 14:55:20 2018
+| Date                      : Tue Aug 28 17:33:40 2018
 | Host                      : WIN-MJ2I8SI0RJV running 64-bit major release  (build 9200)
 | Command                   : report_io -file base_wrapper_io_placed.rpt
 | Design                    : base_wrapper
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           231 |
+|           233 |
 +---------------+
 
 
@@ -353,7 +353,7 @@ Table of Contents
 | T16        | ETH1_RGMII_rd[3]  | High Range | IO_L9P_T1_DQS_34        | INPUT       | LVCMOS33         |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | T17        | HDMI_TX_DATA[7]   | High Range | IO_L20P_T3_34           | OUTPUT      | LVCMOS33         |      34 |         12 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | T18        |                   | High Range | VCCO_34                 | VCCO        |                  |      34 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
-| T19        |                   | High Range | IO_25_34                | User IO     |                  |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| T19        | HDMI_TX_I2S[3]    | High Range | IO_25_34                | OUTPUT      | LVCMOS33         |      34 |         12 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | T20        | HDMI_TX_DATA[20]  | High Range | IO_L15P_T2_DQS_34       | OUTPUT      | LVCMOS33         |      34 |         12 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | U1         |                   |            | VCCO_DDR_502            | VCCO        |                  |         |            |      |                     |                      |   any** |            |           |          |      |                  |              |                   |              |
 | U2         | DDR_dq[22]        |            | PS_DDR_DQ22_502         | INOUT       | HSUL_12_DCI      |         |            | FAST |          DCI DRIVER |                 NONE |         | FIXED      |           |          |      | DRIVER           |              |                   |              |
@@ -427,7 +427,7 @@ Table of Contents
 | Y10        |                   | High Range | VCCO_13                 | VCCO        |                  |      13 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | Y11        |                   | High Range | IO_L18N_T2_13           | User IO     |                  |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | Y12        |                   | High Range | IO_L20P_T3_13           | User IO     |                  |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| Y13        |                   | High Range | IO_L20N_T3_13           | User IO     |                  |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| Y13        | HDMI_RX_I2S[3]    | High Range | IO_L20N_T3_13           | INPUT       | LVCMOS33         |      13 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | Y14        | ETH1_RGMII_rd[0]  | High Range | IO_L8N_T1_34            | INPUT       | LVCMOS33         |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | Y15        |                   |            | GND                     | GND         |                  |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | Y16        | ETH0_RGMII_rd[2]  | High Range | IO_L7P_T1_34            | INPUT       | LVCMOS33         |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |

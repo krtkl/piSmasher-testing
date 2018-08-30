@@ -1,0 +1,34 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port HDMI_RX_PCLK -pg 1 -y 290 -defaultsOSRD
+preplace port HDMI_RX_HS -pg 1 -y 100 -defaultsOSRD
+preplace port vtiming_out -pg 1 -y 330 -defaultsOSRD
+preplace port peripheral_aresetn -pg 1 -y 580 -defaultsOSRD
+preplace port HDMI_RX_VS -pg 1 -y 120 -defaultsOSRD
+preplace port aclk -pg 1 -y 270 -defaultsOSRD
+preplace port ext_reset_in -pg 1 -y 360 -defaultsOSRD
+preplace port HDMI_RX_DE -pg 1 -y 140 -defaultsOSRD
+preplace port video_out -pg 1 -y 310 -defaultsOSRD
+preplace portBus HDMI_RX_DATA -pg 1 -y 80 -defaultsOSRD
+preplace inst vcc -pg 1 -lvl 1 -y 520 -defaultsOSRD
+preplace inst v_vid_in_axi4s_0 -pg 1 -lvl 2 -y 350 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 2 -y 100 -defaultsOSRD
+preplace inst proc_sys_reset_rx_pclk -pg 1 -lvl 1 -y 380 -defaultsOSRD
+preplace netloc Conn1 1 2 1 NJ
+preplace netloc HDMI_RX_DATA_1 1 0 2 NJ 80 410
+preplace netloc Conn2 1 2 1 NJ
+preplace netloc HDMI_RX_PCLK_1 1 0 2 20 280 400
+preplace netloc HDMI_RX_DE_1 1 0 2 NJ 140 380
+preplace netloc HDMI_RX_VS_1 1 0 2 NJ 120 370
+preplace netloc proc_sys_reset_rx_pclk_peripheral_reset 1 1 1 N
+preplace netloc HDMI_RX_HS_1 1 0 2 NJ 100 390
+preplace netloc ext_reset_in_1 1 0 1 NJ
+preplace netloc vcc_dout 1 1 1 380
+preplace netloc peripheral_aresetn_1 1 0 2 NJ 580 410J
+preplace netloc aclk_1 1 0 2 NJ 270 360J
+levelinfo -pg 1 0 190 550 710 -top 0 -bot 600
+",
+}
+0

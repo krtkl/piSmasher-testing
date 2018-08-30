@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-//Date        : Sat Aug 25 14:25:47 2018
+//Date        : Tue Aug 28 17:11:06 2018
 //Host        : WIN-MJ2I8SI0RJV running 64-bit major release  (build 9200)
 //Command     : generate_target base_wrapper.bd
 //Design      : base_wrapper
@@ -117,7 +117,7 @@ module base_wrapper
   input [23:0]HDMI_RX_DATA;
   input HDMI_RX_DE;
   input HDMI_RX_HS;
-  input [2:0]HDMI_RX_I2S;
+  input [3:0]HDMI_RX_I2S;
   input HDMI_RX_LRCLK;
   input HDMI_RX_PCLK;
   input HDMI_RX_SCLK;
@@ -125,7 +125,7 @@ module base_wrapper
   output [23:0]HDMI_TX_DATA;
   output HDMI_TX_DE;
   output HDMI_TX_HS;
-  output [2:0]HDMI_TX_I2S;
+  output [3:0]HDMI_TX_I2S;
   output HDMI_TX_LRCLK;
   output HDMI_TX_PCLK;
   output HDMI_TX_SCLK;
@@ -184,7 +184,7 @@ module base_wrapper
   wire [23:0]HDMI_RX_DATA;
   wire HDMI_RX_DE;
   wire HDMI_RX_HS;
-  wire [2:0]HDMI_RX_I2S;
+  wire [3:0]HDMI_RX_I2S;
   wire HDMI_RX_LRCLK;
   wire HDMI_RX_PCLK;
   wire HDMI_RX_SCLK;
@@ -192,7 +192,7 @@ module base_wrapper
   wire [23:0]HDMI_TX_DATA;
   wire HDMI_TX_DE;
   wire HDMI_TX_HS;
-  wire [2:0]HDMI_TX_I2S;
+  wire [3:0]HDMI_TX_I2S;
   wire HDMI_TX_LRCLK;
   wire HDMI_TX_PCLK;
   wire HDMI_TX_SCLK;

@@ -10,12 +10,12 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="13401fs"></ZoomEndTime>
+      <ZoomEndTime time="10042fs"></ZoomEndTime>
       <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="361"></NameColumnWidth>
-      <ValueColumnWidth column_width="169"></ValueColumnWidth>
+      <ValueColumnWidth column_width="161"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="3" />
    <wvobject fp_name="group83" type="group">
@@ -49,7 +49,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="base_i/hdmi/stream_ila/inst/net_slot_0_axis_tdata" type="array">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">base_i/hdmi/stream_ila/inst/net_slot_0_axis_tdata[23:0]</obj_property>
             <obj_property name="ObjectShortName">net_slot_0_axis_tdata[23:0]</obj_property>
             <obj_property name="label">slot_0 : v_vid_in_axi4s_0_video_out : TDATA</obj_property>

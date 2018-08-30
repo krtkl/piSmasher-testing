@@ -392,6 +392,8 @@ set_property src_info {type:XDC file:2 line:118 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN J18 [get_ports {HDMI_RX_I2S[1]}]
 set_property src_info {type:XDC file:2 line:119 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN K18 [get_ports {HDMI_RX_I2S[2]}]
+set_property src_info {type:XDC file:2 line:120 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN Y13 [get_ports {HDMI_RX_I2S[3]}];      # JC1.12
 set_property src_info {type:XDC file:2 line:121 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN J14 [get_ports HDMI_RX_LRCLK]
 set_property src_info {type:XDC file:2 line:122 export:INPUT save:INPUT read:READ} [current_design]
@@ -458,6 +460,8 @@ set_property src_info {type:XDC file:2 line:167 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN J15 [get_ports {HDMI_TX_I2S[1]}]
 set_property src_info {type:XDC file:2 line:168 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN L17 [get_ports {HDMI_TX_I2S[2]}]
+set_property src_info {type:XDC file:2 line:169 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN T19 [get_ports {HDMI_TX_I2S[3]}];      # JB1.4
 set_property src_info {type:XDC file:2 line:170 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN N15 [get_ports HDMI_TX_SCLK]
 set_property src_info {type:XDC file:2 line:171 export:INPUT save:INPUT read:READ} [current_design]

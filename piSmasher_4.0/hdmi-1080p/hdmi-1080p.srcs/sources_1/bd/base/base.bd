@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x8B4803D48BB966EB" bd:device="xc7z020clg400-3" bd:isValidated="true" bd:synthFlowMode="None" bd:tool_version="2018.2.1" bd:top="base" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x55F1CDC207F29446" bd:device="xc7z020clg400-3" bd:isValidated="true" bd:synthFlowMode="None" bd:tool_version="2018.2.1" bd:top="base" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -574,7 +574,7 @@
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
             <spirit:vector>
-              <spirit:left>2</spirit:left>
+              <spirit:left>3</spirit:left>
               <spirit:right>0</spirit:right>
             </spirit:vector>
           </spirit:wire>
@@ -584,7 +584,7 @@
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
             <spirit:vector>
-              <spirit:left>2</spirit:left>
+              <spirit:left>3</spirit:left>
               <spirit:right>0</spirit:right>
             </spirit:vector>
           </spirit:wire>
@@ -1492,7 +1492,7 @@
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
             <spirit:vector>
-              <spirit:left>2</spirit:left>
+              <spirit:left>3</spirit:left>
               <spirit:right>0</spirit:right>
             </spirit:vector>
           </spirit:wire>
@@ -1514,7 +1514,7 @@
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
             <spirit:vector>
-              <spirit:left>2</spirit:left>
+              <spirit:left>3</spirit:left>
               <spirit:right>0</spirit:right>
             </spirit:vector>
           </spirit:wire>
@@ -2139,26 +2139,26 @@
       <spirit:adHocConnection>
         <spirit:name>HDMI_RX_VS_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="HDMI_RX_VS"/>
-        <spirit:internalPortReference spirit:componentRef="hdmi_ila" spirit:portRef="probe2"/>
         <spirit:externalPortReference spirit:portRef="HDMI_TX_VS"/>
+        <spirit:internalPortReference spirit:componentRef="hdmi_ila" spirit:portRef="probe2"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>HDMI_RX_DATA_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="HDMI_RX_DATA"/>
-        <spirit:internalPortReference spirit:componentRef="hdmi_ila" spirit:portRef="probe0"/>
         <spirit:externalPortReference spirit:portRef="HDMI_TX_DATA"/>
+        <spirit:internalPortReference spirit:componentRef="hdmi_ila" spirit:portRef="probe0"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>HDMI_RX_HS_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="HDMI_RX_HS"/>
-        <spirit:internalPortReference spirit:componentRef="hdmi_ila" spirit:portRef="probe1"/>
         <spirit:externalPortReference spirit:portRef="HDMI_TX_HS"/>
+        <spirit:internalPortReference spirit:componentRef="hdmi_ila" spirit:portRef="probe1"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>HDMI_RX_DE_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="HDMI_RX_DE"/>
-        <spirit:internalPortReference spirit:componentRef="hdmi_ila" spirit:portRef="probe3"/>
         <spirit:externalPortReference spirit:portRef="HDMI_TX_DE"/>
+        <spirit:internalPortReference spirit:componentRef="hdmi_ila" spirit:portRef="probe3"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
   </spirit:design>

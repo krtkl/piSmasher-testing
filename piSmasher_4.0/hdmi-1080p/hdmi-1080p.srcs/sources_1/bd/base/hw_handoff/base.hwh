@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Aug 25 14:26:12 2018" VIVADOVERSION="2018.2.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Aug 28 17:11:16 2018" VIVADOVERSION="2018.2.1">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="base" PACKAGE="clg400" SPEEDGRADE="-3"/>
 
@@ -59,26 +59,26 @@
     </PORT>
     <PORT DIR="I" NAME="HDMI_RX_DE" SIGIS="undef" SIGNAME="External_Ports_HDMI_RX_DE">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="hdmi_hdmi_ila" PORT="probe3"/>
         <CONNECTION INSTANCE="External_Ports" PORT="HDMI_TX_DE"/>
+        <CONNECTION INSTANCE="hdmi_hdmi_ila" PORT="probe3"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="HDMI_RX_VS" SIGIS="undef" SIGNAME="External_Ports_HDMI_RX_VS">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="hdmi_hdmi_ila" PORT="probe2"/>
         <CONNECTION INSTANCE="External_Ports" PORT="HDMI_TX_VS"/>
+        <CONNECTION INSTANCE="hdmi_hdmi_ila" PORT="probe2"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" LEFT="23" NAME="HDMI_RX_DATA" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_HDMI_RX_DATA">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="hdmi_hdmi_ila" PORT="probe0"/>
         <CONNECTION INSTANCE="External_Ports" PORT="HDMI_TX_DATA"/>
+        <CONNECTION INSTANCE="hdmi_hdmi_ila" PORT="probe0"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="HDMI_RX_HS" SIGIS="undef" SIGNAME="External_Ports_HDMI_RX_HS">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="hdmi_hdmi_ila" PORT="probe1"/>
         <CONNECTION INSTANCE="External_Ports" PORT="HDMI_TX_HS"/>
+        <CONNECTION INSTANCE="hdmi_hdmi_ila" PORT="probe1"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" NAME="AC_MCLK" SIGIS="undef" SIGNAME="audio_clk_wiz_0_clk_out1">
@@ -101,12 +101,12 @@
         <CONNECTION INSTANCE="audio_system_ila_0" PORT="clk"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="2" NAME="HDMI_RX_I2S" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_HDMI_RX_I2S">
+    <PORT DIR="I" LEFT="3" NAME="HDMI_RX_I2S" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_HDMI_RX_I2S">
       <CONNECTIONS>
         <CONNECTION INSTANCE="External_Ports" PORT="HDMI_TX_I2S"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="2" NAME="HDMI_TX_I2S" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_HDMI_RX_I2S">
+    <PORT DIR="O" LEFT="3" NAME="HDMI_TX_I2S" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_HDMI_RX_I2S">
       <CONNECTIONS>
         <CONNECTION INSTANCE="External_Ports" PORT="HDMI_RX_I2S"/>
       </CONNECTIONS>

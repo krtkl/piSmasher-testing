@@ -10,15 +10,19 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="2038858fs"></ZoomEndTime>
-      <Cursor1Time time="1295000fs"></Cursor1Time>
+      <ZoomEndTime time="4096001fs"></ZoomEndTime>
+      <Cursor1Time time="1130000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="167"></NameColumnWidth>
-      <ValueColumnWidth column_width="76"></ValueColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="4" />
    <wave_markers>
+      <marker time="320000" label="" />
+      <marker time="364000" label="" />
+      <marker time="512000" label="" />
+      <marker time="232000" label="" />
    </wave_markers>
    <wvobject fp_name="base_i/hdmi/hdmi_tx_ila/inst/probe0_1" type="array">
       <obj_property name="DisplayName">label</obj_property>

@@ -13,15 +13,15 @@ source base_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
-add_files: Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 345.219 ; gain = 111.160
+add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 344.996 ; gain = 110.691
 Command: synth_design -top base_wrapper -part xc7z020clg400-3
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7952 
+INFO: Helper process launched with PID 3616 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 476.805 ; gain = 129.848
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 477.262 ; gain = 130.523
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'base_wrapper' [Z:/Projects/piSmasher/piSmasher-testing/piSmasher_4.1/hdmi-pass-through/hdmi-pass-through.srcs/sources_1/bd/base/hdl/base_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:22660]
@@ -622,7 +622,7 @@ WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unco
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port SLEEP
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:02:42 ; elapsed = 00:02:50 . Memory (MB): peak = 954.352 ; gain = 607.395
+Finished RTL Elaboration : Time (s): cpu = 00:02:20 ; elapsed = 00:02:28 . Memory (MB): peak = 956.035 ; gain = 609.297
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -713,10 +713,10 @@ INFO: [Synth 8-3295] tying undriven pin inst:trig_out_ack to constant 0 [z:/Proj
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:43 ; elapsed = 00:02:51 . Memory (MB): peak = 954.352 ; gain = 607.395
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:21 ; elapsed = 00:02:30 . Memory (MB): peak = 956.035 ; gain = 609.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:43 ; elapsed = 00:02:51 . Memory (MB): peak = 954.352 ; gain = 607.395
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:21 ; elapsed = 00:02:30 . Memory (MB): peak = 956.035 ; gain = 609.297
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 325 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -794,16 +794,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   IODELAYE1 => IDELAYE2: 10 instances
   SRL16 => SRL16E: 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.107 . Memory (MB): peak = 991.051 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 994.895 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:03:05 ; elapsed = 00:03:18 . Memory (MB): peak = 991.051 ; gain = 644.094
+Finished Constraint Validation : Time (s): cpu = 00:02:40 ; elapsed = 00:02:53 . Memory (MB): peak = 994.895 ; gain = 648.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:03:05 ; elapsed = 00:03:18 . Memory (MB): peak = 991.051 ; gain = 644.094
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:40 ; elapsed = 00:02:53 . Memory (MB): peak = 994.895 ; gain = 648.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -831,7 +831,7 @@ Applied set_property DONT_TOUCH = true for base_i/ethernet/gmii_to_rgmii_1/U0. (
 Applied set_property DONT_TOUCH = true for base_i/audio/proc_sys_reset_100MHz/U0. (constraint file  Z:/Projects/piSmasher/piSmasher-testing/piSmasher_4.1/hdmi-pass-through/hdmi-pass-through.runs/synth_1/dont_touch.xdc, line 74).
 Applied set_property DONT_TOUCH = true for base_i/audio/clk_wiz_0/inst. (constraint file  Z:/Projects/piSmasher/piSmasher-testing/piSmasher_4.1/hdmi-pass-through/hdmi-pass-through.runs/synth_1/dont_touch.xdc, line 80).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:06 ; elapsed = 00:03:18 . Memory (MB): peak = 991.051 ; gain = 644.094
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:41 ; elapsed = 00:02:54 . Memory (MB): peak = 994.895 ; gain = 648.156
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [z:/Projects/piSmasher/piSmasher-testing/piSmasher_4.1/hdmi-pass-through/hdmi-pass-through.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
 WARNING: [Synth 8-6014] Unused sequential element seq_cnt_en_reg was removed.  [z:/Projects/piSmasher/piSmasher-testing/piSmasher_4.1/hdmi-pass-through/hdmi-pass-through.srcs/sources_1/bd/base/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
@@ -894,10 +894,10 @@ INFO: [Synth 8-5546] ROM "adv_drdy" won't be mapped to RAM because it is too spa
 INFO: [Synth 8-5546] ROM "read_addr" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "curr_read_block" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "read_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'fsm2071A833CF00'
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'fsm20702FA5FC00'
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'fsm2071A82E8600'
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'fsm2071A8385200'
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'fsm2545B937A300'
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'fsm25447CCCE400'
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'fsm2545B934EE00'
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'fsm2545B92AF600'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -935,10 +935,10 @@ INFO: [Synth 8-3354] encoded FSM with state register 'idelay_reset_cnt_reg' usin
                   data_3 |                      00000100000 |                             1010
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'one-hot' in module 'MDIO_INTERFACE'
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'fsm2071A82C0800'
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'fsm2071A829A000'
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'fsm2545B932F400'
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'fsm2545B92E2400'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:12 ; elapsed = 00:03:25 . Memory (MB): peak = 991.051 ; gain = 644.094
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:45 ; elapsed = 00:03:00 . Memory (MB): peak = 994.895 ; gain = 648.156
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1868,7 +1868,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (base_i/\h
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (base_i/\hdmi/hdmi_ila /inst/ila_lib/inst/\ila_core_inst/u_ila_regs/shift_reg1_reg[1014] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:29 ; elapsed = 00:03:44 . Memory (MB): peak = 991.051 ; gain = 644.094
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:00 ; elapsed = 00:03:15 . Memory (MB): peak = 994.895 ; gain = 648.156
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1880,13 +1880,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:53 ; elapsed = 00:04:09 . Memory (MB): peak = 1089.211 ; gain = 742.254
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:18 ; elapsed = 00:03:35 . Memory (MB): peak = 1082.527 ; gain = 735.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:03:54 ; elapsed = 00:04:10 . Memory (MB): peak = 1110.348 ; gain = 763.391
+Finished Timing Optimization : Time (s): cpu = 00:03:19 ; elapsed = 00:03:35 . Memory (MB): peak = 1103.605 ; gain = 756.867
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1898,7 +1898,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:03:58 ; elapsed = 00:04:14 . Memory (MB): peak = 1129.828 ; gain = 782.871
+Finished Technology Mapping : Time (s): cpu = 00:03:22 ; elapsed = 00:03:39 . Memory (MB): peak = 1122.574 ; gain = 775.836
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1946,7 +1946,7 @@ WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[16] to constant 0
 INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-5410] Found another clock driver \i_base_gmii_to_rgmii_0_0_clocking/i_bufg_gmii_clk :O [z:/Projects/piSmasher/piSmasher-testing/piSmasher_4.1/hdmi-pass-through/hdmi-pass-through.srcs/sources_1/bd/base/ip/base_gmii_to_rgmii_0_0/synth/base_gmii_to_rgmii_0_0_clocking.vhd:88]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:04:00 ; elapsed = 00:04:17 . Memory (MB): peak = 1129.828 ; gain = 782.871
+Finished IO Insertion : Time (s): cpu = 00:03:24 ; elapsed = 00:03:41 . Memory (MB): peak = 1122.574 ; gain = 775.836
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1959,7 +1959,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:04:00 ; elapsed = 00:04:17 . Memory (MB): peak = 1129.828 ; gain = 782.871
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:24 ; elapsed = 00:03:41 . Memory (MB): peak = 1122.574 ; gain = 775.836
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1971,25 +1971,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:01 ; elapsed = 00:04:17 . Memory (MB): peak = 1129.828 ; gain = 782.871
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:24 ; elapsed = 00:03:41 . Memory (MB): peak = 1122.574 ; gain = 775.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:04:01 ; elapsed = 00:04:17 . Memory (MB): peak = 1129.828 ; gain = 782.871
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:24 ; elapsed = 00:03:41 . Memory (MB): peak = 1122.574 ; gain = 775.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:04:01 ; elapsed = 00:04:17 . Memory (MB): peak = 1129.828 ; gain = 782.871
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:25 ; elapsed = 00:03:41 . Memory (MB): peak = 1122.574 ; gain = 775.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:04:01 ; elapsed = 00:04:18 . Memory (MB): peak = 1129.828 ; gain = 782.871
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:25 ; elapsed = 00:03:41 . Memory (MB): peak = 1122.574 ; gain = 775.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2358,11 +2358,11 @@ Report Instance Areas:
 |293   |                xsdb_memory_read_inst                                             |ltlib_v1_0_0_generic_memrd__parameterized0         |   100|
 +------+----------------------------------------------------------------------------------+---------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:04:01 ; elapsed = 00:04:18 . Memory (MB): peak = 1129.828 ; gain = 782.871
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:25 ; elapsed = 00:03:42 . Memory (MB): peak = 1122.574 ; gain = 775.836
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2369 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:00 ; elapsed = 00:03:56 . Memory (MB): peak = 1129.828 ; gain = 746.172
-Synthesis Optimization Complete : Time (s): cpu = 00:04:02 ; elapsed = 00:04:18 . Memory (MB): peak = 1129.828 ; gain = 782.871
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:03:22 . Memory (MB): peak = 1122.574 ; gain = 736.977
+Synthesis Optimization Complete : Time (s): cpu = 00:03:25 ; elapsed = 00:03:42 . Memory (MB): peak = 1122.574 ; gain = 775.836
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 381 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -2391,9 +2391,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 649 Infos, 162 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:04:12 ; elapsed = 00:04:30 . Memory (MB): peak = 1614.859 ; gain = 1269.641
+synth_design: Time (s): cpu = 00:03:33 ; elapsed = 00:03:53 . Memory (MB): peak = 1607.168 ; gain = 1262.172
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'Z:/Projects/piSmasher/piSmasher-testing/piSmasher_4.1/hdmi-pass-through/hdmi-pass-through.runs/synth_1/base_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file base_wrapper_utilization_synth.rpt -pb base_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 1614.859 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Aug 25 19:28:49 2018...
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.112 . Memory (MB): peak = 1607.168 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 27 21:54:36 2018...

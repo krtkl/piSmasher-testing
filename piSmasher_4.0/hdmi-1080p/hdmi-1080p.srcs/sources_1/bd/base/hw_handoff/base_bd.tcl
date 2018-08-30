@@ -158,10 +158,10 @@ proc create_hier_cell_hdmi_audio { parentCell nameHier } {
   # Create interface pins
 
   # Create pins
-  create_bd_pin -dir I -from 2 -to 0 HDMI_RX_I2S
+  create_bd_pin -dir I -from 3 -to 0 HDMI_RX_I2S
   create_bd_pin -dir I HDMI_RX_LRCLK
   create_bd_pin -dir I HDMI_RX_SCLK
-  create_bd_pin -dir O -from 2 -to 0 HDMI_TX_I2S
+  create_bd_pin -dir O -from 3 -to 0 HDMI_TX_I2S
   create_bd_pin -dir O HDMI_TX_LRCLK
   create_bd_pin -dir O HDMI_TX_SCLK
 
@@ -493,7 +493,7 @@ proc create_root_design { parentCell } {
   set HDMI_RX_DATA [ create_bd_port -dir I -from 23 -to 0 -type data HDMI_RX_DATA ]
   set HDMI_RX_DE [ create_bd_port -dir I HDMI_RX_DE ]
   set HDMI_RX_HS [ create_bd_port -dir I HDMI_RX_HS ]
-  set HDMI_RX_I2S [ create_bd_port -dir I -from 2 -to 0 HDMI_RX_I2S ]
+  set HDMI_RX_I2S [ create_bd_port -dir I -from 3 -to 0 HDMI_RX_I2S ]
   set HDMI_RX_LRCLK [ create_bd_port -dir I HDMI_RX_LRCLK ]
   set HDMI_RX_PCLK [ create_bd_port -dir I -type clk HDMI_RX_PCLK ]
   set_property -dict [ list \
@@ -504,7 +504,7 @@ proc create_root_design { parentCell } {
   set HDMI_TX_DATA [ create_bd_port -dir O -from 23 -to 0 HDMI_TX_DATA ]
   set HDMI_TX_DE [ create_bd_port -dir O HDMI_TX_DE ]
   set HDMI_TX_HS [ create_bd_port -dir O HDMI_TX_HS ]
-  set HDMI_TX_I2S [ create_bd_port -dir O -from 2 -to 0 HDMI_TX_I2S ]
+  set HDMI_TX_I2S [ create_bd_port -dir O -from 3 -to 0 HDMI_TX_I2S ]
   set HDMI_TX_LRCLK [ create_bd_port -dir O HDMI_TX_LRCLK ]
   set HDMI_TX_PCLK [ create_bd_port -dir O -type clk HDMI_TX_PCLK ]
   set HDMI_TX_SCLK [ create_bd_port -dir O HDMI_TX_SCLK ]

@@ -1,0 +1,73 @@
+
+\documentclass[sfsidenotes, justified]{tufte-handout}
+
+%
+% Author and title information
+%
+\title{piSmasher Testing Instructions}
+\author{krtkl inc.}
+
+\makeatletter
+
+\input{preamble.tex}
+
+\renewcommand{\maketitle}{%
+  \newpage
+  %\thispagestyle{plain} 
+  \begin{fullwidth}
+    \par{\LARGE\scshape\@title}
+    \hfill
+    \includegraphics[width=0.3\textwidth]{images/krtkl.pdf} \\ 
+    \rule{\linewidth}{0.5pt} \\
+  \end{fullwidth}
+}
+
+\begin{document}
+  \maketitle
+  
+  \section{Summary}
+  
+  Subsystem testing instructions for HDMI transmit, HDMI receive, audio codec, USB and Ethernet.
+  
+  \tableofcontents
+  \listoffigures
+
+	% DMD Probe Rework
+	\newpage
+  \section{HDMI Transmit/Receive}
+    
+    \subsection{Pass Through Configuration (loop-through)}
+    
+    
+    Configure the HDMI transceivers. This will enable the pixel clock on the HDMI receiver which is used to drive the HDMI transmitter.
+    
+\begin{lstlisting}
+# hdmi-config/hdmi-config -m 1080p
+\end{lstlisting}
+    
+	Configure the test pattern generator to use the video input stream from the HDMI receiver to output to the HDMI transmitter.
+	
+\begin{lstlisting}
+# vid-tpg-config/vid-tpg-config -w 1920 -h 1080 -b 0 12
+\end{lstlisting}
+
+
+	Configure the video timing controller for the desired video format.
+	
+\begin{lstlisting}
+# uio-vtc/uio-vtc -g -m 1080p 13 
+\end{lstlisting}
+
+\section{Audio Codec}
+
+
+Configure the input and output paths for the audio codec.
+
+\begin{lstlisting}
+# audio-config/audio-config -i linein -o lineout
+\end{lstlisting}
+
+
+    
+\end{document}
+
